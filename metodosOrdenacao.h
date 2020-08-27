@@ -1,4 +1,4 @@
-#include "lista.h"
+#include "utilidades.h"
 
 void bolha(int *vetor, long long int n) {
     bool houveTroca;

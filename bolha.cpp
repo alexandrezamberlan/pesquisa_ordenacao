@@ -2,7 +2,6 @@
 #include <time.h>
 
 #include "metodosOrdenacao.h"
-#include "utilidades.h"
 
 using namespace std;
 
