@@ -1,5 +1,6 @@
 import java.util.LinkedList;
 import java.util.Random;
+import javax.swing.JOptionPane;
 
 public class Principal {
 
@@ -17,10 +18,16 @@ public class Principal {
     }
     public static void main(String a[]) {
         LinkedList<Integer> lista = new LinkedList<Integer>();
-        popular(100, lista);
-        // tempoInicio = pegaClock();
+        long tempoInicio;  
+        
+        int quantidade = Integer.parseInt(JOptionPane.showInputDialog(null,"Quantos números quer gerar? "));
+
+        popular(quantidade, lista);
+        tempoInicio = System.nanoTime();
         MetodosOrdenacao.bolha(lista);
-        // tempoFim = pegaClock();
-        exibir(lista);
+        JOptionPane.showMessageDialog(null,"Tempo (ms): " + (System.nanoTime() - tempoInicio)/1000000);
+        
+        //exibir(lista);
+        System.exit(0);
     }
 }
