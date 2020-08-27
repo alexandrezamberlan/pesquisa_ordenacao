@@ -1,0 +1,6 @@
+.DS_Store
+*.exe
+*.obj
+*.bin
+/Java/OrdenacaoJava/nbproject/private/
+/Java/OrdenacaoJava/build/
