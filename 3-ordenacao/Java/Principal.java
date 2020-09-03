@@ -21,9 +21,9 @@ public class Principal {
         LinkedList<Integer> listaSelecao = new LinkedList<Integer>();
         long tempoInicio;  
         
-        int quantidade = Integer.parseInt(JOptionPane.showInputDialog(null,"Quantos números quer gerar? "));
+        int quantidade = 5000; //Integer.parseInt(JOptionPane.showInputDialog(null,"Quantos números quer gerar? "));
 
-        popular(quantidade, listaBolha);
+        //popular(quantidade, listaBolha);
         popular(quantidade, listaSelecao);
         System.out.println("Total de números: " + quantidade);
 

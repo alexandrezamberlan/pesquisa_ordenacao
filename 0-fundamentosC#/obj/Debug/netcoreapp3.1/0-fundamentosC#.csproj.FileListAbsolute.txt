@@ -1,0 +1,12 @@
+/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/0-fundamentosC#/bin/Debug/netcoreapp3.1/0-fundamentosC#.deps.json
+/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/0-fundamentosC#/bin/Debug/netcoreapp3.1/0-fundamentosC#.runtimeconfig.json
+/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/0-fundamentosC#/bin/Debug/netcoreapp3.1/0-fundamentosC#.runtimeconfig.dev.json
+/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/0-fundamentosC#/bin/Debug/netcoreapp3.1/0-fundamentosC#.dll
+/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/0-fundamentosC#/bin/Debug/netcoreapp3.1/0-fundamentosC#.pdb
+/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/0-fundamentosC#/obj/Debug/netcoreapp3.1/0-fundamentosC#.csprojAssemblyReference.cache
+/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/0-fundamentosC#/obj/Debug/netcoreapp3.1/0-fundamentosC#.AssemblyInfoInputs.cache
+/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/0-fundamentosC#/obj/Debug/netcoreapp3.1/0-fundamentosC#.AssemblyInfo.cs
+/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/0-fundamentosC#/obj/Debug/netcoreapp3.1/0-fundamentosC#.csproj.CoreCompileInputs.cache
+/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/0-fundamentosC#/obj/Debug/netcoreapp3.1/0-fundamentosC#.dll
+/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/0-fundamentosC#/obj/Debug/netcoreapp3.1/0-fundamentosC#.pdb
+/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/0-fundamentosC#/obj/Debug/netcoreapp3.1/0-fundamentosC#.genruntimeconfig.cache
