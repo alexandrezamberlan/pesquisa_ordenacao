@@ -3,7 +3,6 @@
 #include <string>
 #include <cstdlib>
 #include <vector>
-#include "Ordenacao.h"
 #include <locale.h>
 #include <time.h>
 using namespace std;
@@ -46,7 +45,7 @@ int main() {
 	
 	//solicita pro usuario nome do arquivo origem
 	char nomeArquivo[200];
-	cout << "Informe nome do arquivo fonte com números: ";
+	cout << "Informe nome do arquivo fonte com nÃºmeros: ";
 	cin >> nomeArquivo;
 	
 	//abrir arquivo para leitura
@@ -60,13 +59,17 @@ int main() {
 	
 	while (procuradorArquivo >> valor) {
 		vetor.push_back(valor);
+		//vetor.add(valor) -> java
+		//vetor.Add(valor) -> c#
+		//vetor.append(valor) -> python
+		
 		lista = inserirDesordenadoLista(valor, lista);
 		//cout << valor << endl;
 	}
 	procuradorArquivo.close();
 	cout << "Arquivo lido com sucesso!\n";
 	
-	/*
+	
 	cout << "Exibindo a lista" << endl;
 	exibirLista(lista);
 	
@@ -74,9 +77,6 @@ int main() {
 	for (long long int i = 0; i < vetor.size(); i++) {
 		cout << vetor[i] << endl;
 	}
-	*/
-	
-	//Ordenacao.selecaoVetor(vetor);
 	
 	return 1;
 }

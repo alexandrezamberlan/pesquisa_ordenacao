@@ -14,7 +14,7 @@ int main() {
 	
 	//solicita pro usuario nome do arquivo destino
 	char nomeArquivo[200];
-	cout << "Informe nome do arquivo com extensão: ";
+	cout << "Informe nome do arquivo com extensÃ£o: ";
 	cin >> nomeArquivo;
 	
 	//criar um arquivo para escrita
@@ -27,7 +27,8 @@ int main() {
 	int valor;
 	for (; qtdNumeros > 0; qtdNumeros--) {
 		valor = rand() % 10000;
-		procuradorArquivo << valor << "\n";		
+		//cout << valor << endl;
+		procuradorArquivo << valor << endl;		
 	}
 	
 	procuradorArquivo.close();
