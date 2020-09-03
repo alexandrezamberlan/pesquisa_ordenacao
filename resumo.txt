@@ -1,3 +1,12 @@
+ORDENAR E PESQUISAR
+    - ordenar agiliza a pesquisa
+    - classificações de ordenação
+        - quanto complexidade (esforço/quantidade de processamento): quantidade de comparações e quantidade de trocas
+        - quanto ocupação de memória: principal ou secundária
+        - quanto a estabilidade: estáveis e instáveis
+C++
+    - uso de arquivos .h e sua inclusão em outros programas
+
 MÉTODOS DE ORDENAÇÃO SIMPLES
 
 1) BOLHA - Bubble Sort
@@ -10,39 +19,25 @@ Adequado para vetores e listas
 Trabalha com o conceito de trocas, ou seja, enquanto houver trocas, o algoritmo não para.
 É considerado bolha, porque 'leva' os maiores para o final da estrutura
 
-void bolha(int *v, int n) {
-    int i;
-    int houveTroca;
-    int tmp;
+Observação: se a estrutua estiver ordenada ou quase, o bolha terá excelente desempenho
 
-    do {
-        houveTroca = 0;
-        for (i = 0; i < n-1; i++){
-            if (v[i] > v[i + 1]) {
-                houveTroca = 1;
-                tmp = v[i];
-                v[i] = v[i+1];
-                v[i+1] = tmp;
-            }
-        }
-    } while (houveTroca);
-}
+2) SELEÇÃO - Selection Sort
+Instável
+Memória Interna
+Alta complexidade (muito esforço)
+A estrutura possui 2 partes/porções (1a é a ordenada; 2a parte é a desordenada)
+Adequado para vetores e listas
 
-Celula *bolha(Celula *l) {
-    Celula *i;
-    int houveTroca;
-    int tmp;
+Trabalha com conceito de trocas não contíguas. É considerado seleção porque ele seleciona os menores para
+o início da estrutura
 
-    if (!l) return l;
+Observação: se a estrutura estiver ordenada, o método vai funcionar/processar como se a estrutura estivesse desordenada
 
-    do {
-        for (i = l; i->prox; i = i->prox){
-            if (i->dado > i->prox->dado) {
-                houveTroca = 1;
-                tmp = i->dado;
-                i->dado = i->prox->dado;
-                i->prox->dado = tmp;
-            }
-        }
-    } while (houveTroca);
-}
+3) INSERÇÃO - Insertion Sort
+
+RETOMADA EM ARQUIVOS: C e C++ e Java
+
+
+
+Qual o melhor método de ordenação?
+Depende: tamanho da estrutura; de como a estrutura já está previamente ordenada;

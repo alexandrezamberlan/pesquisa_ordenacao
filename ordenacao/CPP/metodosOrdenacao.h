@@ -39,3 +39,22 @@ Celula *bolhaLista(Celula *l) {
 
     return l;
 }
+
+void selecao(int *vetor, long long int n) {
+    long long int posMenor, i, j;
+    int tmp;
+
+    for (i = 0; i < n-1; i++) {
+        posMenor = i;
+        for (j = i + 1; j < n; j++ ) {
+            if (vetor[j] < vetor[posMenor]) {
+                posMenor = j;
+            }
+        }
+        if (i != posMenor) { 
+            tmp = vetor[i];
+            vetor[i] = vetor[posMenor];
+            vetor[posMenor] = tmp;
+        }
+    }
+}
