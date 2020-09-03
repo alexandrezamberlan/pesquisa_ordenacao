@@ -17,17 +17,29 @@ public class Principal {
         }
     }
     public static void main(String a[]) {
-        LinkedList<Integer> lista = new LinkedList<Integer>();
+        LinkedList<Integer> listaBolha = new LinkedList<Integer>();
+        LinkedList<Integer> listaSelecao = new LinkedList<Integer>();
         long tempoInicio;  
         
         int quantidade = Integer.parseInt(JOptionPane.showInputDialog(null,"Quantos números quer gerar? "));
 
-        popular(quantidade, lista);
-        tempoInicio = System.nanoTime();
-        MetodosOrdenacao.bolha(lista);
-        JOptionPane.showMessageDialog(null,"Tempo (ms): " + (System.nanoTime() - tempoInicio)/1000000);
+        popular(quantidade, listaBolha);
+        popular(quantidade, listaSelecao);
+        System.out.println("Total de números: " + quantidade);
+
+        //bolha
+        //tempoInicio = System.nanoTime();
+        //MetodosOrdenacao.bolha(listaBolha);
+        //System.out.println("Tempo (ms) bolha: " + (System.nanoTime() - tempoInicio)/1000000);
         
-        //exibir(lista);
+        //selecao
+        tempoInicio = System.nanoTime();
+        MetodosOrdenacao.selecao(listaSelecao);
+        System.out.println("Tempo (ms) seleção: " + (System.nanoTime() - tempoInicio)/1000000);
+        
+        
+        //exibir(listaSelecao);
+        
         System.exit(0);
     }
 }

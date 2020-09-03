@@ -1,0 +1,12 @@
+/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/3-ordenacao/C#/bin/Debug/netcoreapp3.1/C#.deps.json
+/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/3-ordenacao/C#/bin/Debug/netcoreapp3.1/C#.runtimeconfig.json
+/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/3-ordenacao/C#/bin/Debug/netcoreapp3.1/C#.runtimeconfig.dev.json
+/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/3-ordenacao/C#/bin/Debug/netcoreapp3.1/C#.dll
+/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/3-ordenacao/C#/bin/Debug/netcoreapp3.1/C#.pdb
+/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/Debug/netcoreapp3.1/C#.csprojAssemblyReference.cache
+/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/Debug/netcoreapp3.1/C#.AssemblyInfoInputs.cache
+/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/Debug/netcoreapp3.1/C#.AssemblyInfo.cs
+/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/Debug/netcoreapp3.1/C#.csproj.CoreCompileInputs.cache
+/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/Debug/netcoreapp3.1/C#.dll
+/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/Debug/netcoreapp3.1/C#.pdb
+/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/Debug/netcoreapp3.1/C#.genruntimeconfig.cache
