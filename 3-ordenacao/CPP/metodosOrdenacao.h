@@ -58,3 +58,25 @@ void selecao(int *vetor, long long int n) {
         }
     }
 }
+
+Celula *selecaoLista(Celula *l) {
+    Celula *posMenor, *i, *j;
+    int tmp;
+
+    if (!l) return l;
+
+    for (i = l; i->prox; i = i->prox) {
+        posMenor = i;
+        for (j = i->prox; j ; j = j->prox) {
+            if (j->dado < posMenor->dado) {
+                posMenor = j;
+            }
+        }
+        if (i != posMenor) { 
+            tmp = i->dado;
+            i->dado = posMenor->dado;
+            posMenor->dado = tmp;
+        }
+    }
+    return l;
+}

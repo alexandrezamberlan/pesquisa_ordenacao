@@ -32,15 +32,13 @@ int main() {
     cout << "Tempo para seleção: "<< (float)(tempoFim - tempoInicio)/CLOCKS_PER_SEC << endl;
     //exibe(vetorSelecao, tamanho);
 
-    // lista = popularLista(tamanho, lista);
-    // tempoInicio = clock();
-    // lista = selecaoLista(lista);
-    // tempoFim = clock();
-    // cout << "Tempo para ordenar lista: "<< (float)(tempoFim - tempoInicio)/CLOCKS_PER_SEC << endl;
+    lista = popularLista(tamanho, lista);
+    tempoInicio = clock();
+    lista = selecaoLista(lista);
+    tempoFim = clock();
+    cout << "Tempo para ordenar lista: "<< (float)(tempoFim - tempoInicio)/CLOCKS_PER_SEC << endl;
 
     //exibirLista(lista);
 
-
-   
     return 1;
 }
