@@ -80,3 +80,18 @@ Celula *selecaoLista(Celula *l) {
     }
     return l;
 }
+
+void insercao(int *vetor, long long int n) {
+    long long int i, j;
+    int tmp;
+
+    for (i = 1; i < n; i++) {
+        tmp = vetor[i];
+        for (j = i - 1; j >= 0; j--) {
+            if (tmp < vetor[j]) {
+                vetor[j + 1] = vetor[j];
+            } else break;
+        }
+        vetor[j + 1] = tmp;
+    }
+}

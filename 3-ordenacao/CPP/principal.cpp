@@ -13,11 +13,13 @@ int main() {
     cout << "Tamanho do vetor ou lista: ";
     cin >> tamanho;
 
-    int *vetorBolha, *vetorSelecao;
+    int *vetorBolha, *vetorSelecao, *vetorInsercao;
     vetorBolha = (int*)malloc(sizeof(int) * tamanho);
     vetorSelecao = (int*)malloc(sizeof(int) * tamanho);
+    vetorInsercao = (int*)malloc(sizeof(int) * tamanho);
     popula(vetorBolha, tamanho);
     popula(vetorSelecao, tamanho);
+    popula(vetorInsercao, tamanho);
 
     //bolha
     tempoInicio = clock();
@@ -32,13 +34,20 @@ int main() {
     cout << "Tempo para seleção: "<< (float)(tempoFim - tempoInicio)/CLOCKS_PER_SEC << endl;
     //exibe(vetorSelecao, tamanho);
 
-    lista = popularLista(tamanho, lista);
+    //insercao
     tempoInicio = clock();
-    lista = selecaoLista(lista);
+    insercao(vetorInsercao,tamanho);
     tempoFim = clock();
-    cout << "Tempo para ordenar lista: "<< (float)(tempoFim - tempoInicio)/CLOCKS_PER_SEC << endl;
+    cout << "Tempo para inserção: "<< (float)(tempoFim - tempoInicio)/CLOCKS_PER_SEC << endl;
+    //exibe(vetorInsercao, tamanho);
 
-    //exibirLista(lista);
+    // lista = popularLista(tamanho, lista);
+    // tempoInicio = clock();
+    // lista = selecaoLista(lista);
+    // tempoFim = clock();
+    // cout << "Tempo para ordenar lista: "<< (float)(tempoFim - tempoInicio)/CLOCKS_PER_SEC << endl;
+
+    // //exibirLista(lista);
 
     return 1;
 }

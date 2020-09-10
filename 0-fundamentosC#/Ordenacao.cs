@@ -5,7 +5,6 @@ namespace _0_fundamentosC_
 {
     class Ordenacao
     {
-        
         public static void bolha(List<int> lista)
         {
             int i, tmp;
@@ -24,8 +23,6 @@ namespace _0_fundamentosC_
                     }
                 }
             } while (houveTroca);
-        }
-
-        
+        }        
     }
 }

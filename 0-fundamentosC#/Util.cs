@@ -5,7 +5,6 @@ namespace _0_fundamentosC_
 {
     class Util
     {
-        
         public static void popular(List<int> lista, int n)
         {
             Random gerador = new Random();

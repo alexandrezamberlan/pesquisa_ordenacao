@@ -12,19 +12,19 @@ MÉTODOS DE ORDENAÇÃO SIMPLES
 1) BOLHA - Bubble Sort
 Estável
 Memória Interna
-Alta complexidade (muito esforço)
+Alta complexidade (muito esforço) - O(n^2)
 A estrutura possui 2 partes/porções (1a é a desordenada; 2a parte é a ordenada)
 Adequado para vetores e listas
 
 Trabalha com o conceito de trocas, ou seja, enquanto houver trocas, o algoritmo não para.
 É considerado bolha, porque 'leva' os maiores para o final da estrutura
 
-Observação: se a estrutua estiver ordenada ou quase, o bolha terá excelente desempenho
+Observação: se a estrutura estiver ordenada ou quase, o bolha terá excelente desempenho
 
 2) SELEÇÃO - Selection Sort
 Instável
 Memória Interna
-Alta complexidade (muito esforço)
+Alta complexidade (muito esforço) - O(n^2)
 A estrutura possui 2 partes/porções (1a é a ordenada; 2a parte é a desordenada)
 Adequado para vetores e listas
 
@@ -34,9 +34,15 @@ o início da estrutura
 Observação: se a estrutura estiver ordenada, o método vai funcionar/processar como se a estrutura estivesse desordenada
 
 3) INSERÇÃO - Insertion Sort
+Estável
+Memória Interna
+Alta complexidade - O(n^2)
+A estrutura possui 2 partes/porções (1a é a ordenada; 2a parte é a desordenada)
+Adequado para vetores e listas
 
-RETOMADA EM ARQUIVOS: C e C++ e Java
+Trabalha com o conceito de inserção na porção inicial, com isso, pode diminuir o número de comparações
 
+Observação: se a estrutura estiver ordenada ou quase, o bolha terá excelente desempenho
 
 
 Qual o melhor método de ordenação?
