@@ -32,7 +32,7 @@ int main() {
     selecao(vetorSelecao,tamanho);
     tempoFim = clock();
     cout << "Tempo para seleção: "<< (float)(tempoFim - tempoInicio)/CLOCKS_PER_SEC << endl;
-    //exibe(vetorSelecao, tamanho);
+    // //exibe(vetorSelecao, tamanho);
 
     //insercao
     tempoInicio = clock();
