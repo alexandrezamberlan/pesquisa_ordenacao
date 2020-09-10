@@ -1,21 +1,21 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
-namespace C_
+namespace _0_fundamentosC_
 {
-    public class Ordenacao
+    class Ordenacao
     {
-        public static void bolha(List<int> lista) 
+        public static void bolha(List<int> lista)
         {
-            int tmp;
+            int i, tmp;
             bool houveTroca;
-            int i;
-            do 
-            {
+
+            do {
                 houveTroca = false;
-                for (i = 0; i < lista.Count-1; i++)
+                for (i = 0; i < lista.Count - 1; i++)
                 {
-                    if (lista[i] > lista[i+1]) {
+                    if (lista[i] > lista[i+1]) 
+                    {
                         houveTroca = true;
                         tmp = lista[i];
                         lista[i] = lista[i+1];
@@ -23,6 +23,6 @@ namespace C_
                     }
                 }
             } while (houveTroca);
-        }
+        }        
     }
 }
