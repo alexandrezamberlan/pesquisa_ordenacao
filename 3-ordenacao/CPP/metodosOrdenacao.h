@@ -210,7 +210,6 @@ CelulaD *agitacaoLista(CelulaD *l) {
         if (!houveTroca) {
             break;
         }
-            
         //aplicando o bolha da direita para esquerda
         houveTroca = false;
         for (i = fim; i->ant != ini; i = i->ant) {
