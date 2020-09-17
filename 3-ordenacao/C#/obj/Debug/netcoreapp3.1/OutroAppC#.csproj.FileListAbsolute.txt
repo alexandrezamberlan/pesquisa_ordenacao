@@ -10,3 +10,15 @@
 /Users/alexandrezamberlan/codigos/pesquisa_ordenacao/3-ordenacao/OutroAppC#/obj/Debug/netcoreapp3.1/OutroAppC#.dll
 /Users/alexandrezamberlan/codigos/pesquisa_ordenacao/3-ordenacao/OutroAppC#/obj/Debug/netcoreapp3.1/OutroAppC#.pdb
 /Users/alexandrezamberlan/codigos/pesquisa_ordenacao/3-ordenacao/OutroAppC#/obj/Debug/netcoreapp3.1/OutroAppC#.genruntimeconfig.cache
+/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/3-ordenacao/C#/bin/Debug/netcoreapp3.1/OutroAppC#.deps.json
+/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/3-ordenacao/C#/bin/Debug/netcoreapp3.1/OutroAppC#.runtimeconfig.json
+/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/3-ordenacao/C#/bin/Debug/netcoreapp3.1/OutroAppC#.runtimeconfig.dev.json
+/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/3-ordenacao/C#/bin/Debug/netcoreapp3.1/OutroAppC#.dll
+/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/3-ordenacao/C#/bin/Debug/netcoreapp3.1/OutroAppC#.pdb
+/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/Debug/netcoreapp3.1/OutroAppC#.csprojAssemblyReference.cache
+/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/Debug/netcoreapp3.1/OutroAppC#.AssemblyInfoInputs.cache
+/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/Debug/netcoreapp3.1/OutroAppC#.AssemblyInfo.cs
+/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/Debug/netcoreapp3.1/OutroAppC#.csproj.CoreCompileInputs.cache
+/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/Debug/netcoreapp3.1/OutroAppC#.dll
+/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/Debug/netcoreapp3.1/OutroAppC#.pdb
+/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/Debug/netcoreapp3.1/OutroAppC#.genruntimeconfig.cache

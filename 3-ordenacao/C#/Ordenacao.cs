@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace OutroAppC_
+namespace C_
 {
     class Ordenacao
     {
@@ -60,6 +60,43 @@ namespace OutroAppC_
                 }
                 lista[j + 1] = tmp;
             }
+        }
+
+        public static void agitacao(List<int> lista) {
+            bool houveTroca;
+            int tmp;
+            int i, ini = 0, fim = lista.Count - 1;
+
+            do {
+                //aplicando o bolha da esquerda para direita
+                houveTroca = false;
+                for (i = ini; i < fim; i++) {      
+                    if (lista[i] > lista[i+1]) {
+                        houveTroca = true;
+                        tmp = lista[i];
+                        lista[i] = lista[i+1];
+                        lista[i+1] = tmp;
+                    }
+                }
+                fim--;
+
+                if (!houveTroca) {
+                    break;
+                }
+
+                //aplicando o bolha da direita para esquerda
+                houveTroca = false;
+                for (i = fim; i > ini; i--) {
+                    if (lista[i] < lista[i-1]) {
+                        houveTroca = true;
+                        tmp = lista[i];
+                        lista[i] = lista[i-1];
+                        lista[i-1] = tmp;
+                    }
+                }
+                ini++;
+
+            } while (houveTroca && ini <= fim);
         }
     }
 }

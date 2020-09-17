@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace OutroAppC_
+namespace C_
 {
     class Utilidades
     {

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/3-ordenacao/OutroAppC#/OutroAppC#.csproj": {}
+    "/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/3-ordenacao/C#/OutroAppC#.csproj": {}
   },
   "projects": {
-    "/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/3-ordenacao/OutroAppC#/OutroAppC#.csproj": {
+    "/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/3-ordenacao/C#/OutroAppC#.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/3-ordenacao/OutroAppC#/OutroAppC#.csproj",
+        "projectUniqueName": "/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/3-ordenacao/C#/OutroAppC#.csproj",
         "projectName": "OutroAppC#",
-        "projectPath": "/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/3-ordenacao/OutroAppC#/OutroAppC#.csproj",
+        "projectPath": "/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/3-ordenacao/C#/OutroAppC#.csproj",
         "packagesPath": "/Users/alexandrezamberlan/.nuget/packages/",
-        "outputPath": "/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/3-ordenacao/OutroAppC#/obj/",
+        "outputPath": "/Users/alexandrezamberlan/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
