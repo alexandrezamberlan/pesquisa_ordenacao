@@ -66,7 +66,7 @@ Celula *popularLista(long long int qtd, Celula *l) {
     return l;
 }
 
-Celula *popularListaD(long long int qtd, CelulaD *l) {
+CelulaD *popularListaD(long long int qtd, CelulaD *l) {
     srand(time(NULL));
     do {
         l = inserirDesordenadoListaD(rand() % 100, l);
