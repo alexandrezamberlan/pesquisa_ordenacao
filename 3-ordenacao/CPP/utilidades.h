@@ -43,13 +43,15 @@ Celula *inserirDesordenadoLista(int valor, Celula *l) {
 }
 
 CelulaD *inserirDesordenadoListaD(int valor, CelulaD *l) {
-    CelulaD *novo = (CelulaD *)malloc(sizeof(Celula));
+    CelulaD *novo = (CelulaD *)malloc(sizeof(CelulaD));
 
     novo->dado = valor;
     novo->prox = NULL;
     novo->ant = NULL;
 
     if (!l) return novo;
+
+    for (;l->ant;l = l->ant); //coloca l no início da lista dupla
 
     novo->prox = l;
     l->ant = novo;
@@ -67,7 +69,9 @@ Celula *popularLista(long long int qtd, Celula *l) {
 }
 
 CelulaD *popularListaD(long long int qtd, CelulaD *l) {
+    
     srand(time(NULL));
+    
     do {
         l = inserirDesordenadoListaD(rand() % 100, l);
         qtd--;

@@ -32,7 +32,11 @@ namespace OutroAppC_
             Ordenacao.insercao(listaInsercao);
             Console.WriteLine("Fim do insercao: "+ DateTime.Now);
 
-            Utilidades.exibirLista(listaInsercao);
+
+            Console.WriteLine("Inicio do método de ordenação do C#: " + DateTime.Now);
+            //(lista);
+            Console.WriteLine("Fim do método de ordenação do C#: "+ DateTime.Now);
+            Utilidades.exibirLista(lista);
         }
     }
 }

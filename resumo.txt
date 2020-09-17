@@ -33,7 +33,7 @@ o início da estrutura
 
 Observação: se a estrutura estiver ordenada, o método vai funcionar/processar como se a estrutura estivesse desordenada
 
-3) INSERÇÃO - Insertion Sort
+3) INSERÇÃO - Insertion Sort - O(n^2)
 Estável
 Memória Interna
 Alta complexidade - O(n^2)
@@ -42,8 +42,23 @@ Adequado para vetores e listas
 
 Trabalha com o conceito de inserção na porção inicial, com isso, pode diminuir o número de comparações
 
-Observação: se a estrutura estiver ordenada ou quase, o bolha terá excelente desempenho
+Observação: i) se a estrutura estiver ordenada ou quase, o inserção terá excelente desempenho
+            ii) atenção a lista deve ser duplamente encadeada
 
 
 Qual o melhor método de ordenação?
 Depende: tamanho da estrutura; de como a estrutura já está previamente ordenada;
+
+4) AGITAÇÃO - Shake Sort ou Cocktail - 
+É baseado no Bolha, ou seja, é uma tentantiva de melhorar o Bolha.
+Estável
+Memória Interna
+A estrutura possui 3 partes/porções (1a é a ordenada pelos menores; 2a é a desordenada; 3a é 
+a ordenada pelos maiores)
+
+De fato é a aplicação do bolha da esquerda para direita e depois da direita para esquerda
+
+Há os índices/ponteiros ini e fim que marcam o início e o final da estrutura
+
+Observação: i) se a estrutura estiver ordenada ou quase, o agitação terá excelente desempenho, como o bolha
+            ii) atenção a lista deve ser duplamente encadeada  

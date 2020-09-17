@@ -122,6 +122,9 @@ CelulaD *insercaoLista(CelulaD *l) {
     
     if (!l) return l;
 
+    while (l->ant)
+        l = l->ant;
+
     for (i = l->prox; i; i = i->prox) {
         tmp = i->dado;
         for (j = i->ant ; j ; j = j->ant) {
@@ -179,4 +182,47 @@ void agitacao(int *vetor, long long int n) {
 
     cout << "Quantidade comparações: " << qtdComparacoes << endl;
     cout << "Quantidade trocas: " << qtdTrocas << endl;
+}
+
+CelulaD *agitacaoLista(CelulaD *l) {
+    bool houveTroca;
+    int tmp;
+    CelulaD *i, *ini, *fim;
+    if (!l) return l;
+    while (l->ant)
+        l = l->ant;
+    ini = l;
+    fim = l;
+    while (fim->prox) 
+        fim = fim->prox;
+    do {
+        //aplicando o bolha da esquerda para direita
+        houveTroca = false;
+        for (i = ini; i->prox != fim; i = i->prox) {      
+            if (i->dado > i->prox->dado) {
+                houveTroca = true;
+                tmp = i->dado;
+                i->dado = i->prox->dado;
+                i->prox->dado = tmp;
+            }
+        }
+        fim = fim->ant;
+        if (!houveTroca) {
+            break;
+        }
+            
+        //aplicando o bolha da direita para esquerda
+        houveTroca = false;
+        for (i = fim; i->ant != ini; i = i->ant) {
+            if (i->dado < i->ant->dado) {
+                houveTroca = true;
+                tmp = i->dado;
+                i->dado = i->ant->dado;
+                i->ant->dado = tmp;
+            }
+        }
+        ini = ini->prox;
+    } while (houveTroca && fim->prox != ini);
+
+    return l;
 }
