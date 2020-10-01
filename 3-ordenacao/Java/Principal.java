@@ -22,6 +22,7 @@ public class Principal {
         ArrayList<Integer> listaSelecao = new ArrayList<Integer>();
         ArrayList<Integer> listaInsercao = new ArrayList<Integer>();
         ArrayList<Integer> listaAgitacao = new ArrayList<Integer>();
+        ArrayList<Integer> listaPente = new ArrayList<Integer>();
         ArrayList<Integer> lista = new ArrayList<Integer>();
         long tempoInicio;  
         
@@ -31,29 +32,36 @@ public class Principal {
         popular(quantidade, listaSelecao);
         popular(quantidade, listaInsercao);
         popular(quantidade, listaAgitacao);
+        popular(quantidade, listaPente);
         popular(quantidade, lista);
         System.out.println("Total de números: " + quantidade);
 
-        //bolha
-        tempoInicio = System.nanoTime();
-        MetodosOrdenacao.bolha(listaBolha);
-        System.out.println("Tempo (ms) bolha: " + (System.nanoTime() - tempoInicio)/1000000);
+        // //bolha
+        // tempoInicio = System.nanoTime();
+        // MetodosOrdenacao.bolha(listaBolha);
+        // System.out.println("Tempo (ms) bolha: " + (System.nanoTime() - tempoInicio)/1000000);
         
-        //selecao
-        tempoInicio = System.nanoTime();
-        MetodosOrdenacao.selecao(listaSelecao);
-        System.out.println("Tempo (ms) seleção: " + (System.nanoTime() - tempoInicio)/1000000);
+        // //selecao
+        // tempoInicio = System.nanoTime();
+        // MetodosOrdenacao.selecao(listaSelecao);
+        // System.out.println("Tempo (ms) seleção: " + (System.nanoTime() - tempoInicio)/1000000);
         
-        //insercao
-        tempoInicio = System.nanoTime();
-        MetodosOrdenacao.insercao(listaInsercao);
-        System.out.println("Tempo (ms) inserção: " + (System.nanoTime() - tempoInicio)/1000000);
+        // //insercao
+        // tempoInicio = System.nanoTime();
+        // MetodosOrdenacao.insercao(listaInsercao);
+        // System.out.println("Tempo (ms) inserção: " + (System.nanoTime() - tempoInicio)/1000000);
 
-        //agitacao
-        tempoInicio = System.nanoTime();
-        MetodosOrdenacao.agitacao(listaAgitacao);
-        System.out.println("Tempo (ms) agitação: " + (System.nanoTime() - tempoInicio)/1000000);
+        // //agitacao
+        // tempoInicio = System.nanoTime();
+        // MetodosOrdenacao.agitacao(listaAgitacao);
+        // System.out.println("Tempo (ms) agitação: " + (System.nanoTime() - tempoInicio)/1000000);
         
+        //pente
+        tempoInicio = System.nanoTime();
+        MetodosOrdenacao.pente(listaPente);
+        System.out.println("Tempo (ms) pente: " + (System.nanoTime() - tempoInicio)/1000000);
+        //exibir(listaPente);
+
         //usando o próprio Java para ordenar
         tempoInicio = System.nanoTime();
         Collections.sort(lista);

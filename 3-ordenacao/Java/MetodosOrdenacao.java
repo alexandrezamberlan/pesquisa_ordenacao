@@ -83,4 +83,25 @@ public class MetodosOrdenacao {
             ini++;
         } while (houveTroca && ini <= fim);
     }
+    public static void pente(ArrayList<Integer> lista) {
+        boolean houveTroca;
+        int tmp;
+        int i;
+        int distancia = lista.size();
+        
+        do {
+            distancia = (int)((float)distancia / 1.3);
+            if (distancia < 1) distancia = 1;
+    
+            houveTroca = false;
+            for (i = 0; i < lista.size() - distancia; i++) {
+                if (lista.get(i) > lista.get(i+distancia)) {
+                    houveTroca = true;
+                    tmp = lista.get(i);
+                    lista.set(i, lista.get(i+distancia));
+                    lista.set(i+distancia, tmp);
+                }
+            }
+        } while (distancia > 1 || houveTroca);
+    }
 }
