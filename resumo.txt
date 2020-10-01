@@ -46,10 +46,13 @@ Observação: i) se a estrutura estiver ordenada ou quase, o inserção terá ex
             ii) atenção a lista deve ser duplamente encadeada
 
 
+
 Qual o melhor método de ordenação?
 Depende: tamanho da estrutura; de como a estrutura já está previamente ordenada;
 
-4) AGITAÇÃO - Shake Sort ou Cocktail - 
+
+
+4) AGITAÇÃO - Shake Sort ou Cocktail
 É baseado no Bolha, ou seja, é uma tentantiva de melhorar o Bolha.
 Estável
 Memória Interna
@@ -62,3 +65,34 @@ Há os índices/ponteiros ini e fim que marcam o início e o final da estrutura
 
 Observação: i) se a estrutura estiver ordenada ou quase, o agitação terá excelente desempenho, como o bolha
             ii) atenção a lista deve ser duplamente encadeada  
+
+
+5) PENTE - Comb Sort
+É baseado no Bolha, ou seja, é uma tentantiva de melhorar o Bolha.
+
+ATENÇÃO: a partir deste método, há COMPARAÇÕES a uma distância X. Isso gera uma pré-organização da estrutura,
+         diminuindo número de comparações e trocas.
+
+Instável
+Memória Interna
+A estrutura possui 2 porções/partes (1a é a ordenada; 2a é a desordenada)
+
+Há as variáveis clássicas do bolha: i, houveTroca, tmp.
+Há a variável distancia que é calculada pelo tamanho da estrutura dividido por 1.3
+
+Adequado somente para vetores ou estruturas prontas tipo lista de uma linguagem de programação
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
