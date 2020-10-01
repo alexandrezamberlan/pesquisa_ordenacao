@@ -13,15 +13,17 @@ int main() {
     cin >> tamanho;
 
     CelulaD *lista = NULL;
-    int *vetorBolha, *vetorSelecao, *vetorInsercao, *vetorAgitacao;
+    int *vetorBolha, *vetorSelecao, *vetorInsercao, *vetorAgitacao, *vetorPente;
     vetorBolha = (int*)malloc(sizeof(int) * tamanho);
     vetorSelecao = (int*)malloc(sizeof(int) * tamanho);
     vetorInsercao = (int*)malloc(sizeof(int) * tamanho);
     vetorAgitacao = (int*)malloc(sizeof(int) * tamanho);
+    vetorPente = (int*)malloc(sizeof(int) * tamanho);
     popula(vetorBolha, tamanho);
     popula(vetorSelecao, tamanho);
     popula(vetorInsercao, tamanho);
     popula(vetorAgitacao, tamanho);
+    popula(vetorPente, tamanho);
 
     // //bolha
     // tempoInicio = clock();
@@ -37,24 +39,30 @@ int main() {
     // // //exibe(vetorSelecao, tamanho);
 
     // //insercao
-    // tempoInicio = clock();
-    // insercao(vetorInsercao,tamanho);
-    // tempoFim = clock();
-    // cout << "Tempo para inserção: "<< (float)(tempoFim - tempoInicio)/CLOCKS_PER_SEC << endl;
-    // //exibe(vetorInsercao, tamanho);
+    tempoInicio = clock();
+    insercao(vetorInsercao,tamanho);
+    tempoFim = clock();
+    cout << "Tempo para inserção: "<< (float)(tempoFim - tempoInicio)/CLOCKS_PER_SEC << endl;
+    //exibe(vetorInsercao, tamanho);
 
     //agitacao
+    // tempoInicio = clock();
+    // agitacao(vetorAgitacao,tamanho);
+    // tempoFim = clock();
+    // cout << "Tempo para agitação: "<< (float)(tempoFim - tempoInicio)/CLOCKS_PER_SEC << endl;
+    // //exibe(vetorAgitacao, tamanho);
+
     tempoInicio = clock();
-    agitacao(vetorAgitacao,tamanho);
+    pente(vetorPente,tamanho);
     tempoFim = clock();
-    cout << "Tempo para agitação: "<< (float)(tempoFim - tempoInicio)/CLOCKS_PER_SEC << endl;
-    //exibe(vetorAgitacao, tamanho);
+    cout << "Tempo para pente: "<< (float)(tempoFim - tempoInicio)/CLOCKS_PER_SEC << endl;
+    exibe(vetorPente, tamanho);
     
-    lista = popularListaD(tamanho, lista);
-    tempoInicio = clock();
-    lista = agitacaoLista(lista);
-    tempoFim = clock();
-    cout << "Tempo para ordenar lista: "<< (float)(tempoFim - tempoInicio)/CLOCKS_PER_SEC << endl;
+    // lista = popularListaD(tamanho, lista);
+    // tempoInicio = clock();
+    // lista = agitacaoLista(lista);
+    // tempoFim = clock();
+    // cout << "Tempo para ordenar lista: "<< (float)(tempoFim - tempoInicio)/CLOCKS_PER_SEC << endl;
 
     //exibirListaD(lista);
 
