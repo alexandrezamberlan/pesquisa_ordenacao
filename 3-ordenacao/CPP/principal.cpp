@@ -9,6 +9,8 @@ int main() {
     clock_t tempoInicio, tempoFim;
     long long int tamanho;
 
+    system("clear");//no windows é system("cls");
+
     cout << "Tamanho do vetor ou lista: ";
     cin >> tamanho;
 
@@ -26,6 +28,8 @@ int main() {
     // popula(vetorAgitacao, tamanho);
     popula(vetorPente, tamanho);
     popula(vetorShell, tamanho);
+
+    
 
     // //bolha
     // tempoInicio = clock();

@@ -104,4 +104,29 @@ public class MetodosOrdenacao {
             }
         } while (distancia > 1 || houveTroca);
     }
+
+    public static void shell(ArrayList<Integer> lista) {
+        int i, j, distancia = 1;
+        int tmp;
+        int referenciaTamanho = 3;
+    
+        do {
+            distancia = referenciaTamanho * distancia + 1;
+        } while (distancia < lista.size());
+    
+        do {
+            distancia = (int)((float)distancia / referenciaTamanho);           
+            for (i = distancia; i < lista.size(); i++) {
+                tmp = lista.get(i);
+                for (j = i - distancia; j >= 0; j = j - distancia) {
+                    if (tmp < lista.get(j)) {
+                        lista.set(j + distancia, lista.get(j));
+                    } else break;
+                }
+                lista.set(j + distancia, tmp);
+            }
+    
+        } while (distancia > 1);
+    }
+    
 }

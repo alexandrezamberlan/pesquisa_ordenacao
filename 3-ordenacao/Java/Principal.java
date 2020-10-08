@@ -18,21 +18,23 @@ public class Principal {
         }
     }
     public static void main(String a[]) {
-        ArrayList<Integer> listaBolha = new ArrayList<Integer>();
-        ArrayList<Integer> listaSelecao = new ArrayList<Integer>();
-        ArrayList<Integer> listaInsercao = new ArrayList<Integer>();
-        ArrayList<Integer> listaAgitacao = new ArrayList<Integer>();
+        // ArrayList<Integer> listaBolha = new ArrayList<Integer>();
+        // ArrayList<Integer> listaSelecao = new ArrayList<Integer>();
+        // ArrayList<Integer> listaInsercao = new ArrayList<Integer>();
+        // ArrayList<Integer> listaAgitacao = new ArrayList<Integer>();
         ArrayList<Integer> listaPente = new ArrayList<Integer>();
+        ArrayList<Integer> listaShell = new ArrayList<Integer>();
         ArrayList<Integer> lista = new ArrayList<Integer>();
         long tempoInicio;  
         
         int quantidade = Integer.parseInt(JOptionPane.showInputDialog(null,"Quantos números quer gerar? "));
 
-        popular(quantidade, listaBolha);
-        popular(quantidade, listaSelecao);
-        popular(quantidade, listaInsercao);
-        popular(quantidade, listaAgitacao);
+        // popular(quantidade, listaBolha);
+        // popular(quantidade, listaSelecao);
+        // popular(quantidade, listaInsercao);
+        // popular(quantidade, listaAgitacao);
         popular(quantidade, listaPente);
+        popular(quantidade, listaShell);
         popular(quantidade, lista);
         System.out.println("Total de números: " + quantidade);
 
@@ -62,12 +64,16 @@ public class Principal {
         System.out.println("Tempo (ms) pente: " + (System.nanoTime() - tempoInicio)/1000000);
         //exibir(listaPente);
 
+         //shell
+         tempoInicio = System.nanoTime();
+         MetodosOrdenacao.shell(listaShell);
+         System.out.println("Tempo (ms) shell: " + (System.nanoTime() - tempoInicio)/1000000);
+         //exibir(listaShell);
+ 
         //usando o próprio Java para ordenar
         tempoInicio = System.nanoTime();
         Collections.sort(lista);
         System.out.println("Tempo (ms) do método do Java: " + (System.nanoTime() - tempoInicio)/1000000);
-
-        //exibir(listaAgitacao);
         
         System.exit(0);
     }

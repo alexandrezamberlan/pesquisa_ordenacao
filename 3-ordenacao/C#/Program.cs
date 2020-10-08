@@ -8,21 +8,23 @@ namespace C_
     {
         static void Main(string[] args)
         {
-            List<int> listaBolha = new List<int>();
-            List<int> listaSelecao = new List<int>();
-            List<int> listaInsercao = new List<int>();
-            List<int> listaAgitacao = new List<int>();
+            //List<int> listaBolha = new List<int>();
+            //List<int> listaSelecao = new List<int>();
+            //List<int> listaInsercao = new List<int>();
+            //List<int> listaAgitacao = new List<int>();
             List<int> listaPente = new List<int>();
+            List<int> listaShell = new List<int>();
 
             Console.Write("Quantidade números: ");
             int qtd = Int32.Parse(Console.ReadLine());
 
-            Utilidades.popularLista(listaBolha, qtd);
-            Utilidades.popularLista(listaSelecao, qtd);
-            Utilidades.popularLista(listaInsercao, qtd);
-            Utilidades.popularLista(listaAgitacao, qtd);
+            //Utilidades.popularLista(listaBolha, qtd);
+            //Utilidades.popularLista(listaSelecao, qtd);
+            //Utilidades.popularLista(listaInsercao, qtd);
+            //Utilidades.popularLista(listaAgitacao, qtd);
             Utilidades.popularLista(listaPente, qtd);
-            
+            Utilidades.popularLista(listaShell, qtd);
+
             Stopwatch sw = new Stopwatch();
 
             //sw.Start();
@@ -53,6 +55,12 @@ namespace C_
             Ordenacao.pente(listaPente);
             sw.Stop();
             Console.WriteLine("Fim do pente (ms): " + sw.ElapsedMilliseconds);
+            sw.Reset();
+
+            sw.Start();
+            Ordenacao.shell(listaShell);
+            sw.Stop();
+            Console.WriteLine("Fim do shell (ms): " + sw.ElapsedMilliseconds);
             sw.Reset();
         }
     }
