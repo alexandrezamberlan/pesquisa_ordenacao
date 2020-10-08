@@ -253,7 +253,7 @@ void pente(int *vetor, long long int n) {
     cout << "Quantidade trocas: " << qtdTrocas << endl;
 }
 
-void shel(int *vetor, long long int n) {
+void shell(int *vetor, long long int n) {
     long long int i, j, distancia = 1;
     int tmp;
     long long int qtdComparacoes = 0, qtdTrocas = 0;

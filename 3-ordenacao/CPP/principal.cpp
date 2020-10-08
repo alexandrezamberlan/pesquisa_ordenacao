@@ -61,7 +61,7 @@ int main() {
     // exibe(vetorPente, tamanho);
 
     tempoInicio = clock();
-    pente(vetorShell,tamanho);
+    shell(vetorShell,tamanho);
     tempoFim = clock();
     cout << "Tempo para shell: "<< (float)(tempoFim - tempoInicio)/CLOCKS_PER_SEC << endl;
     //exibe(vetorShell, tamanho);
