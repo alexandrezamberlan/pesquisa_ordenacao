@@ -252,3 +252,34 @@ void pente(int *vetor, long long int n) {
     cout << "Quantidade comparações: " << qtdComparacoes << endl;
     cout << "Quantidade trocas: " << qtdTrocas << endl;
 }
+
+void shel(int *vetor, long long int n) {
+    long long int i, j, distancia = 1;
+    int tmp;
+    long long int qtdComparacoes = 0, qtdTrocas = 0;
+    int referenciaTamanho = 3;
+
+    do {
+        distancia = referenciaTamanho * distancia + 1;
+    } while (distancia < n);
+
+    do {
+        distancia = (int)distancia / referenciaTamanho;
+        
+        for (i = distancia; i < n; i++) {
+            tmp = vetor[i];
+            for (j = i - distancia; j >= 0; j = j - distancia) {
+                qtdComparacoes++;
+                if (tmp < vetor[j]) {
+                    vetor[j + distancia] = vetor[j];
+                    qtdTrocas++;
+                } else break;
+            }
+            vetor[j + distancia] = tmp;
+            qtdTrocas++;
+        }
+
+    } while (distancia > 1);
+    cout << "Quantidade comparações: " << qtdComparacoes << endl;
+    cout << "Quantidade trocas: " << qtdTrocas << endl;
+}

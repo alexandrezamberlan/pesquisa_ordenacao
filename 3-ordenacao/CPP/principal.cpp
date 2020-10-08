@@ -13,17 +13,19 @@ int main() {
     cin >> tamanho;
 
     CelulaD *lista = NULL;
-    int *vetorBolha, *vetorSelecao, *vetorInsercao, *vetorAgitacao, *vetorPente;
-    vetorBolha = (int*)malloc(sizeof(int) * tamanho);
-    vetorSelecao = (int*)malloc(sizeof(int) * tamanho);
+    int *vetorBolha, *vetorSelecao, *vetorInsercao, *vetorAgitacao, *vetorPente, *vetorShell;
+    // vetorBolha = (int*)malloc(sizeof(int) * tamanho);
+    // vetorSelecao = (int*)malloc(sizeof(int) * tamanho);
     vetorInsercao = (int*)malloc(sizeof(int) * tamanho);
-    vetorAgitacao = (int*)malloc(sizeof(int) * tamanho);
+    // vetorAgitacao = (int*)malloc(sizeof(int) * tamanho);
     vetorPente = (int*)malloc(sizeof(int) * tamanho);
-    popula(vetorBolha, tamanho);
-    popula(vetorSelecao, tamanho);
+    vetorShell = (int*)malloc(sizeof(int) * tamanho);
+    // popula(vetorBolha, tamanho);
+    // popula(vetorSelecao, tamanho);
     popula(vetorInsercao, tamanho);
-    popula(vetorAgitacao, tamanho);
+    // popula(vetorAgitacao, tamanho);
     popula(vetorPente, tamanho);
+    popula(vetorShell, tamanho);
 
     // //bolha
     // tempoInicio = clock();
@@ -39,10 +41,10 @@ int main() {
     // // //exibe(vetorSelecao, tamanho);
 
     // //insercao
-    tempoInicio = clock();
-    insercao(vetorInsercao,tamanho);
-    tempoFim = clock();
-    cout << "Tempo para inserção: "<< (float)(tempoFim - tempoInicio)/CLOCKS_PER_SEC << endl;
+    // tempoInicio = clock();
+    // insercao(vetorInsercao,tamanho);
+    // tempoFim = clock();
+    // cout << "Tempo para inserção: "<< (float)(tempoFim - tempoInicio)/CLOCKS_PER_SEC << endl;
     //exibe(vetorInsercao, tamanho);
 
     //agitacao
@@ -56,7 +58,13 @@ int main() {
     pente(vetorPente,tamanho);
     tempoFim = clock();
     cout << "Tempo para pente: "<< (float)(tempoFim - tempoInicio)/CLOCKS_PER_SEC << endl;
-    exibe(vetorPente, tamanho);
+    // exibe(vetorPente, tamanho);
+
+    tempoInicio = clock();
+    pente(vetorShell,tamanho);
+    tempoFim = clock();
+    cout << "Tempo para shell: "<< (float)(tempoFim - tempoInicio)/CLOCKS_PER_SEC << endl;
+    //exibe(vetorShell, tamanho);
     
     // lista = popularListaD(tamanho, lista);
     // tempoInicio = clock();

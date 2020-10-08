@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{D2ABBEFC-5065-42DA-B430-6B0B8E285A81}|Default">
+  <MonoDevelop.Ide.ItemProperties.OutroAppC_223 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Ordenacao.cs">
+    <Files>
+      <File FileName="Utilidades.cs" Line="1" Column="1" />
+      <File FileName="Ordenacao.cs" Line="104" Column="49" />
+      <File FileName="Program.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="OutroAppC#" expanded="True">
+            <Node name="OutroAppC#" expanded="True">
+              <Node name="Ordenacao.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -83,7 +83,12 @@ Há a variável distancia que é calculada pelo tamanho da estrutura dividido po
 Adequado somente para vetores ou estruturas prontas tipo lista de uma linguagem de programação
 
 
+6) SHELLSORT 
+É baseado no Inserção, ou seja, é uma tentativa de melhoria via o uso da ANÁLISE A DISTÂNCIA (tipo pente)
+Instável 
+Memória Interna
 
+Não é adequado para listas encadeadas
 
 
 

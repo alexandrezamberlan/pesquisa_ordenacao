@@ -22,3 +22,15 @@
 /Users/alexandrezamberlan/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/Debug/netcoreapp3.1/OutroAppC#.dll
 /Users/alexandrezamberlan/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/Debug/netcoreapp3.1/OutroAppC#.pdb
 /Users/alexandrezamberlan/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/Debug/netcoreapp3.1/OutroAppC#.genruntimeconfig.cache
+/Volumes/HD16GB/codigos/pesquisa_ordenacao/3-ordenacao/C#/bin/Debug/netcoreapp3.1/OutroAppC#.deps.json
+/Volumes/HD16GB/codigos/pesquisa_ordenacao/3-ordenacao/C#/bin/Debug/netcoreapp3.1/OutroAppC#.runtimeconfig.json
+/Volumes/HD16GB/codigos/pesquisa_ordenacao/3-ordenacao/C#/bin/Debug/netcoreapp3.1/OutroAppC#.runtimeconfig.dev.json
+/Volumes/HD16GB/codigos/pesquisa_ordenacao/3-ordenacao/C#/bin/Debug/netcoreapp3.1/OutroAppC#.dll
+/Volumes/HD16GB/codigos/pesquisa_ordenacao/3-ordenacao/C#/bin/Debug/netcoreapp3.1/OutroAppC#.pdb
+/Volumes/HD16GB/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/Debug/netcoreapp3.1/OutroAppC#.csprojAssemblyReference.cache
+/Volumes/HD16GB/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/Debug/netcoreapp3.1/OutroAppC#.AssemblyInfoInputs.cache
+/Volumes/HD16GB/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/Debug/netcoreapp3.1/OutroAppC#.AssemblyInfo.cs
+/Volumes/HD16GB/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/Debug/netcoreapp3.1/OutroAppC#.csproj.CoreCompileInputs.cache
+/Volumes/HD16GB/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/Debug/netcoreapp3.1/OutroAppC#.dll
+/Volumes/HD16GB/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/Debug/netcoreapp3.1/OutroAppC#.pdb
+/Volumes/HD16GB/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/Debug/netcoreapp3.1/OutroAppC#.genruntimeconfig.cache

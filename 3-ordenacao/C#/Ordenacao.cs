@@ -98,5 +98,29 @@ namespace C_
 
             } while (houveTroca && ini <= fim);
         }
+
+        public static void pente(List<int> lista)
+        {
+            int i, tmp, distancia = lista.Count;
+            bool houveTroca;
+
+            do
+            {
+                distancia = (int)((float)distancia / 1.3);
+                if (distancia < 1) distancia = 1;
+
+                houveTroca = false;
+                for (i = 0; i < lista.Count - distancia; i++)
+                {
+                    if (lista[i] > lista[i + distancia])
+                    {
+                        houveTroca = true;
+                        tmp = lista[i];
+                        lista[i] = lista[i + distancia];
+                        lista[i + distancia] = tmp;
+                    }
+                }
+            } while (distancia > 1 || houveTroca);
+        }
     }
 }
