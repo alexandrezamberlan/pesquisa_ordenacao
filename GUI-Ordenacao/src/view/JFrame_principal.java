@@ -232,7 +232,7 @@ public class JFrame_principal extends javax.swing.JFrame {
         }
         
         listaTemporaria.clear();
-        listaTemporaria.addAll(lista);
+        listaTemporaria.addAll(lista); //clonando
         
         jTextField_metodoUtilizado.setText("COMBSORT");
         jTextArea_numerosOrdenados.setText("");
@@ -251,7 +251,7 @@ public class JFrame_principal extends javax.swing.JFrame {
         }
         
         listaTemporaria.clear();
-        listaTemporaria.addAll(lista);
+        listaTemporaria.addAll(lista); //clonando
         
         jTextField_metodoUtilizado.setText("QUICKSORT");
         jTextArea_numerosOrdenados.setText("");
@@ -261,6 +261,7 @@ public class JFrame_principal extends javax.swing.JFrame {
         jTextField_tempoProcessamento.setText("" + (System.nanoTime() - tempoInicio)/1000000);
         
         inserirAreaTextoOrdenada(listaTemporaria);
+        
     }//GEN-LAST:event_jMenuItem_quicksortActionPerformed
 
     /**
