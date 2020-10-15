@@ -242,6 +242,8 @@ public class JFrame_principal extends javax.swing.JFrame {
         jTextField_tempoProcessamento.setText("" + (System.nanoTime() - tempoInicio)/1000000);
         
         inserirAreaTextoOrdenada(listaTemporaria);
+        //gravarArquivoLog
+        //data - hora - metodo - tempo - qtosNumeros
     }//GEN-LAST:event_jMenuItem_combsortActionPerformed
 
     private void jMenuItem_quicksortActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_quicksortActionPerformed
@@ -261,6 +263,9 @@ public class JFrame_principal extends javax.swing.JFrame {
         jTextField_tempoProcessamento.setText("" + (System.nanoTime() - tempoInicio)/1000000);
         
         inserirAreaTextoOrdenada(listaTemporaria);
+        
+        //gravarArquivoLog
+        //data - hora - metodo - tempo - qtosNumeros
         
     }//GEN-LAST:event_jMenuItem_quicksortActionPerformed
 
