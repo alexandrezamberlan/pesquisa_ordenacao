@@ -8,12 +8,14 @@ package view;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.filechooser.FileNameExtensionFilter;
+import model.Ordenacao;
 
 /**
  *
@@ -50,8 +52,8 @@ public class JFrame_principal extends javax.swing.JFrame {
         jMenu_file = new javax.swing.JMenu();
         jMenuItem_abrirArquivo = new javax.swing.JMenuItem();
         jMenu_selecionarMetodos = new javax.swing.JMenu();
-        jMenuItem2 = new javax.swing.JMenuItem();
-        jMenuItem3 = new javax.swing.JMenuItem();
+        jMenuItem_combsort = new javax.swing.JMenuItem();
+        jMenuItem_quicksort = new javax.swing.JMenuItem();
         jMenuItem_mostrarHistorico = new javax.swing.JMenuItem();
         jMenu_about = new javax.swing.JMenu();
 
@@ -93,11 +95,16 @@ public class JFrame_principal extends javax.swing.JFrame {
 
         jMenu_selecionarMetodos.setText("Selecionar métodos");
 
-        jMenuItem2.setText("Combsort");
-        jMenu_selecionarMetodos.add(jMenuItem2);
+        jMenuItem_combsort.setText("Combsort");
+        jMenuItem_combsort.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem_combsortActionPerformed(evt);
+            }
+        });
+        jMenu_selecionarMetodos.add(jMenuItem_combsort);
 
-        jMenuItem3.setText("Quicksort");
-        jMenu_selecionarMetodos.add(jMenuItem3);
+        jMenuItem_quicksort.setText("Quicksort");
+        jMenu_selecionarMetodos.add(jMenuItem_quicksort);
 
         jMenu_file.add(jMenu_selecionarMetodos);
 
@@ -189,6 +196,13 @@ public class JFrame_principal extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jMenuItem_abrirArquivoActionPerformed
 
+    private void inserirAreaTextoOrdenada(ArrayList<Integer> lista) {
+        jTextArea_numerosOrdenados.setText("");
+        for (Iterator<Integer> i = lista.iterator(); i.hasNext();) {
+            jTextArea_numerosOrdenados.append(i.next() + "\n");
+        }
+    }
+    
     private void jMenu_aboutMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu_aboutMouseClicked
         
         StringBuffer texto = new StringBuffer();
@@ -197,6 +211,21 @@ public class JFrame_principal extends javax.swing.JFrame {
         
         JOptionPane.showMessageDialog(this, texto.toString());
     }//GEN-LAST:event_jMenu_aboutMouseClicked
+
+    private void jMenuItem_combsortActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_combsortActionPerformed
+        // TODO add your handling code here:
+        if (lista.isEmpty()) {
+            JOptionPane.showMessageDialog(this,"É preciso abrir um arquivo com números..");
+            return;
+        }
+        ArrayList<Integer> listaTemporaria = new ArrayList<>();
+        listaTemporaria.addAll(lista);
+        
+        jTextField_metodoUtilizado.setText("COMBSORT");
+        
+        Ordenacao.pente(listaTemporaria);
+        inserirAreaTextoOrdenada(listaTemporaria);
+    }//GEN-LAST:event_jMenuItem_combsortActionPerformed
 
     /**
      * @param args the command line arguments
@@ -240,10 +269,10 @@ public class JFrame_principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem_abrirArquivo;
+    private javax.swing.JMenuItem jMenuItem_combsort;
     private javax.swing.JMenuItem jMenuItem_mostrarHistorico;
+    private javax.swing.JMenuItem jMenuItem_quicksort;
     private javax.swing.JMenu jMenu_about;
     private javax.swing.JMenu jMenu_file;
     private javax.swing.JMenu jMenu_selecionarMetodos;

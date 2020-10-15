@@ -27,12 +27,15 @@
                 <Property name="text" type="java.lang.String" value="Selecionar m&#xe9;todos"/>
               </Properties>
               <SubComponents>
-                <MenuItem class="javax.swing.JMenuItem" name="jMenuItem2">
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItem_combsort">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Combsort"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem_combsortActionPerformed"/>
+                  </Events>
                 </MenuItem>
-                <MenuItem class="javax.swing.JMenuItem" name="jMenuItem3">
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItem_quicksort">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Quicksort"/>
                   </Properties>
