@@ -39,6 +39,9 @@
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Quicksort"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem_quicksortActionPerformed"/>
+                  </Events>
                 </MenuItem>
               </SubComponents>
             </Menu>

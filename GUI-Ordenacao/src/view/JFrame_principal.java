@@ -104,6 +104,11 @@ public class JFrame_principal extends javax.swing.JFrame {
         jMenu_selecionarMetodos.add(jMenuItem_combsort);
 
         jMenuItem_quicksort.setText("Quicksort");
+        jMenuItem_quicksort.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem_quicksortActionPerformed(evt);
+            }
+        });
         jMenu_selecionarMetodos.add(jMenuItem_quicksort);
 
         jMenu_file.add(jMenu_selecionarMetodos);
@@ -222,10 +227,11 @@ public class JFrame_principal extends javax.swing.JFrame {
     private void jMenuItem_combsortActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_combsortActionPerformed
         // TODO add your handling code here:
         if (lista.isEmpty()) {
-            JOptionPane.showMessageDialog(this,"É preciso abrir um arquivo com números..");
+            JOptionPane.showMessageDialog(this,"É preciso abrir um arquivo com números.");
             return;
         }
-        ArrayList<Integer> listaTemporaria = new ArrayList<>();
+        
+        listaTemporaria.clear();
         listaTemporaria.addAll(lista);
         
         jTextField_metodoUtilizado.setText("COMBSORT");
@@ -237,6 +243,25 @@ public class JFrame_principal extends javax.swing.JFrame {
         
         inserirAreaTextoOrdenada(listaTemporaria);
     }//GEN-LAST:event_jMenuItem_combsortActionPerformed
+
+    private void jMenuItem_quicksortActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_quicksortActionPerformed
+        if (lista.isEmpty()) {
+            JOptionPane.showMessageDialog(this,"É preciso abrir um arquivo com números.");
+            return;
+        }
+        
+        listaTemporaria.clear();
+        listaTemporaria.addAll(lista);
+        
+        jTextField_metodoUtilizado.setText("QUICKSORT");
+        jTextArea_numerosOrdenados.setText("");
+        
+        long tempoInicio = System.nanoTime();
+        Ordenacao.quickSort(listaTemporaria,0,listaTemporaria.size()-1);
+        jTextField_tempoProcessamento.setText("" + (System.nanoTime() - tempoInicio)/1000000);
+        
+        inserirAreaTextoOrdenada(listaTemporaria);
+    }//GEN-LAST:event_jMenuItem_quicksortActionPerformed
 
     /**
      * @param args the command line arguments
@@ -274,6 +299,7 @@ public class JFrame_principal extends javax.swing.JFrame {
     }
     
     ArrayList<Integer> lista = new ArrayList<>();
+    ArrayList<Integer> listaTemporaria = new ArrayList<>();
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
