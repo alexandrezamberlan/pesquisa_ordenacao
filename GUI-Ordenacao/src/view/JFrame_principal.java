@@ -75,7 +75,7 @@ public class JFrame_principal extends javax.swing.JFrame {
 
         jLabel1.setText("Método utilizado: ");
 
-        jLabel2.setText("Tempo de processamento: ");
+        jLabel2.setText("Tempo de processamento (ms): ");
 
         jTextField_metodoUtilizado.setEditable(false);
         jTextField_metodoUtilizado.setFocusable(false);
@@ -138,7 +138,7 @@ public class JFrame_principal extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jTextField_metodoUtilizado)
                     .addComponent(jTextField_tempoProcessamento, javax.swing.GroupLayout.DEFAULT_SIZE, 130, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 77, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
@@ -167,8 +167,15 @@ public class JFrame_principal extends javax.swing.JFrame {
         
         lista.clear();
         jTextArea_listaNumeros.setText("");
+        jTextArea_numerosOrdenados.setText("");
+        jTextField_metodoUtilizado.setText("");
+        jTextField_tempoProcessamento.setText("");
         
         int numero;
+        
+        /*
+        caixaSelecionaArquivo.setCurrentDirectory(new java.io.File("caminho/diretorio");
+        */
         
         JFileChooser caixaSelecionaArquivo = new JFileChooser();
         
@@ -222,8 +229,12 @@ public class JFrame_principal extends javax.swing.JFrame {
         listaTemporaria.addAll(lista);
         
         jTextField_metodoUtilizado.setText("COMBSORT");
+        jTextArea_numerosOrdenados.setText("");
         
+        long tempoInicio = System.nanoTime();
         Ordenacao.pente(listaTemporaria);
+        jTextField_tempoProcessamento.setText("" + (System.nanoTime() - tempoInicio)/1000000);
+        
         inserirAreaTextoOrdenada(listaTemporaria);
     }//GEN-LAST:event_jMenuItem_combsortActionPerformed
 

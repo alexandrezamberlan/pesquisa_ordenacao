@@ -96,7 +96,7 @@
                   <Component id="jTextField_metodoUtilizado" max="32767" attributes="0"/>
                   <Component id="jTextField_tempoProcessamento" pref="130" max="32767" attributes="0"/>
               </Group>
-              <EmptySpace pref="77" max="32767" attributes="0"/>
+              <EmptySpace pref="46" max="32767" attributes="0"/>
               <Component id="jScrollPane2" min="-2" pref="111" max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -168,7 +168,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Tempo de processamento: "/>
+        <Property name="text" type="java.lang.String" value="Tempo de processamento (ms): "/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="jTextField_metodoUtilizado">
