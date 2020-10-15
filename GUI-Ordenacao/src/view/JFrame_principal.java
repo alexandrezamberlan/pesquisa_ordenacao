@@ -5,7 +5,15 @@
  */
 package view;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
+import javax.swing.filechooser.FileNameExtensionFilter;
 
 /**
  *
@@ -29,22 +37,69 @@ public class JFrame_principal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jMenuItem1 = new javax.swing.JMenuItem();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea_listaNumeros = new javax.swing.JTextArea();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextArea_numerosOrdenados = new javax.swing.JTextArea();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jTextField_metodoUtilizado = new javax.swing.JTextField();
+        jTextField_tempoProcessamento = new javax.swing.JTextField();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu_file = new javax.swing.JMenu();
         jMenuItem_abrirArquivo = new javax.swing.JMenuItem();
-        jMenuItem_selecionarMetodo = new javax.swing.JMenuItem();
+        jMenu_selecionarMetodos = new javax.swing.JMenu();
+        jMenuItem2 = new javax.swing.JMenuItem();
+        jMenuItem3 = new javax.swing.JMenuItem();
         jMenuItem_mostrarHistorico = new javax.swing.JMenuItem();
         jMenu_about = new javax.swing.JMenu();
 
+        jMenuItem1.setText("jMenuItem1");
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jTextArea_listaNumeros.setEditable(false);
+        jTextArea_listaNumeros.setColumns(20);
+        jTextArea_listaNumeros.setRows(5);
+        jTextArea_listaNumeros.setFocusable(false);
+        jScrollPane1.setViewportView(jTextArea_listaNumeros);
+
+        jTextArea_numerosOrdenados.setEditable(false);
+        jTextArea_numerosOrdenados.setColumns(20);
+        jTextArea_numerosOrdenados.setRows(5);
+        jTextArea_numerosOrdenados.setFocusable(false);
+        jScrollPane2.setViewportView(jTextArea_numerosOrdenados);
+
+        jLabel1.setText("Método utilizado: ");
+
+        jLabel2.setText("Tempo de processamento: ");
+
+        jTextField_metodoUtilizado.setEditable(false);
+        jTextField_metodoUtilizado.setFocusable(false);
+
+        jTextField_tempoProcessamento.setEditable(false);
+        jTextField_tempoProcessamento.setFocusable(false);
 
         jMenu_file.setText("Arquivo");
 
         jMenuItem_abrirArquivo.setText("Abrir arquivo");
+        jMenuItem_abrirArquivo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem_abrirArquivoActionPerformed(evt);
+            }
+        });
         jMenu_file.add(jMenuItem_abrirArquivo);
 
-        jMenuItem_selecionarMetodo.setText("Selecionar método");
-        jMenu_file.add(jMenuItem_selecionarMetodo);
+        jMenu_selecionarMetodos.setText("Selecionar métodos");
+
+        jMenuItem2.setText("Combsort");
+        jMenu_selecionarMetodos.add(jMenuItem2);
+
+        jMenuItem3.setText("Quicksort");
+        jMenu_selecionarMetodos.add(jMenuItem3);
+
+        jMenu_file.add(jMenu_selecionarMetodos);
 
         jMenuItem_mostrarHistorico.setText("Histórico de testes");
         jMenu_file.add(jMenuItem_mostrarHistorico);
@@ -52,9 +107,9 @@ public class JFrame_principal extends javax.swing.JFrame {
         jMenuBar1.add(jMenu_file);
 
         jMenu_about.setText("Sobre");
-        jMenu_about.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenu_aboutActionPerformed(evt);
+        jMenu_about.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jMenu_aboutMouseClicked(evt);
             }
         });
         jMenuBar1.add(jMenu_about);
@@ -65,29 +120,83 @@ public class JFrame_principal extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 646, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(35, 35, 35)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel1))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jTextField_metodoUtilizado)
+                    .addComponent(jTextField_tempoProcessamento, javax.swing.GroupLayout.DEFAULT_SIZE, 130, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 77, Short.MAX_VALUE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 526, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(7, 7, 7)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel1)
+                            .addComponent(jTextField_metodoUtilizado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel2)
+                            .addComponent(jTextField_tempoProcessamento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 520, Short.MAX_VALUE)
+                    .addComponent(jScrollPane1)))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenu_aboutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu_aboutActionPerformed
-        // TODO add your handling code here:
-        StringBuffer texto = new StringBuffer();
-        //String - limite de caracteres e de funções de manipulação
-        //StringBuffer - possui funções de manipulação de string avançada
-        //StringBuilder - possui funções de manipulação de string avançada, com capacidade de armazenamento muito grande
+    private void jMenuItem_abrirArquivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_abrirArquivoActionPerformed
         
+        lista.clear();
+        jTextArea_listaNumeros.setText("");
+        
+        int numero;
+        
+        JFileChooser caixaSelecionaArquivo = new JFileChooser();
+        
+        FileNameExtensionFilter filtroExtensao = new FileNameExtensionFilter("Text files", "txt");
+        caixaSelecionaArquivo.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
+        caixaSelecionaArquivo.addChoosableFileFilter(filtroExtensao);
+        caixaSelecionaArquivo.setFileFilter(filtroExtensao);
+        
+      
+        if (caixaSelecionaArquivo.showOpenDialog(this) == JFileChooser.APPROVE_OPTION){
+            File caminhoArquivo = new File(caixaSelecionaArquivo.getSelectedFile().toString());
+            //percorrer o procuradorArquivo, copiar o texto (números) e appendar na textArea
+            try {
+                Scanner leitorArquivo = new Scanner(caminhoArquivo);
+                
+                while (leitorArquivo.hasNextLine()) {
+                    numero = Integer.parseInt(leitorArquivo.nextLine());
+                    lista.add(numero);
+                    jTextArea_listaNumeros.append(numero + "\n");
+                }
+                
+            } catch (FileNotFoundException ex) {
+                JOptionPane.showMessageDialog(this,"Problemas para abrir o arquivo");
+            }
+        }
+    }//GEN-LAST:event_jMenuItem_abrirArquivoActionPerformed
+
+    private void jMenu_aboutMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu_aboutMouseClicked
+        
+        StringBuffer texto = new StringBuffer();
         texto.append("Sistema construído na disciplina de Pesquisa e Ordenação\n");
         texto.append("Alunos: Gabriel, Augusto, Zeni, Regis, Lucas Thiago, Meani e João\n");
         
-        
         JOptionPane.showMessageDialog(this, texto.toString());
-    }//GEN-LAST:event_jMenu_aboutActionPerformed
+    }//GEN-LAST:event_jMenu_aboutMouseClicked
 
     /**
      * @param args the command line arguments
@@ -123,13 +232,26 @@ public class JFrame_principal extends javax.swing.JFrame {
             }
         });
     }
+    
+    ArrayList<Integer> lista = new ArrayList<>();
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem_abrirArquivo;
     private javax.swing.JMenuItem jMenuItem_mostrarHistorico;
-    private javax.swing.JMenuItem jMenuItem_selecionarMetodo;
     private javax.swing.JMenu jMenu_about;
     private javax.swing.JMenu jMenu_file;
+    private javax.swing.JMenu jMenu_selecionarMetodos;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTextArea jTextArea_listaNumeros;
+    private javax.swing.JTextArea jTextArea_numerosOrdenados;
+    private javax.swing.JTextField jTextField_metodoUtilizado;
+    private javax.swing.JTextField jTextField_tempoProcessamento;
     // End of variables declaration//GEN-END:variables
 }
