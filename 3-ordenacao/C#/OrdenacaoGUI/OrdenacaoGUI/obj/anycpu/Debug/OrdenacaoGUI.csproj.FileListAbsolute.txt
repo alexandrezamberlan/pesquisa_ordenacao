@@ -1,0 +1,6 @@
+/Volumes/HD16GB/codigos/pesquisa_ordenacao/3-ordenacao/C#/OrdenacaoGUI/OrdenacaoGUI/bin/Debug/OrdenacaoGUI.exe
+/Volumes/HD16GB/codigos/pesquisa_ordenacao/3-ordenacao/C#/OrdenacaoGUI/OrdenacaoGUI/bin/Debug/OrdenacaoGUI.pdb
+/Volumes/HD16GB/codigos/pesquisa_ordenacao/3-ordenacao/C#/OrdenacaoGUI/OrdenacaoGUI/obj/anycpu/Debug/OrdenacaoGUI.csprojAssemblyReference.cache
+/Volumes/HD16GB/codigos/pesquisa_ordenacao/3-ordenacao/C#/OrdenacaoGUI/OrdenacaoGUI/obj/anycpu/Debug/OrdenacaoGUI.csproj.CoreCompileInputs.cache
+/Volumes/HD16GB/codigos/pesquisa_ordenacao/3-ordenacao/C#/OrdenacaoGUI/OrdenacaoGUI/obj/anycpu/Debug/OrdenacaoGUI.exe
+/Volumes/HD16GB/codigos/pesquisa_ordenacao/3-ordenacao/C#/OrdenacaoGUI/OrdenacaoGUI/obj/anycpu/Debug/OrdenacaoGUI.pdb

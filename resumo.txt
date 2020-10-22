@@ -91,7 +91,11 @@ Memória Interna
 Não é adequado para listas encadeadas
 
 
-
+7) QUICKSORT (USA O CONCEITO DE DIVIDIR PARA CONQUISTAR)
+Faz parte de uma categoria de métodos de ordenação que utilizam a divisão da estrutura para acelerar a ordenação. Essa divisão é realizada por 
+meio de RECURSÃO.
+    - A estrutura vai possuir 2 porções: parte esquerda e parte direita, divididas pelo PIVO. Pensar como se fosse uma ÁRVORE BINÁRIA
+    - O método possui duas funções: quick (processo recursivo) e o particiona (posiciona/ordena o pivo)
 
 
 
