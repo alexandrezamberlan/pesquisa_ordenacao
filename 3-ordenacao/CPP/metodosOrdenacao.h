@@ -321,70 +321,66 @@ void quickSort(int *vetor, long long int ini, long long int fim) {
     if (pivo + 1 < fim) quickSort(vetor, pivo + 1, fim); //se existe lado dir do pivo, executa lado dir
 }
 
-void intercala(int v[], unsigned long long int ini, unsigned long long int fim) {
-    unsigned long long int meio;
-  	unsigned long long int i, j, k;
+void intercala(int *vetor, long long int n) {
+  	long long int meio;
+  	long long int i, j, k;
  	int *vetorTemporario;
 
-  	vetorTemporario = (int*) malloc((fim - ini + 1 ) * sizeof(int));
+  	vetorTemporario = (int*) malloc(n * sizeof(int));
 
 	if (!vetorTemporario) { //testa para ver se malloc aloca de fato
 		printf("Nao hah mais memoria\n");
 		exit(1);
 	}
 
-	meio = int(ini + fim) / 2;
+	meio = int(n / 2);
 
-	i = ini; //indice da porcao esquerda
-	j = meio + 1; //indice da porcao direita
+	i = 0; //indice da porcao esquerda
+	j = meio; //indice da porcao direita
 	k = 0; //indice do vetor temporario
 
-	while (i <= meio && j <= fim) {
-		if (v[i] < v[j]) {
-	  		vetorTemporario[k] = v[i]; //elemento da porcao esquerda vem para o temporario
+	while (i < meio && j < n) {
+		if (vetor[i] < vetor[j]) {
+	  		vetorTemporario[k] = vetor[i]; //elemento da porcao esquerda vem para o temporario
 	  		++i;
 		} else {
-	  		vetorTemporario[k] = v[j]; //elemento da porcao direita vem para o temporario
+	  		vetorTemporario[k] = vetor[j]; //elemento da porcao direita vem para o temporario
 	  		++j;
 		}
 		++k;
 	}
 
-	if (i == meio+1) {
-		while (j <= fim) { //nao hah mais elementos na porcao esquerda
-	  		vetorTemporario[k] = v[j];
+	if (i == meio) {
+		while (j < n) { //nao hah mais elementos na porcao esquerda
+	  		vetorTemporario[k] = vetor[j];
 	  		++j;
 	  		++k;
 		}
 	} else {
-		while (i <= meio) {
-	    	vetorTemporario[k] = v[i];
+		while (i < meio) {
+	    	vetorTemporario[k] = vetor[i];
 	  		++i;
 	    	++k;
 		}
 	}
 
-	for (i = ini, k = 0; i <= fim ; ++i, ++k) {
-		v[i] = vetorTemporario[k];
+	for (i = 0; i < n; ++i) {
+		vetor[i] = vetorTemporario[i];
 	}
 
 	free(vetorTemporario);
 }
 
-void mergeSort(int *vetor, long long int ini, long long int fim) { //responsavel pela divisao = recursao
+void mergeSort(int *vetor, long long int n) { //responsavel pela divisao = recursao
     long long int meio;
 
-    if (ini < fim) {
-        meio = int(ini + fim) / 2;
+    if (n > 1) {
+        meio = int(n / 2);
         //imprime(v, n); printf(" - n: %d; meio: %d\n", n, meio); getchar();
-        
-        //printf("%d - %d - %d\n", ini, fim, meio);
-        //system("pause");
-        if (ini < meio) mergeSort(vetor, 0, meio); //porcao da esquerda - so entra se existe
-        if (meio + 1 < fim) mergeSort(vetor, meio + 1, fim); //porcao da direita - - so entra se existe
 
+        mergeSort(vetor, meio); //porcao da esquerda
+        mergeSort(vetor + meio, n - meio); //porcao da direita
         //printf("chama intercalacao\n"); getchar();
-        intercala(vetor, ini, fim);
+        intercala(vetor, n);
     }
-
 }

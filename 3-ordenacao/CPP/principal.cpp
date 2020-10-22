@@ -80,10 +80,10 @@ int main() {
     // exibe(vetorQuick, tamanho);
 
     tempoInicio = clock();
-    mergeSort(vetorMerge, 0, tamanho-1);
+    mergeSort(vetorMerge, tamanho);
     tempoFim = clock();
     cout << "Tempo para merge: "<< (float)(tempoFim - tempoInicio)/CLOCKS_PER_SEC << endl;
-    exibe(vetorMerge, tamanho);
+    //exibe(vetorMerge, tamanho);
     
     // lista = popularListaD(tamanho, lista);
     // tempoInicio = clock();
