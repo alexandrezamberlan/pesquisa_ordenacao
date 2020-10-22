@@ -15,22 +15,25 @@ int main() {
     cin >> tamanho;
 
     CelulaD *lista = NULL;
-    int *vetorBolha, *vetorSelecao, *vetorInsercao, *vetorAgitacao, *vetorPente, *vetorShell;
+    int *vetorBolha, *vetorSelecao, *vetorInsercao, *vetorAgitacao, *vetorPente, *vetorShell, *vetorQuick, *vetorMerge;
     // vetorBolha = (int*)malloc(sizeof(int) * tamanho);
     // vetorSelecao = (int*)malloc(sizeof(int) * tamanho);
-    vetorInsercao = (int*)malloc(sizeof(int) * tamanho);
+    // vetorInsercao = (int*)malloc(sizeof(int) * tamanho);
     // vetorAgitacao = (int*)malloc(sizeof(int) * tamanho);
     vetorPente = (int*)malloc(sizeof(int) * tamanho);
     vetorShell = (int*)malloc(sizeof(int) * tamanho);
+    vetorQuick = (int*)malloc(sizeof(int) * tamanho);
+    vetorMerge = (int*)malloc(sizeof(int) * tamanho);
     // popula(vetorBolha, tamanho);
     // popula(vetorSelecao, tamanho);
-    popula(vetorInsercao, tamanho);
+    // popula(vetorInsercao, tamanho);
     // popula(vetorAgitacao, tamanho);
     popula(vetorPente, tamanho);
     popula(vetorShell, tamanho);
+    popula(vetorQuick, tamanho);
+    popula(vetorMerge, tamanho);
 
     
-
     // //bolha
     // tempoInicio = clock();
     // bolha(vetorBolha,tamanho);
@@ -69,6 +72,18 @@ int main() {
     tempoFim = clock();
     cout << "Tempo para shell: "<< (float)(tempoFim - tempoInicio)/CLOCKS_PER_SEC << endl;
     //exibe(vetorShell, tamanho);
+
+    tempoInicio = clock();
+    quickSort(vetorQuick, 0, tamanho-1);
+    tempoFim = clock();
+    cout << "Tempo para quick: "<< (float)(tempoFim - tempoInicio)/CLOCKS_PER_SEC << endl;
+    // exibe(vetorQuick, tamanho);
+
+    tempoInicio = clock();
+    mergeSort(vetorMerge, 0, tamanho-1);
+    tempoFim = clock();
+    cout << "Tempo para merge: "<< (float)(tempoFim - tempoInicio)/CLOCKS_PER_SEC << endl;
+    exibe(vetorMerge, tamanho);
     
     // lista = popularListaD(tamanho, lista);
     // tempoInicio = clock();

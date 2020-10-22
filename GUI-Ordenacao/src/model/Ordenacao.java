@@ -142,32 +142,32 @@ public class Ordenacao {
     
     
     private static int particiona(ArrayList<Integer> lista, int ini, int fim) {
-	int pivo;
-        int tmp;
+        int pivo;
+            int tmp;
 
-	pivo = ini;
-	while (fim > ini) {
+        pivo = ini;
+        while (fim > ini) {
 
-		for (; fim > pivo && lista.get(fim) > lista.get(pivo); fim--);
+            for (; fim > pivo && lista.get(fim) > lista.get(pivo); fim--);
 
-		if (fim > pivo) {
-                    tmp = lista.get(pivo);
-                    lista.set(pivo, lista.get(fim));
-                    lista.set(fim, tmp);	
-                    pivo = fim;
-		}
+            if (fim > pivo) {
+                        tmp = lista.get(pivo);
+                        lista.set(pivo, lista.get(fim));
+                        lista.set(fim, tmp);	
+                        pivo = fim;
+            }
 
-		for (ini++; ini < pivo && lista.get(ini) < lista.get(pivo); ini++);
+            for (ini++; ini < pivo && lista.get(ini) < lista.get(pivo); ini++);
 
-		if (ini < pivo) {
-                    tmp = lista.get(pivo);
-                    lista.set(pivo, lista.get(ini));
-                    lista.set(ini, tmp);
-                    pivo = ini;
-		}
-	}
-	return pivo;
-}
+            if (ini < pivo) {
+                        tmp = lista.get(pivo);
+                        lista.set(pivo, lista.get(ini));
+                        lista.set(ini, tmp);
+                        pivo = ini;
+            }
+        }
+        return pivo;
+    }
 
 
     public static void quickSort(ArrayList<Integer> lista, int ini, int fim) {

@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Random;
 
 public class MetodosOrdenacao {
     
@@ -127,6 +128,46 @@ public class MetodosOrdenacao {
             }
     
         } while (distancia > 1);
+    }
+
+    private static int particiona(ArrayList<Integer> lista, int ini, int fim) {
+        int pivo;
+            int tmp;
+        
+        Random gerador = new Random();
+
+        pivo = ini; //na bibliografia do método, é possível ser o ini, o fim ou uma posição sorteada
+        while (fim > ini) {
+
+            for (; fim > pivo && lista.get(fim) > lista.get(pivo); fim--);
+
+            if (fim > pivo) {
+                tmp = lista.get(pivo);
+                lista.set(pivo, lista.get(fim));
+                lista.set(fim, tmp);	
+                pivo = fim;
+            }
+
+            for (ini++; ini < pivo && lista.get(ini) < lista.get(pivo); ini++);
+
+            if (ini < pivo) {
+                tmp = lista.get(pivo);
+                lista.set(pivo, lista.get(ini));
+                lista.set(ini, tmp);
+                pivo = ini;
+            }
+        }
+        return pivo;
+    }
+
+
+    public static void quickSort(ArrayList<Integer> lista, int ini, int fim) {
+        int pivo;
+
+        pivo = particiona(lista, ini, fim);
+        
+        if (ini < pivo - 1) quickSort(lista, ini, pivo - 1); //se existe lado esq do pivo, executa lado esq
+        if (pivo + 1 < fim) quickSort(lista, pivo + 1, fim); //se existe lado dir do pivo, executa lado dir
     }
     
 }

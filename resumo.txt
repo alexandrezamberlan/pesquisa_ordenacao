@@ -99,6 +99,15 @@ meio de RECURSÃO.
 
 
 
+8) MERGESORT (como o quicksort, USA O CONCEITO DE DIVIDIR PARA CONQUISTAR)
+Faz parte de uma categoria de métodos de ordenação que utilizam a divisão da estrutura para acelerar a ordenação. Essa divisão é realizada por 
+meio de RECURSÃO.
+
+Contudo, diferente do QUICKSORT, o MERGESORT sempre divide a estrutura no meio (vai existir uma variável meio)
+
+    - A estrutura vai possuir 2 porções: parte esquerda e parte direita, divididas pelo MEIO. Pensar como se fosse uma ÁRVORE BINÁRIA
+    - O método possui duas funções: merge (processo recursivo) e o intercala (a ordenação vai funcionar no desempilhamento do processo em que intercala e ordena)
+    
 
 
 

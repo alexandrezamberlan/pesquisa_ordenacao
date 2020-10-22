@@ -24,6 +24,7 @@ public class Principal {
         // ArrayList<Integer> listaAgitacao = new ArrayList<Integer>();
         ArrayList<Integer> listaPente = new ArrayList<Integer>();
         ArrayList<Integer> listaShell = new ArrayList<Integer>();
+        ArrayList<Integer> listaQuick = new ArrayList<Integer>();
         ArrayList<Integer> lista = new ArrayList<Integer>();
         long tempoInicio;  
         
@@ -35,6 +36,7 @@ public class Principal {
         // popular(quantidade, listaAgitacao);
         popular(quantidade, listaPente);
         popular(quantidade, listaShell);
+        popular(quantidade, listaQuick);
         popular(quantidade, lista);
         System.out.println("Total de números: " + quantidade);
 
@@ -69,6 +71,12 @@ public class Principal {
          MetodosOrdenacao.shell(listaShell);
          System.out.println("Tempo (ms) shell: " + (System.nanoTime() - tempoInicio)/1000000);
          //exibir(listaShell);
+
+        //quick
+        tempoInicio = System.nanoTime();
+        MetodosOrdenacao.quickSort(listaQuick, 0, listaQuick.size() - 1);
+        System.out.println("Tempo (ms) quick: " + (System.nanoTime() - tempoInicio)/1000000);
+        //exibir(listaQuick);
  
         //usando o próprio Java para ordenar
         tempoInicio = System.nanoTime();
