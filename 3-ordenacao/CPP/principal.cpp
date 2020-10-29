@@ -73,11 +73,11 @@ int main() {
     cout << "Tempo para shell: "<< (float)(tempoFim - tempoInicio)/CLOCKS_PER_SEC << endl;
     //exibe(vetorShell, tamanho);
 
-    tempoInicio = clock();
-    quickSort(vetorQuick, 0, tamanho-1);
-    tempoFim = clock();
-    cout << "Tempo para quick: "<< (float)(tempoFim - tempoInicio)/CLOCKS_PER_SEC << endl;
-    // exibe(vetorQuick, tamanho);
+    // tempoInicio = clock();
+    // quickSort(vetorQuick, 0, tamanho-1);
+    // tempoFim = clock();
+    // cout << "Tempo para quick: "<< (float)(tempoFim - tempoInicio)/CLOCKS_PER_SEC << endl;
+    // // exibe(vetorQuick, tamanho);
 
     tempoInicio = clock();
     mergeSort(vetorMerge, tamanho);

@@ -1,0 +1,38 @@
+1) Por que devemos ter sistemas com estruturas de dados ordenadas?
+
+2) Os sistemas de banco de dados possuem mecanismos de ordenação automática ?
+	índices
+
+3) Qual o melhor método de ordenação ?
+	
+4) Em que tamanho de estrutura, um ou outro método já começa a fazer a diferença ?
+
+5) Nos benchmarks realizados nos algoritmos de ordenação, quais são as variáveis de acompanhamento ?
+	comparações, trocas, tempo, quantidade
+
+6) O que é complexidade de um algoritmo ?
+	esforço computacional: comparações, trocas
+	Medida pela notação big Ó -> O(1), O(log n), O(n), O(n^2), O(nˆx), O(!n) 
+
+7) Alguns métodos de ordenação têm mecanismos para otimizar a ordenação, principalmente aqueles que são extensões de outros.
+Quais seriam estes mecanismos que otimizam a ordenação?
+	1) análise a distância: garante uma pré-organização da estrutura, diminuindo os números de comparações e trocas
+		- pente, shell e quick
+	2) dividir recursivamente a estrutura para facilitar a ordenação
+		- quick e merge
+
+8) Os métodos que utilizam a distância para pré-organizar as estruturas são estáveis ou instáveis? Por quê?
+
+9) Os métodos que dividem recursivamente a estrutura têm diferenças entre si (quick e o merge). Quais seriam essas diferenças?
+
+	- merge divide sempre ao meio
+	- quick divide no pivo
+	- merge ordena no retorno da recursão (intercalação)
+	- quick ordena o pivo
+
+10) Os métodos quick e merge têm comportamento comum. Quais seriam ?
+	- recursão
+	- comportamento de árvore binária
+	- a ordenação sempre ocorre na volta do empilhamento
+
+
