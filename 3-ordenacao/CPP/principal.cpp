@@ -15,7 +15,8 @@ int main() {
     cin >> tamanho;
 
     CelulaD *lista = NULL;
-    int *vetorBolha, *vetorSelecao, *vetorInsercao, *vetorAgitacao, *vetorPente, *vetorShell, *vetorQuick, *vetorMerge;
+    int *vetorBolha, *vetorSelecao, *vetorInsercao, *vetorAgitacao, *vetorPente, *vetorShell, 
+        *vetorQuick, *vetorMerge, *vetorHeap;
     // vetorBolha = (int*)malloc(sizeof(int) * tamanho);
     // vetorSelecao = (int*)malloc(sizeof(int) * tamanho);
     // vetorInsercao = (int*)malloc(sizeof(int) * tamanho);
@@ -24,6 +25,7 @@ int main() {
     vetorShell = (int*)malloc(sizeof(int) * tamanho);
     vetorQuick = (int*)malloc(sizeof(int) * tamanho);
     vetorMerge = (int*)malloc(sizeof(int) * tamanho);
+    vetorHeap = (int*)malloc(sizeof(int) * (tamanho+1));
     // popula(vetorBolha, tamanho);
     // popula(vetorSelecao, tamanho);
     // popula(vetorInsercao, tamanho);
@@ -32,6 +34,9 @@ int main() {
     popula(vetorShell, tamanho);
     popula(vetorQuick, tamanho);
     popula(vetorMerge, tamanho);
+    popula(vetorHeap, tamanho);
+    vetorHeap[tamanho+1] = vetorHeap[0];
+    vetorHeap[0] = -99;
 
     
     // //bolha
@@ -67,11 +72,11 @@ int main() {
     cout << "Tempo para pente: "<< (float)(tempoFim - tempoInicio)/CLOCKS_PER_SEC << endl;
     // exibe(vetorPente, tamanho);
 
-    tempoInicio = clock();
-    shell(vetorShell,tamanho);
-    tempoFim = clock();
-    cout << "Tempo para shell: "<< (float)(tempoFim - tempoInicio)/CLOCKS_PER_SEC << endl;
-    //exibe(vetorShell, tamanho);
+    // tempoInicio = clock();
+    // shell(vetorShell,tamanho);
+    // tempoFim = clock();
+    // cout << "Tempo para shell: "<< (float)(tempoFim - tempoInicio)/CLOCKS_PER_SEC << endl;
+    // //exibe(vetorShell, tamanho);
 
     // tempoInicio = clock();
     // quickSort(vetorQuick, 0, tamanho-1);
@@ -84,6 +89,13 @@ int main() {
     tempoFim = clock();
     cout << "Tempo para merge: "<< (float)(tempoFim - tempoInicio)/CLOCKS_PER_SEC << endl;
     //exibe(vetorMerge, tamanho);
+
+    tempoInicio = clock();
+    heapSort(vetorHeap, tamanho+1);
+    tempoFim = clock();
+    cout << "Tempo para heap: "<< (float)(tempoFim - tempoInicio)/CLOCKS_PER_SEC << endl;
+    // exibe(vetorHeap, tamanho);
+    // printf("%d\n", vetorHeap[tamanho+1]);
     
     // lista = popularListaD(tamanho, lista);
     // tempoInicio = clock();

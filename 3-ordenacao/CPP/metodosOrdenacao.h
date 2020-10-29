@@ -23,7 +23,7 @@ void bolha(int *vetor, long long int n) {
         }
     } while (houveTroca);
     cout << "Quantidade comparações: " << qtdComparacoes << endl;
-    cout << "Quantidade trocas: " << qtdTrocas << endl;
+    cout << "Quantidade trocas: " << qtdTrocas << endl  << endl;;
 }
 
 
@@ -70,7 +70,7 @@ void selecao(int *vetor, long long int n) {
         }
     }
     cout << "Quantidade comparações: " << qtdComparacoes << endl;
-    cout << "Quantidade trocas: " << qtdTrocas << endl;
+    cout << "Quantidade trocas: " << qtdTrocas << endl  << endl;;
 }
 
 Celula *selecaoLista(Celula *l) {
@@ -113,7 +113,7 @@ void insercao(int *vetor, long long int n) {
         qtdTrocas++;
     }
     cout << "Quantidade comparações: " << qtdComparacoes << endl;
-    cout << "Quantidade trocas: " << qtdTrocas << endl;
+    cout << "Quantidade trocas: " << qtdTrocas << endl  << endl;;
 }
 
 CelulaD *insercaoLista(CelulaD *l) {
@@ -181,7 +181,7 @@ void agitacao(int *vetor, long long int n) {
     } while (houveTroca && ini <= fim);
 
     cout << "Quantidade comparações: " << qtdComparacoes << endl;
-    cout << "Quantidade trocas: " << qtdTrocas << endl;
+    cout << "Quantidade trocas: " << qtdTrocas << endl  << endl;;
 }
 
 CelulaD *agitacaoLista(CelulaD *l) {
@@ -250,7 +250,7 @@ void pente(int *vetor, long long int n) {
         }
     } while (distancia > 1 || houveTroca);
     cout << "Quantidade comparações: " << qtdComparacoes << endl;
-    cout << "Quantidade trocas: " << qtdTrocas << endl;
+    cout << "Quantidade trocas: " << qtdTrocas << endl  << endl;;
 }
 
 void shell(int *vetor, long long int n) {
@@ -281,7 +281,7 @@ void shell(int *vetor, long long int n) {
 
     } while (distancia > 1);
     cout << "Quantidade comparações: " << qtdComparacoes << endl;
-    cout << "Quantidade trocas: " << qtdTrocas << endl;
+    cout << "Quantidade trocas: " << qtdTrocas << endl  << endl;;
 }
 
 long long int particiona(int *vetor, long long int ini, long long int fim) {
@@ -383,4 +383,38 @@ void mergeSort(int *vetor, long long int n) { //responsavel pela divisao = recur
         //printf("chama intercalacao\n"); getchar();
         intercala(vetor, n);
     }
+}
+
+void heapSort(int *vetor, long long int n) {
+  int tmp;
+  long long int i;
+  long long int qtdComparacoes = 0, qtdTrocas = 0;
+
+  while (n > 1){
+    for(i = n/2; i > 0; i--){
+      qtdComparacoes++;
+      if (vetor[i] < vetor[i*2]){ //comparando o raiz com seu filho da esquerda
+        tmp = vetor[i];
+        vetor[i] =   vetor[i*2] ; 
+        vetor[i*2] = tmp;
+        qtdTrocas++;
+      }
+      if (i*2 + 1 <= n) { //só vamos comparar o filho da direita se ele existir
+        qtdComparacoes++;
+        if (vetor[i] < vetor[i*2+1]){ //comparando o raiz com seu filho da direita
+          tmp=vetor[i];
+          vetor[i] = vetor[i*2 + 1];
+          vetor[i*2 + 1] = tmp;
+          qtdTrocas++;
+        }
+      }
+    }
+    tmp = vetor[1];
+    vetor[1] = vetor[n];
+    vetor[n] = tmp;
+    qtdTrocas++;
+    n--;
+  }
+  cout << "Quantidade comparações: " << qtdComparacoes << endl;
+  cout << "Quantidade trocas: " << qtdTrocas << endl << endl;
 }
