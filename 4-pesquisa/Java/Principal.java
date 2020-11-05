@@ -29,14 +29,27 @@ public class Principal {
         popular(quantidade, listaBinaria);
         popular(quantidade, lista);
         System.out.println("Total de números: " + quantidade);
-        System.out.println("Número da lista sequencial");
+        System.out.println("Números da lista sequencial");
         exibir(listaSequencial);
         int numero = Integer.parseInt(JOptionPane.showInputDialog(null,"Qual número deseja pesquisar?"));
 
-        //sequencial primeira ocorrencia
+        // //sequencial primeira ocorrencia
+        // tempoInicio = System.nanoTime();
+        // System.out.println(numero + " foi localizado em: \n" + MetodosPesquisa.pesquisaSequencialRetornaPrimeiraOcorrencia(numero, listaSequencial));
+        // // System.out.println("Tempo (ms): " + (System.nanoTime() - tempoInicio)/1000000);
+
+        //sequencial mostra todas as ocorrencias
         tempoInicio = System.nanoTime();
-        System.out.println(numero + " foi localizado em " + MetodosPesquisa.pesquisaSequencialRetornaPrimeiraOcorrencia(numero, listaSequencial));
+        System.out.println("\n\n" + numero + " foi localizado em: ");
+        MetodosPesquisa.pesquisaSequencialMostraTodasAsPosicoes(numero, listaSequencial);
         // System.out.println("Tempo (ms): " + (System.nanoTime() - tempoInicio)/1000000);
+
+        //sequencial retorna todas as ocorrencias
+        tempoInicio = System.nanoTime();
+        System.out.println("\n\n" + numero + " foi localizado em: ");
+        ArrayList<Integer> ocorrencias = MetodosPesquisa.pesquisaSequencialRetornaTodasAsOcorrencias(numero, listaSequencial);
+        // System.out.println("Tempo (ms): " + (System.nanoTime() - tempoInicio)/1000000);
+        System.out.println("\n\n"+ numero + " foi localizado em: " + ocorrencias);
         
         
         //usando o próprio Java para ordenar

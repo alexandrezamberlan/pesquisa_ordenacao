@@ -28,7 +28,7 @@ public class MetodosPesquisa {
         System.out.println();
     }
     
-    ArrayList<Integer> pesquisaSequencialRetornaTodasAsOcorrencias(int numero, ArrayList<Integer> lista) {
+    public static ArrayList<Integer> pesquisaSequencialRetornaTodasAsOcorrencias(int numero, ArrayList<Integer> lista) {
         int i;
         boolean achou = false;
         ArrayList<Integer> lista_ocorrencias = new ArrayList<>();
