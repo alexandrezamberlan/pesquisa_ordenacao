@@ -38,15 +38,14 @@ public class Principal {
         // System.out.println(numero + " foi localizado em: \n" + MetodosPesquisa.pesquisaSequencialRetornaPrimeiraOcorrencia(numero, listaSequencial));
         // // System.out.println("Tempo (ms): " + (System.nanoTime() - tempoInicio)/1000000);
 
-        //sequencial mostra todas as ocorrencias
-        tempoInicio = System.nanoTime();
-        System.out.println("\n\n" + numero + " foi localizado em: ");
-        MetodosPesquisa.pesquisaSequencialMostraTodasAsPosicoes(numero, listaSequencial);
-        // System.out.println("Tempo (ms): " + (System.nanoTime() - tempoInicio)/1000000);
+        // //sequencial mostra todas as ocorrencias
+        // tempoInicio = System.nanoTime();
+        // System.out.println("\n\n" + numero + " foi localizado em: ");
+        // MetodosPesquisa.pesquisaSequencialMostraTodasAsPosicoes(numero, listaSequencial);
+        // // System.out.println("Tempo (ms): " + (System.nanoTime() - tempoInicio)/1000000);
 
         //sequencial retorna todas as ocorrencias
         tempoInicio = System.nanoTime();
-        System.out.println("\n\n" + numero + " foi localizado em: ");
         ArrayList<Integer> ocorrencias = MetodosPesquisa.pesquisaSequencialRetornaTodasAsOcorrencias(numero, listaSequencial);
         // System.out.println("Tempo (ms): " + (System.nanoTime() - tempoInicio)/1000000);
         System.out.println("\n\n"+ numero + " foi localizado em: " + ocorrencias);
