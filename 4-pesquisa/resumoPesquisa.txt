@@ -1,0 +1,14 @@
+Depois das estruturas ordenadas, há o processo de pesquisa
+
+A ordenação influencia no desempenho da pesquisa/busca
+
+Pesquisa em estruturas vetores/listas:
+    - sequencial (usada quando a estrutura não está ordenada)
+        - O(n)
+
+    - binária (dependente da ordenação e baseada na dinâmica de árvores binárias)
+        - O(log n)
+
+Pesquisa em textos (Pesquisa Digital)
+    - Árvores Trie
+    - P.A.T.R.I.C.I.A
