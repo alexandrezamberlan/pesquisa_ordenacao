@@ -40,7 +40,7 @@ public class Principal {
 
         // //sequencial mostra todas as ocorrencias
         // tempoInicio = System.nanoTime();
-        // System.out.println("\n\n" + numero + " foi localizado em: ");
+        // System.out.println("\n\n" + numero + " foi localizado nas posições: ");
         // MetodosPesquisa.pesquisaSequencialMostraTodasAsPosicoes(numero, listaSequencial);
         // // System.out.println("Tempo (ms): " + (System.nanoTime() - tempoInicio)/1000000);
 
@@ -48,7 +48,7 @@ public class Principal {
         tempoInicio = System.nanoTime();
         ArrayList<Integer> ocorrencias = MetodosPesquisa.pesquisaSequencialRetornaTodasAsOcorrencias(numero, listaSequencial);
         // System.out.println("Tempo (ms): " + (System.nanoTime() - tempoInicio)/1000000);
-        System.out.println("\n\n"+ numero + " foi localizado em: " + ocorrencias);
+        System.out.println("\n\n"+ numero + " foi localizado nas posições: " + ocorrencias);
         
         
         //usando o próprio Java para ordenar
