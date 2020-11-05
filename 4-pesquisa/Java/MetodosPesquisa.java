@@ -28,18 +28,18 @@ public class MetodosPesquisa {
         printf("\n\n");
     }
     
-    ArrayList pesquisaSequencialRetornaTodasAsOcorrencias(int numero, int *vetor, long long int n) {
-        long long int i;
-        bool achou = false;
-        Celula *lista = NULL;
+    ArrayList<Integer> pesquisaSequencialRetornaTodasAsOcorrencias(int numero, ArrayList<Integer> lista) {
+        int i;
+        boolean achou = false;
+        ArrayList<Integer> lista_ocorrencias = new ArrayList<>();
         
-        for (i = 0; i < n; i++) {
-            if (numero == vetor[i]) {
-                lista = inserirDesordenadoLista(i, lista);
+        for (i = 0; i < lista.size(); i++) {
+            if (numero == lista.get(i)) {
+                lista_ocorrencias.add(i);
                 achou = true;
             }
         }
-        return lista;
+        return lista_ocorrencias;
     }
 }
     
