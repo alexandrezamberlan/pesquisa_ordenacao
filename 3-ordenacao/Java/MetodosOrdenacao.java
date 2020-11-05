@@ -169,5 +169,31 @@ public class MetodosOrdenacao {
         if (ini < pivo - 1) quickSort(lista, ini, pivo - 1); //se existe lado esq do pivo, executa lado esq
         if (pivo + 1 < fim) quickSort(lista, pivo + 1, fim); //se existe lado dir do pivo, executa lado dir
     }
-    
+
+    public static void heapSort(ArrayList<Integer> lista) {
+        int tmp;
+        int i;
+        int n = lista.size(); 
+      
+        while (n > 1){
+          for(i = (int)n/2 - 1; i > 0; i--){
+            if (lista.get(i) < lista.get(i*2)){ //comparando o raiz com seu filho da esquerda
+              tmp = lista.get(i);
+              lista.set(i,lista.get(i*2)); 
+              lista.set(i*2, tmp);
+            }
+            if (i*2 + 1 < n) { //só vamos comparar o filho da direita se ele existir
+              if (lista.get(i) < lista.get(i*2 + 1)){ //comparando o raiz com seu filho da direita
+                tmp = lista.get(i);
+                lista.set(i, lista.get(i*2 + 1));
+                lista.set(i*2 + 1, tmp);
+              }
+            }
+          }
+          tmp = lista.get(1);
+          lista.set(1, lista.get(n-1));
+          lista.set(n-1, tmp);
+          n--;
+        }
+    }
 }

@@ -110,7 +110,18 @@ Contudo, diferente do QUICKSORT, o MERGESORT sempre divide a estrutura no meio (
     
 
 
+9) HEAPSORT (método baseado na dinâmica de árvores binárias, contudo em vetor)
+    - Heapmáximo: garantir que raiz da subarvore seja maior ou igual que seus filhos. Se isso não ocorrer, fazer as trocas
+        filhoEsquerda = posicaoRaiz * 2
+        filhoDireita = posicaoRaiz * 2 + 1
+    - Troca do primeiro com o último e diminui uma posição o vetor (fim)
 
+    ATENÇÃO: o vetor deve começar na posição 1
+
+    Teste para filho esquerda 
+        -> if (vetor[raiz] < vetor[raiz * 2]) { troca }
+    Teste para o filho da direita (antes de testar, é preciso ter certeza que o filho exista)
+        -> if (raiz * 2 + 1 < n && vetor[raiz] < vetor[raiz * 2 + 1]) { troca }
 
 
 

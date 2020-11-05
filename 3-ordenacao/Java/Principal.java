@@ -25,6 +25,7 @@ public class Principal {
         ArrayList<Integer> listaPente = new ArrayList<Integer>();
         ArrayList<Integer> listaShell = new ArrayList<Integer>();
         ArrayList<Integer> listaQuick = new ArrayList<Integer>();
+        ArrayList<Integer> listaHeap = new ArrayList<Integer>();
         ArrayList<Integer> lista = new ArrayList<Integer>();
         long tempoInicio;  
         
@@ -37,6 +38,11 @@ public class Principal {
         popular(quantidade, listaPente);
         popular(quantidade, listaShell);
         popular(quantidade, listaQuick);
+
+        popular(quantidade, listaHeap); 
+        listaHeap.add(23); //adicionado mais um numero no final da listaHeap
+        listaHeap.set(0, -99); //posição 0 com lixo
+        
         popular(quantidade, lista);
         System.out.println("Total de números: " + quantidade);
 
@@ -77,6 +83,12 @@ public class Principal {
         MetodosOrdenacao.quickSort(listaQuick, 0, listaQuick.size() - 1);
         System.out.println("Tempo (ms) quick: " + (System.nanoTime() - tempoInicio)/1000000);
         //exibir(listaQuick);
+        
+        //heap
+        tempoInicio = System.nanoTime();
+        MetodosOrdenacao.heapSort(listaHeap);
+        System.out.println("Tempo (ms) heap: " + (System.nanoTime() - tempoInicio)/1000000);
+        // exibir(listaHeap);
  
         //usando o próprio Java para ordenar
         tempoInicio = System.nanoTime();
