@@ -25,7 +25,7 @@ public class MetodosPesquisa {
         if (!achou) {
             System.out.println("... não localizado");
         }
-        printf("\n\n");
+        System.out.println();
     }
     
     ArrayList<Integer> pesquisaSequencialRetornaTodasAsOcorrencias(int numero, ArrayList<Integer> lista) {
