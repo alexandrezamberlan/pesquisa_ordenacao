@@ -1,7 +1,7 @@
 #include <iostream>
 #include <time.h>
-#include "../3-ordenacao/CPP/utilidades.h"
-#include "../3-ordenacao/CPP/metodosOrdenacao.h"
+#include "../../3-ordenacao/CPP/utilidades.h"
+#include "../../3-ordenacao/CPP/metodosOrdenacao.h"
 #include "metodosPesquisa.h"
 
 using namespace std;
