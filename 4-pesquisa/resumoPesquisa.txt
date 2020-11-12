@@ -6,8 +6,40 @@ Pesquisa em estruturas vetores/listas:
     - sequencial (usada quando a estrutura não está ordenada)
         - O(n)
 
+        long long int sequencial(int numero, int *vetor, long long int n) {
+            long long int i;
+            for (i = 0; i < n; i++) {
+                if (numero == vetor[i]) {
+                    return i;
+                }
+            }
+            return -1; //valor não encontrado
+        }
+
     - binária (dependente da ordenação e baseada na dinâmica de árvores binárias)
         - O(log n)
+
+        long long int binaria(int numero, int *vetor, long long int n) {
+            long long int ini = 0, fim = n - 1, meio;
+
+            while (ini <= fim) {
+                meio = (ini + fim)/2;
+                if (numero == vetor[meio]) {
+                    return meio;
+                }
+                if (numero < vetor[meio]) {
+                    fim = meio - 1;
+                } else {
+                    ini = meio + 1;
+                }
+            }
+            return -1; //valor não encontrado
+        }
+
+
+
+
+
 
 Pesquisa em textos (Pesquisa Digital)
     - Árvores Trie

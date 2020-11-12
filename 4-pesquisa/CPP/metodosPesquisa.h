@@ -30,13 +30,13 @@ void pesquisaSequencialMostraTodasAsPosicoes(int numero, int *vetor, long long i
 
 Celula *pesquisaSequencialRetornaTodasAsOcorrencias(int numero, int *vetor, long long int n) {
     long long int i;
-    bool achou = false;
+
     Celula *lista = NULL;
     
     for (i = 0; i < n; i++) {
         if (numero == vetor[i]) {
             lista = inserirDesordenadoLista(i, lista);
-            achou = true;
+            
         }
     }
     return lista;
