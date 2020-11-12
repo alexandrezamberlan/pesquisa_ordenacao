@@ -41,3 +41,25 @@ Celula *pesquisaSequencialRetornaTodasAsOcorrencias(int numero, int *vetor, long
     }
     return lista;
 }
+
+long long int pesquisaBinaria(int numero, int *vetor, long long int n) {
+    long long int ini = 0, fim = n - 1, meio;
+
+    long long int qtdComparacoes = 0;
+
+    while (ini <= fim) {
+        meio = (ini + fim)/2;
+        qtdComparacoes++;
+        if (numero == vetor[meio]) {
+            printf("Foram realizada %lld comparações\n", qtdComparacoes);
+            return meio;
+        }
+        if (numero < vetor[meio]) {
+            fim = meio - 1;
+        } else {
+            ini = meio + 1;
+        }
+    }
+    printf("Foram realizada %lld comparações\n", qtdComparacoes);
+    return -1; //valor não encontrado
+}
