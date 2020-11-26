@@ -47,9 +47,9 @@ public class Hash4 {
         }
         
         int m = Integer.parseInt(JOptionPane.showInputDialog(null,"Informe matricula de pesquisa: "));
-        aluno = new Aluno(m);
+
         
-        if (listaComControleDuplicidade.contains(aluno)) {
+        if (listaComControleDuplicidade.contains(new Aluno(m))) {
             System.out.println(aluno.matricula + "  encontrado");
         }
     }
