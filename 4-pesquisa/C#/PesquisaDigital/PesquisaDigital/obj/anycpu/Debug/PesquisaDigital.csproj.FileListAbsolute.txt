@@ -1,0 +1,6 @@
+/Volumes/HD16GB/codigos/pesquisa_ordenacao/4-pesquisa/C#/PesquisaDigital/PesquisaDigital/bin/Debug/PesquisaDigital.exe
+/Volumes/HD16GB/codigos/pesquisa_ordenacao/4-pesquisa/C#/PesquisaDigital/PesquisaDigital/bin/Debug/PesquisaDigital.pdb
+/Volumes/HD16GB/codigos/pesquisa_ordenacao/4-pesquisa/C#/PesquisaDigital/PesquisaDigital/obj/anycpu/Debug/PesquisaDigital.csprojAssemblyReference.cache
+/Volumes/HD16GB/codigos/pesquisa_ordenacao/4-pesquisa/C#/PesquisaDigital/PesquisaDigital/obj/anycpu/Debug/PesquisaDigital.csproj.CoreCompileInputs.cache
+/Volumes/HD16GB/codigos/pesquisa_ordenacao/4-pesquisa/C#/PesquisaDigital/PesquisaDigital/obj/anycpu/Debug/PesquisaDigital.exe
+/Volumes/HD16GB/codigos/pesquisa_ordenacao/4-pesquisa/C#/PesquisaDigital/PesquisaDigital/obj/anycpu/Debug/PesquisaDigital.pdb

@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stetic-interface>
+  <configuration>
+    <images-root-path>..</images-root-path>
+  </configuration>
+  <import>
+    <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <widget-library name="../bin/Debug/PesquisaDigital.exe" internal="true" />
+  </import>
+  <widget class="Gtk.Window" id="MainWindow" design-size="368 341">
+    <action-group name="Default">
+      <action id="MenuAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Menu</property>
+        <property name="ShortLabel" translatable="yes">Menu</property>
+      </action>
+    </action-group>
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">MainWindow</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <signal name="DeleteEvent" handler="OnDeleteEvent" />
+    <child>
+      <widget class="Gtk.Fixed" id="fixed1">
+        <property name="MemberName" />
+        <property name="HasWindow">False</property>
+        <child>
+          <placeholder />
+        </child>
+        <child>
+          <placeholder />
+        </child>
+        <child>
+          <placeholder />
+        </child>
+        <child>
+          <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow">
+            <property name="MemberName" />
+            <property name="WidthRequest">335</property>
+            <property name="HeightRequest">221</property>
+            <property name="ShadowType">In</property>
+            <child>
+              <widget class="Gtk.TextView" id="textview_texto">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="ShowScrollbars">True</property>
+                <property name="Text" translatable="yes" />
+                <property name="Justification">Fill</property>
+                <property name="WrapMode">Word</property>
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="X">25</property>
+            <property name="Y">111</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="button_arquivo">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Arquivo</property>
+            <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="abrirArquivo" after="yes" />
+          </widget>
+          <packing>
+            <property name="X">26</property>
+            <property name="Y">55</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="label1">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Pesquisar</property>
+          </widget>
+          <packing>
+            <property name="X">138</property>
+            <property name="Y">32</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow1">
+            <property name="MemberName" />
+            <property name="WidthRequest">160</property>
+            <property name="HeightRequest">20</property>
+            <property name="ShadowType">In</property>
+            <child>
+              <widget class="Gtk.TextView" id="textview_pesquisar">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="ShowScrollbars">True</property>
+                <property name="Text" translatable="yes" />
+                <signal name="KeyReleaseEvent" handler="pesquisarTexto" after="yes" />
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="X">198</property>
+            <property name="Y">27</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="label2">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Ocorrências</property>
+          </widget>
+          <packing>
+            <property name="X">123</property>
+            <property name="Y">66</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow2">
+            <property name="MemberName" />
+            <property name="WidthRequest">160</property>
+            <property name="HeightRequest">20</property>
+            <property name="ShadowType">In</property>
+            <child>
+              <widget class="Gtk.TextView" id="textview_ocorrencias">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="ShowScrollbars">True</property>
+                <property name="Editable">False</property>
+                <property name="Text" translatable="yes" />
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="X">198</property>
+            <property name="Y">61</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</stetic-interface>
