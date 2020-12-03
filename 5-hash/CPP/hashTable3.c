@@ -35,11 +35,9 @@ int main() {
 	CelulaD *tabelaHash[TAMANHO_TABELA];
 	int dado;
 	int endereco;
-
-	inicializaTabelaHash(tabelaHash, TAMANHO_TABELA);
-
 	int opcao;
 
+	inicializaTabelaHash(tabelaHash, TAMANHO_TABELA);
 	do {
 		printf("1 - Inserir; 2 - Pesquisar; 3 - Exibir; 4 - Sair: ");
 		scanf("%d", &opcao);

@@ -29,9 +29,6 @@ int main() {
 
 	inicializaTabelaHash(tabelaHash, TAMANHO_TABELA);
 
-
-
-
 	int opcao;
 
 	do {
