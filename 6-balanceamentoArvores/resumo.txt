@@ -1,0 +1,57 @@
+Balanceamento ou equilíbrio em Árvores Binárias de Pesquisa (ordenadas)
+- Justificativa/Motivo
+    Acelerar as buscas, ou seja, diminuir o número de comparações
+
+
+Há duas técnicas:
+    - AVL: faz o balanceamento ao inserir, ou seja, garante que a árvore esteja menos profunda e mais balanceada possível
+    - DSW: faz o balanceamento em uma árvore totalmente desbalanceada
+
+Na estrutura de uma árvore AVL ou DSW há um novo atributo:
+    - fb ou fe (fator de balanceamento ou fator de equilíbrio)
+    - fb = altura(subArvore->esq) - altura(subArvore->dir)
+
+Situação de desbalanceamento/desequilíbrio
+    fb == -2 ou fb == 2
+
+Há somente dois métodos de rotação/giro
+    - rodar/girar para esquerda -> quando -2
+    - rodar/girar para direitoa -> quando +2
+
+Há dois tipos de balaceamento
+    - rotação/giro simples, ou seja, um giro no nodo pai desbalanceado
+        pai == -2  e  filho == -1
+        pai == +2  e  filho == +1
+
+    - rotação/giro duplo, ou seja, um giro no nodo filho e outro giro no nodo pai desbalanceado
+        pai == -2  e  filho == +1
+        pai == +2  e  filho == -1
+
+    Arvore *rodarEsquerda(Arvore *r) {
+        Arvore *novoPai;
+        Arvore *tmp;
+
+
+        novoPai = r->dir;
+        tmp = novoPai->esq;
+        novoPai->esq = r;
+
+        r->dir = tmp;
+
+        return novoPai;
+    }
+
+
+    Arvore *rodarDireita(Arvore *r) {
+        Arvore *novoPai;
+        Arvore *tmp;
+
+
+        novoPai = r->esq;
+        tmp = novoPai->dir;
+        novoPai->dir = r;
+
+        r->esq = tmp;
+
+        return novoPai;
+    }
