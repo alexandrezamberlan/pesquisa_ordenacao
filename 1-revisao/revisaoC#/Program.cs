@@ -9,12 +9,17 @@ namespace revisaoC_
         {
             List<int> vetor = new List<int>();
             int quantidade;
-            
+            Stopwatch sw = new Stopwatch();
+
             Console.Write("Quantos números quer gerar? ");
             quantidade = Int32.Parse(Console.ReadLine());
         
+            sw.Start();
             popular(vetor, quantidade);
             exibir(vetor);
+            sw.Stop();
+            Console.WriteLine("Tempo de processamento (ms): " + sw.ElapsedMilliseconds);
+            sw.Reset();
         }
 
 
