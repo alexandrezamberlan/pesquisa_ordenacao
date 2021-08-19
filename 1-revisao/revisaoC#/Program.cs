@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace revisaoC_
 {
@@ -21,7 +22,6 @@ namespace revisaoC_
             Console.WriteLine("Tempo de processamento (ms): " + sw.ElapsedMilliseconds);
             sw.Reset();
         }
-
 
         static void popular(List<int> v, int n) {
             Random gerador = new Random();
