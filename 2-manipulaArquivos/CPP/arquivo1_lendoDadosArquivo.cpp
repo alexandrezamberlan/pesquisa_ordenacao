@@ -15,6 +15,11 @@ int main() {
 	//https://www.tutorialspoint.com/cplusplus/cpp_files_streams
 	ifstream procuradorArquivo; 
     procuradorArquivo.open(nomeArquivo); 
+
+    if (!procuradorArquivo) {
+        cout << "Arquivo não localizado. Programa encerrado." << endl;
+        exit(0);
+    }
  
    		
 	//le o arquivo capturando as frases
