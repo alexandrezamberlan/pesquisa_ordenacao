@@ -1,0 +1,18 @@
+Manipulando arquivos texto - plain text
+    - Exemplos: .txt, .csv, .xml, .json
+
+Ao trabalhar com arquivos, há uma relação da memória secundária (onde está o arquivo físico),
+com a memória principal (onde está a variável que representa o arquivo)
+    - na RAM há um 'procurador' do arquivo. Nessa variável, é que o programador:
+        - abre ou associa o procurador ao arquivo
+
+        - fecha ou envia os dados do procurador para o arquivo
+
+        - percorre o procurador, logo, o arquivo
+
+        - escreve no procurador (entretanto, fica só na memória)
+        
+        - le do procurador
+        
+        - gravar/despejar do procurador no arquivo
+

@@ -1,7 +1,10 @@
+
+.vscode
 .DS_Store
 *.exe
 *.obj
 *.bin
+*.class
 /Java/OrdenacaoJava/nbproject/private/
 /Java/OrdenacaoJava/build/
 roda
