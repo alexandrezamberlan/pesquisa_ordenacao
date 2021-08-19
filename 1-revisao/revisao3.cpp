@@ -30,9 +30,10 @@ int main() {
     cout << "Quantos números deseja gerar? ";
     cin >> quantidade;
 
-
+    //temporizar
+    tempoInicio = clock();
     vetor = popular(vetor, quantidade);
-    
-    
     exibir(vetor, quantidade);
+    tempoFim = clock();
+    cout << "Tempo de processamento: "<< (float)(tempoFim - tempoInicio)/CLOCKS_PER_SEC << endl;
 }
