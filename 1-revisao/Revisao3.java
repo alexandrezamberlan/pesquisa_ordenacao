@@ -12,9 +12,9 @@ public class Revisao3 {
         
         tempoInicio = System.nanoTime();
         popular(vetor, quantidade);
+        exibir(vetor);
         tempoFim = System.nanoTime();
         System.out.println("Tempo de processamento: " + (tempoFim - tempoInicio)/1000000 + " ms");
-        //exibir(vetor);
     }
 
     public static void popular(ArrayList<Integer> v, int n) {

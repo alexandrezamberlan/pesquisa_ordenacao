@@ -1,0 +1,15 @@
+/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/1-revisao/revisaoC#/obj/Debug/net5.0/revisaoC#.csproj.AssemblyReference.cache
+/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/1-revisao/revisaoC#/obj/Debug/net5.0/revisaoC#.GeneratedMSBuildEditorConfig.editorconfig
+/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/1-revisao/revisaoC#/obj/Debug/net5.0/revisaoC#.AssemblyInfoInputs.cache
+/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/1-revisao/revisaoC#/obj/Debug/net5.0/revisaoC#.AssemblyInfo.cs
+/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/1-revisao/revisaoC#/obj/Debug/net5.0/revisaoC#.csproj.CoreCompileInputs.cache
+/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/1-revisao/revisaoC#/bin/Debug/net5.0/revisaoC#.deps.json
+/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/1-revisao/revisaoC#/bin/Debug/net5.0/revisaoC#.runtimeconfig.json
+/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/1-revisao/revisaoC#/bin/Debug/net5.0/revisaoC#.runtimeconfig.dev.json
+/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/1-revisao/revisaoC#/bin/Debug/net5.0/revisaoC#.dll
+/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/1-revisao/revisaoC#/bin/Debug/net5.0/ref/revisaoC#.dll
+/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/1-revisao/revisaoC#/bin/Debug/net5.0/revisaoC#.pdb
+/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/1-revisao/revisaoC#/obj/Debug/net5.0/revisaoC#.dll
+/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/1-revisao/revisaoC#/obj/Debug/net5.0/ref/revisaoC#.dll
+/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/1-revisao/revisaoC#/obj/Debug/net5.0/revisaoC#.pdb
+/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/1-revisao/revisaoC#/obj/Debug/net5.0/revisaoC#.genruntimeconfig.cache
