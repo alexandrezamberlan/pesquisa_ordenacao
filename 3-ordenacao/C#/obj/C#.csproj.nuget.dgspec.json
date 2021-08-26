@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/3-ordenacao/C#/OutroAppC#.csproj": {}
+    "/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/3-ordenacao/C#/C#.csproj": {}
   },
   "projects": {
-    "/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/3-ordenacao/C#/OutroAppC#.csproj": {
+    "/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/3-ordenacao/C#/C#.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/3-ordenacao/C#/OutroAppC#.csproj",
-        "projectName": "OutroAppC#",
-        "projectPath": "/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/3-ordenacao/C#/OutroAppC#.csproj",
+        "projectUniqueName": "/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/3-ordenacao/C#/C#.csproj",
+        "projectName": "C#",
+        "projectPath": "/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/3-ordenacao/C#/C#.csproj",
         "packagesPath": "/Users/alexandrezamberlan/.nuget/packages/",
         "outputPath": "/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/",
         "projectStyle": "PackageReference",

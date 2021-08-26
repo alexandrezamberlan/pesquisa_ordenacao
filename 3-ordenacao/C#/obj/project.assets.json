@@ -14,17 +14,17 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Volumes/HD16GB/codigos/pesquisa_ordenacao/3-ordenacao/C#/OutroAppC#.csproj",
-      "projectName": "OutroAppC#",
-      "projectPath": "/Volumes/HD16GB/codigos/pesquisa_ordenacao/3-ordenacao/C#/OutroAppC#.csproj",
+      "projectUniqueName": "/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/3-ordenacao/C#/C#.csproj",
+      "projectName": "C#",
+      "projectPath": "/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/3-ordenacao/C#/C#.csproj",
       "packagesPath": "/Users/alexandrezamberlan/.nuget/packages/",
-      "outputPath": "/Volumes/HD16GB/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/",
+      "outputPath": "/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/alexandrezamberlan/.config/NuGet/NuGet.Config"
+        "/Users/alexandrezamberlan/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -34,6 +34,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -45,6 +46,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",
@@ -60,7 +62,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.402/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.302/RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -34,3 +34,9 @@
 /Volumes/HD16GB/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/Debug/netcoreapp3.1/OutroAppC#.dll
 /Volumes/HD16GB/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/Debug/netcoreapp3.1/OutroAppC#.pdb
 /Volumes/HD16GB/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/Debug/netcoreapp3.1/OutroAppC#.genruntimeconfig.cache
+/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/Debug/netcoreapp3.1/OutroAppC#.csproj.AssemblyReference.cache
+/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/Debug/netcoreapp3.1/OutroAppC#.AssemblyInfoInputs.cache
+/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/Debug/netcoreapp3.1/OutroAppC#.AssemblyInfo.cs
+/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/Debug/netcoreapp3.1/OutroAppC#.csproj.CoreCompileInputs.cache
+/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/Debug/netcoreapp3.1/OutroAppC#.dll
+/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/Debug/netcoreapp3.1/OutroAppC#.pdb
