@@ -1,3 +1,4 @@
+import java.util.Random;
 public class Util {
     public static void popular(int quantidade, ArrayList<Integer> lista) {
         Random gerador = new Random();
