@@ -1,0 +1,15 @@
+/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/3-ordenacao/C#/bin/Debug/net5.0/C#.deps.json
+/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/3-ordenacao/C#/bin/Debug/net5.0/C#.runtimeconfig.json
+/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/3-ordenacao/C#/bin/Debug/net5.0/C#.runtimeconfig.dev.json
+/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/3-ordenacao/C#/bin/Debug/net5.0/C#.dll
+/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/3-ordenacao/C#/bin/Debug/net5.0/ref/C#.dll
+/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/3-ordenacao/C#/bin/Debug/net5.0/C#.pdb
+/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/Debug/net5.0/C#.csproj.AssemblyReference.cache
+/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/Debug/net5.0/C#.GeneratedMSBuildEditorConfig.editorconfig
+/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/Debug/net5.0/C#.AssemblyInfoInputs.cache
+/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/Debug/net5.0/C#.AssemblyInfo.cs
+/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/Debug/net5.0/C#.csproj.CoreCompileInputs.cache
+/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/Debug/net5.0/C#.dll
+/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/Debug/net5.0/ref/C#.dll
+/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/Debug/net5.0/C#.pdb
+/Volumes/LEVATRAZ/Documents/codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/Debug/net5.0/C#.genruntimeconfig.cache
