@@ -23,6 +23,31 @@ void bolha(int *vetor, long long int n) {
     // cout << "Quantidade trocas: " << qtdTrocas << endl  << endl;;
 }
 
+void selecao(int *vetor, long long int n) {
+    long long int posMenor, i, j;
+    int tmp;
+    long long int qtdComparacoes = 0, qtdTrocas = 0;
+
+    for (i = 0; i < n-1; i++) {
+        posMenor = i;
+        for (j = i + 1; j < n; j++ ) {
+            // qtdComparacoes++;
+            if (vetor[j] < vetor[posMenor]) {
+                posMenor = j;
+            }
+        }
+        if (i != posMenor) { 
+            tmp = vetor[i];
+            vetor[i] = vetor[posMenor];
+            vetor[posMenor] = tmp;
+            // qtdTrocas++;
+        }
+    }
+    // cout << "Quantidade comparações: " << qtdComparacoes << endl;
+    // cout << "Quantidade trocas: " << qtdTrocas << endl  << endl;;
+}
+
+
 
 // Celula *bolhaLista(Celula *l) {
 //     Celula *i;
@@ -46,29 +71,6 @@ void bolha(int *vetor, long long int n) {
 //     return l;
 // }
 
-// void selecao(int *vetor, long long int n) {
-//     long long int posMenor, i, j;
-//     int tmp;
-//     long long int qtdComparacoes = 0, qtdTrocas = 0;
-
-//     for (i = 0; i < n-1; i++) {
-//         posMenor = i;
-//         for (j = i + 1; j < n; j++ ) {
-//             qtdComparacoes++;
-//             if (vetor[j] < vetor[posMenor]) {
-//                 posMenor = j;
-//             }
-//         }
-//         if (i != posMenor) { 
-//             tmp = vetor[i];
-//             vetor[i] = vetor[posMenor];
-//             vetor[posMenor] = tmp;
-//             qtdTrocas++;
-//         }
-//     }
-//     cout << "Quantidade comparações: " << qtdComparacoes << endl;
-//     cout << "Quantidade trocas: " << qtdTrocas << endl  << endl;;
-// }
 
 // Celula *selecaoLista(Celula *l) {
 //     Celula *posMenor, *i, *j;

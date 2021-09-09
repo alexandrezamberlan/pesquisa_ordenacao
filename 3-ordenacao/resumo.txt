@@ -39,6 +39,15 @@ o início da estrutura
 
 Observação: se a estrutura estiver ordenada, o método vai funcionar/processar como se a estrutura estivesse desordenada
 
+0   1   2   3   4   5   6
+7   1   4   2   3   9   8
+1   7   4   2   3   9   8
+1   2   4   7   3   9   8
+1   2   3   7   4   9   8
+1   2   3   4   7   9   8
+1   2   3   4   7   8   9
+
+
 3) INSERÇÃO - Insertion Sort - O(n^2)
 Estável
 Memória Interna

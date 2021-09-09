@@ -16,6 +16,12 @@ void exibir(int *vetor, long long int n) {
     }
 }
 
+void copiar(int *vetorOrigem, long long int n, int *vetorDestino) {
+    for (long long int i = 0; i < n; i++) {
+        vetorDestino[i] = vetorOrigem[i];
+    }
+}
+
 // typedef struct nodo {
 //     int dado;
 //     struct nodo *prox;

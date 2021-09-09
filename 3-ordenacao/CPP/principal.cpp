@@ -15,9 +15,12 @@ int main() {
     cout << "Tamanho do vetor: ";
     cin >> tamanho;
     int *vetorBolha;
+    int *vetorSelecao;
     vetorBolha = (int*)malloc(sizeof(int) * tamanho);
+    vetorSelecao = (int*)malloc(sizeof(int) * tamanho);
     popular(vetorBolha, tamanho);
-    // exibir(vetorBolha, tamanho);
+    copiar(vetorBolha, tamanho, vetorSelecao);
+    //exibir(vetorSelecao, tamanho);
 
     //bolha
     tempoInicio = clock();
@@ -25,6 +28,13 @@ int main() {
     tempoFim = clock();
     cout << "Tempo para bolha: "<< (float)(tempoFim - tempoInicio)/CLOCKS_PER_SEC << endl;
     // exibir(vetorBolha, tamanho);
+
+    //selecao
+    tempoInicio = clock();
+    selecao(vetorSelecao,tamanho);
+    tempoFim = clock();
+    cout << "Tempo para selecao: "<< (float)(tempoFim - tempoInicio)/CLOCKS_PER_SEC << endl;
+    //exibir(vetorSelecao, tamanho);
 
     return 1;
 }
