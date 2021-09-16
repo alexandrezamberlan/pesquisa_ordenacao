@@ -17,8 +17,6 @@ public class Principal {
         listaSelecao.addAll(listaBolha);
         listaPente.addAll(listaBolha);
 
-        
-
         // //bolha
         // tempoInicio = System.nanoTime();
         // MetodosOrdenacao.bolha(listaBolha);

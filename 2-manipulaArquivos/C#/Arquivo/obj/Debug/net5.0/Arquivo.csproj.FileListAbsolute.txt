@@ -1,0 +1,15 @@
+/Users/alexandrezamberlan/Documents/_codigos/pesquisa_ordenacao/2-manipulaArquivos/C#/Arquivo/bin/Debug/net5.0/Arquivo.deps.json
+/Users/alexandrezamberlan/Documents/_codigos/pesquisa_ordenacao/2-manipulaArquivos/C#/Arquivo/bin/Debug/net5.0/Arquivo.runtimeconfig.json
+/Users/alexandrezamberlan/Documents/_codigos/pesquisa_ordenacao/2-manipulaArquivos/C#/Arquivo/bin/Debug/net5.0/Arquivo.runtimeconfig.dev.json
+/Users/alexandrezamberlan/Documents/_codigos/pesquisa_ordenacao/2-manipulaArquivos/C#/Arquivo/bin/Debug/net5.0/Arquivo.dll
+/Users/alexandrezamberlan/Documents/_codigos/pesquisa_ordenacao/2-manipulaArquivos/C#/Arquivo/bin/Debug/net5.0/ref/Arquivo.dll
+/Users/alexandrezamberlan/Documents/_codigos/pesquisa_ordenacao/2-manipulaArquivos/C#/Arquivo/bin/Debug/net5.0/Arquivo.pdb
+/Users/alexandrezamberlan/Documents/_codigos/pesquisa_ordenacao/2-manipulaArquivos/C#/Arquivo/obj/Debug/net5.0/Arquivo.csproj.AssemblyReference.cache
+/Users/alexandrezamberlan/Documents/_codigos/pesquisa_ordenacao/2-manipulaArquivos/C#/Arquivo/obj/Debug/net5.0/Arquivo.GeneratedMSBuildEditorConfig.editorconfig
+/Users/alexandrezamberlan/Documents/_codigos/pesquisa_ordenacao/2-manipulaArquivos/C#/Arquivo/obj/Debug/net5.0/Arquivo.AssemblyInfoInputs.cache
+/Users/alexandrezamberlan/Documents/_codigos/pesquisa_ordenacao/2-manipulaArquivos/C#/Arquivo/obj/Debug/net5.0/Arquivo.AssemblyInfo.cs
+/Users/alexandrezamberlan/Documents/_codigos/pesquisa_ordenacao/2-manipulaArquivos/C#/Arquivo/obj/Debug/net5.0/Arquivo.csproj.CoreCompileInputs.cache
+/Users/alexandrezamberlan/Documents/_codigos/pesquisa_ordenacao/2-manipulaArquivos/C#/Arquivo/obj/Debug/net5.0/Arquivo.dll
+/Users/alexandrezamberlan/Documents/_codigos/pesquisa_ordenacao/2-manipulaArquivos/C#/Arquivo/obj/Debug/net5.0/ref/Arquivo.dll
+/Users/alexandrezamberlan/Documents/_codigos/pesquisa_ordenacao/2-manipulaArquivos/C#/Arquivo/obj/Debug/net5.0/Arquivo.pdb
+/Users/alexandrezamberlan/Documents/_codigos/pesquisa_ordenacao/2-manipulaArquivos/C#/Arquivo/obj/Debug/net5.0/Arquivo.genruntimeconfig.cache

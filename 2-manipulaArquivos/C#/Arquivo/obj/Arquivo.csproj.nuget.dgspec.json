@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/alexandrezamberlan/Documents/_codigos/pesquisa_ordenacao/3-ordenacao/C#/C#.csproj": {}
+    "/Users/alexandrezamberlan/Documents/_codigos/pesquisa_ordenacao/2-manipulaArquivos/C#/Arquivo/Arquivo.csproj": {}
   },
   "projects": {
-    "/Users/alexandrezamberlan/Documents/_codigos/pesquisa_ordenacao/3-ordenacao/C#/C#.csproj": {
+    "/Users/alexandrezamberlan/Documents/_codigos/pesquisa_ordenacao/2-manipulaArquivos/C#/Arquivo/Arquivo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/alexandrezamberlan/Documents/_codigos/pesquisa_ordenacao/3-ordenacao/C#/C#.csproj",
-        "projectName": "C#",
-        "projectPath": "/Users/alexandrezamberlan/Documents/_codigos/pesquisa_ordenacao/3-ordenacao/C#/C#.csproj",
+        "projectUniqueName": "/Users/alexandrezamberlan/Documents/_codigos/pesquisa_ordenacao/2-manipulaArquivos/C#/Arquivo/Arquivo.csproj",
+        "projectName": "Arquivo",
+        "projectPath": "/Users/alexandrezamberlan/Documents/_codigos/pesquisa_ordenacao/2-manipulaArquivos/C#/Arquivo/Arquivo.csproj",
         "packagesPath": "/Users/alexandrezamberlan/.nuget/packages/",
-        "outputPath": "/Users/alexandrezamberlan/Documents/_codigos/pesquisa_ordenacao/3-ordenacao/C#/obj/",
+        "outputPath": "/Users/alexandrezamberlan/Documents/_codigos/pesquisa_ordenacao/2-manipulaArquivos/C#/Arquivo/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
