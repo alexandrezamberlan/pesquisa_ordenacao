@@ -40,50 +40,8 @@ public class MetodosOrdenacao {
         }
     }
 
-    public static void insercao(ArrayList<Integer> lista) {
-        int i, j, tmp;
     
-        for (i = 1; i < lista.size(); i++) {
-            tmp = lista.get(i);
-            for (j = i - 1; j >= 0; j--) {
-                if (tmp < lista.get(j)) {
-                    lista.set(j + 1, lista.get(j));
-                } else break;
-            }
-            lista.set(j + 1, tmp);
-        }
-    }
-
-    public static void agitacao(ArrayList<Integer> lista) {
-        boolean houveTroca;
-        int tmp, ini = 0, fim = lista.size()-1;
-        int i;
-
-        do {
-            houveTroca = false;
-            for (i = ini; i < fim; i++) {
-                if (lista.get(i) > lista.get(i+1)) {
-                    houveTroca = true;
-                    tmp = lista.get(i);
-                    lista.set(i,lista.get(i+1));
-                    lista.set(i+1, tmp);  
-                }
-            }
-            fim--;
-
-            if (!houveTroca) break;
-            houveTroca = false;
-            for (i = fim; i > ini; i--) {
-                if (lista.get(i) < lista.get(i-1)) {
-                    houveTroca = true;
-                    tmp = lista.get(i);
-                    lista.set(i,lista.get(i-1));
-                    lista.set(i-1, tmp);  
-                }
-            }
-            ini++;
-        } while (houveTroca && ini <= fim);
-    }
+    
     public static void pente(ArrayList<Integer> lista) {
         boolean houveTroca;
         int tmp;
@@ -104,96 +62,5 @@ public class MetodosOrdenacao {
                 }
             }
         } while (distancia > 1 || houveTroca);
-    }
-
-    public static void shell(ArrayList<Integer> lista) {
-        int i, j, distancia = 1;
-        int tmp;
-        int referenciaTamanho = 3;
-    
-        do {
-            distancia = referenciaTamanho * distancia + 1;
-        } while (distancia < lista.size());
-    
-        do {
-            distancia = (int)((float)distancia / referenciaTamanho);           
-            for (i = distancia; i < lista.size(); i++) {
-                tmp = lista.get(i);
-                for (j = i - distancia; j >= 0; j = j - distancia) {
-                    if (tmp < lista.get(j)) {
-                        lista.set(j + distancia, lista.get(j));
-                    } else break;
-                }
-                lista.set(j + distancia, tmp);
-            }
-    
-        } while (distancia > 1);
-    }
-
-    private static int particiona(ArrayList<Integer> lista, int ini, int fim) {
-        int pivo;
-            int tmp;
-        
-        Random gerador = new Random();
-
-        pivo = ini; //na bibliografia do método, é possível ser o ini, o fim ou uma posição sorteada
-        while (fim > ini) {
-
-            for (; fim > pivo && lista.get(fim) > lista.get(pivo); fim--);
-
-            if (fim > pivo) {
-                tmp = lista.get(pivo);
-                lista.set(pivo, lista.get(fim));
-                lista.set(fim, tmp);	
-                pivo = fim;
-            }
-
-            for (ini++; ini < pivo && lista.get(ini) < lista.get(pivo); ini++);
-
-            if (ini < pivo) {
-                tmp = lista.get(pivo);
-                lista.set(pivo, lista.get(ini));
-                lista.set(ini, tmp);
-                pivo = ini;
-            }
-        }
-        return pivo;
-    }
-
-
-    public static void quickSort(ArrayList<Integer> lista, int ini, int fim) {
-        int pivo;
-
-        pivo = particiona(lista, ini, fim);
-        
-        if (ini < pivo - 1) quickSort(lista, ini, pivo - 1); //se existe lado esq do pivo, executa lado esq
-        if (pivo + 1 < fim) quickSort(lista, pivo + 1, fim); //se existe lado dir do pivo, executa lado dir
-    }
-
-    public static void heapSort(ArrayList<Integer> lista) {
-        int tmp;
-        int i;
-        int n = lista.size(); 
-      
-        while (n > 1){
-          for(i = (int)n/2 - 1; i > 0; i--){
-            if (lista.get(i) < lista.get(i*2)){ //comparando o raiz com seu filho da esquerda
-              tmp = lista.get(i);
-              lista.set(i,lista.get(i*2)); 
-              lista.set(i*2, tmp);
-            }
-            if (i*2 + 1 < n) { //só vamos comparar o filho da direita se ele existir
-              if (lista.get(i) < lista.get(i*2 + 1)){ //comparando o raiz com seu filho da direita
-                tmp = lista.get(i);
-                lista.set(i, lista.get(i*2 + 1));
-                lista.set(i*2 + 1, tmp);
-              }
-            }
-          }
-          tmp = lista.get(1);
-          lista.set(1, lista.get(n-1));
-          lista.set(n-1, tmp);
-          n--;
-        }
     }
 }

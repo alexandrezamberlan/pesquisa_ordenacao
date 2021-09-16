@@ -96,7 +96,14 @@ Há as variáveis clássicas do bolha: i, houveTroca, tmp.
 Há a variável distancia que é calculada pelo tamanho da estrutura dividido por 1.3
 
 Adequado somente para vetores ou estruturas prontas tipo lista de uma linguagem de programação
-
+n = 7
+0   1   2   3   4   5   6   
+7   1   4   2   3   9   8    distancia = (int)n / 1.3 = 5
+7   1   4   2   3   9   8    distancia = distancia / 1.3 = 3
+2   1   4   7   3   9   8    distancia = distancia / 1.3 = 2
+2   1   3   7   4   9   8    distancia = distancia / 1.3 = 1
+1   2   3   4   7   8   9    distancia = 1
+1   2   3   4   7   8   9
 
 6) SHELLSORT 
 É baseado no Inserção, ou seja, é uma tentativa de melhoria via o uso da ANÁLISE A DISTÂNCIA (tipo pente)

@@ -6,6 +6,13 @@
    "configurations": [
     {
         "type": "java",
+        "name": "Launch Principal",
+        "request": "launch",
+        "mainClass": "Principal",
+        "projectName": ""
+    },
+    {
+        "type": "java",
         "name": "Launch ManipulaArquivoTexto",
         "request": "launch",
         "mainClass": "ManipulaArquivoTexto",

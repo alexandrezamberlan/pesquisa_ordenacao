@@ -16,25 +16,37 @@ int main() {
     cin >> tamanho;
     int *vetorBolha;
     int *vetorSelecao;
+    int *vetorPente;
     vetorBolha = (int*)malloc(sizeof(int) * tamanho);
     vetorSelecao = (int*)malloc(sizeof(int) * tamanho);
+    vetorPente = (int*)malloc(sizeof(int) * tamanho);
     popular(vetorBolha, tamanho);
     copiar(vetorBolha, tamanho, vetorSelecao);
+    copiar(vetorBolha, tamanho, vetorPente);
     //exibir(vetorSelecao, tamanho);
 
-    //bolha
+    //pente
     tempoInicio = clock();
-    bolha(vetorBolha,tamanho);
+    pente(vetorPente,tamanho);
     tempoFim = clock();
-    cout << "Tempo para bolha: "<< (float)(tempoFim - tempoInicio)/CLOCKS_PER_SEC << endl;
-    // exibir(vetorBolha, tamanho);
+    cout << "Tempo para pente: "<< (float)(tempoFim - tempoInicio)/CLOCKS_PER_SEC << endl;
+    //exibir(vetorPente, tamanho);
 
-    //selecao
-    tempoInicio = clock();
-    selecao(vetorSelecao,tamanho);
-    tempoFim = clock();
-    cout << "Tempo para selecao: "<< (float)(tempoFim - tempoInicio)/CLOCKS_PER_SEC << endl;
-    //exibir(vetorSelecao, tamanho);
+    // //bolha
+    // tempoInicio = clock();
+    // bolha(vetorBolha,tamanho);
+    // tempoFim = clock();
+    // cout << "Tempo para bolha: "<< (float)(tempoFim - tempoInicio)/CLOCKS_PER_SEC << endl;
+    // // exibir(vetorBolha, tamanho);
+
+    // //selecao
+    // tempoInicio = clock();
+    // selecao(vetorSelecao,tamanho);
+    // tempoFim = clock();
+    // cout << "Tempo para selecao: "<< (float)(tempoFim - tempoInicio)/CLOCKS_PER_SEC << endl;
+    // //exibir(vetorSelecao, tamanho);
+
+  
 
     return 1;
 }
