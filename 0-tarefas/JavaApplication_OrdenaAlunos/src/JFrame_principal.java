@@ -1,9 +1,16 @@
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author alexandrezamberlan
@@ -28,25 +35,33 @@ public class JFrame_principal extends javax.swing.JFrame {
 
         jButton_abrirArquivo = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        jTextArea_listaOriginal = new javax.swing.JTextArea();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTextArea2 = new javax.swing.JTextArea();
+        jTextArea_listaOrdenada = new javax.swing.JTextArea();
         jComboBox_escolhaOrdenacao = new javax.swing.JComboBox<>();
         jButton_ordenar = new javax.swing.JButton();
+        jButton_limpar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Desafio de Ordenação");
         setResizable(false);
 
         jButton_abrirArquivo.setText("Abrir arquivo");
+        jButton_abrirArquivo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_abrirArquivoActionPerformed(evt);
+            }
+        });
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
+        jTextArea_listaOriginal.setEditable(false);
+        jTextArea_listaOriginal.setColumns(20);
+        jTextArea_listaOriginal.setRows(5);
+        jScrollPane1.setViewportView(jTextArea_listaOriginal);
 
-        jTextArea2.setColumns(20);
-        jTextArea2.setRows(5);
-        jScrollPane2.setViewportView(jTextArea2);
+        jTextArea_listaOrdenada.setEditable(false);
+        jTextArea_listaOrdenada.setColumns(20);
+        jTextArea_listaOrdenada.setRows(5);
+        jScrollPane2.setViewportView(jTextArea_listaOrdenada);
 
         jComboBox_escolhaOrdenacao.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Escolha um método", "Bolha", "Seleção", "Pente" }));
         jComboBox_escolhaOrdenacao.setToolTipText("Se você não selecionar um método, o sistema não irá rodar");
@@ -54,6 +69,13 @@ public class JFrame_principal extends javax.swing.JFrame {
 
         jButton_ordenar.setText("Ordenar");
         jButton_ordenar.setEnabled(false);
+
+        jButton_limpar.setText("Limpar");
+        jButton_limpar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_limparActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -63,16 +85,17 @@ public class JFrame_principal extends javax.swing.JFrame {
                 .addGap(20, 20, 20)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 360, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 310, Short.MAX_VALUE))
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 353, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jButton_abrirArquivo)
                         .addGap(18, 18, 18)
                         .addComponent(jComboBox_escolhaOrdenacao, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(jButton_ordenar)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton_limpar)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -82,16 +105,58 @@ public class JFrame_principal extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton_abrirArquivo)
                     .addComponent(jComboBox_escolhaOrdenacao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton_ordenar))
+                    .addComponent(jButton_ordenar)
+                    .addComponent(jButton_limpar))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 313, Short.MAX_VALUE)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 308, Short.MAX_VALUE)
                     .addComponent(jScrollPane1))
                 .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton_abrirArquivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_abrirArquivoActionPerformed
+        // TODO add your handling code here:
+        JFileChooser janelaCarregarArquivo = new JFileChooser();
+        janelaCarregarArquivo.setMultiSelectionEnabled(false);
+        if (janelaCarregarArquivo.showOpenDialog(janelaCarregarArquivo) == JFileChooser.APPROVE_OPTION) {
+            System.out.println("Arquivo selecionado: " + janelaCarregarArquivo.getSelectedFile());
+
+            String resposta[]; //1000@Pedro@CC
+            
+            try {
+                FileReader arquivo = new FileReader(janelaCarregarArquivo.getSelectedFile());
+                BufferedReader in = new BufferedReader(arquivo);
+                String linha;
+                int i = 0;
+                while (in.ready()) {
+                    linha = in.readLine();
+                    resposta = linha.split("@"); //resposta = [1000, Pedro, CC]
+                    //colocar alunos na lista
+                    listaAlunos.add(new Aluno(Integer.parseInt(resposta[0]), resposta[1], resposta[2]));
+                    //colocar alunos na área de texto
+                    jTextArea_listaOriginal.append(listaAlunos.get(i).matricula + " - " + listaAlunos.get(i).nome + " - " +
+                            listaAlunos.get(i).curso + "\n");
+                    i++;
+                }
+                jComboBox_escolhaOrdenacao.setEnabled(true);
+                in.close();
+            } catch (IOException e) {
+                System.out.println("Erro na abertura e tratamento do arquivo!");
+            }
+
+        }
+
+    }//GEN-LAST:event_jButton_abrirArquivoActionPerformed
+
+    private void jButton_limparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_limparActionPerformed
+        // TODO add your handling code here:
+        jTextArea_listaOriginal.setText("");
+        jTextArea_listaOrdenada.setText("");
+        listaAlunos.clear();
+    }//GEN-LAST:event_jButton_limparActionPerformed
 
     /**
      * @param args the command line arguments
@@ -128,13 +193,16 @@ public class JFrame_principal extends javax.swing.JFrame {
         });
     }
 
+    ArrayList<Aluno> listaAlunos = new ArrayList<>();
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton_abrirArquivo;
+    private javax.swing.JButton jButton_limpar;
     private javax.swing.JButton jButton_ordenar;
     private javax.swing.JComboBox<String> jComboBox_escolhaOrdenacao;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextArea jTextArea2;
+    private javax.swing.JTextArea jTextArea_listaOrdenada;
+    private javax.swing.JTextArea jTextArea_listaOriginal;
     // End of variables declaration//GEN-END:variables
 }
