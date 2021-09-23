@@ -1,0 +1,8 @@
+Em uma linguagem qualquer que suporte modo gráfico, construir uma interface:
+1) para abrir arquivos com lista com dados de alunos (matricula, nome completo, curso),
+inserindo-os em uma lista de alunos (ArrayList) e os exibindo em uma área de texto, um abaixo do 
+outro;
+2) possibilite que o usuário possa escolher o critério de ordenação (nome ou matrícula), via 
+o componente de seleção simples; 
+3) uma vez escolhida o critério de ordenação, ordenar, temporizar, exibir a temporização numa
+caixa de diálogo, exibir o resultado da ordenação em outra área de texto.
