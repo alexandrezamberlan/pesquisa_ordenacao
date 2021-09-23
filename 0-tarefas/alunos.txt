@@ -1,3 +1,5 @@
-1000@Pedro Cassenote Batista@Ciência da Computação
+1010@Pedro Cassenote Batista@Ciência da Computação
 1001@Guilherme Painko Scalcon@Ciência da Computação
 1002@João Gabriel Canha@Ciência da Computação
+999@Alexandre Zamberlan@Sistemas de Informação
+854@Priscila Weber@Engenharia Química

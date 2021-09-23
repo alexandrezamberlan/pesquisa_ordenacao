@@ -41,6 +41,7 @@ public class JFrame_principal extends javax.swing.JFrame {
         jComboBox_escolhaOrdenacao = new javax.swing.JComboBox<>();
         jButton_ordenar = new javax.swing.JButton();
         jButton_limpar = new javax.swing.JButton();
+        jComboBox_criterioOrdenacao = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Desafio de Ordenação");
@@ -69,6 +70,11 @@ public class JFrame_principal extends javax.swing.JFrame {
 
         jButton_ordenar.setText("Ordenar");
         jButton_ordenar.setEnabled(false);
+        jButton_ordenar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_ordenarActionPerformed(evt);
+            }
+        });
 
         jButton_limpar.setText("Limpar");
         jButton_limpar.addActionListener(new java.awt.event.ActionListener() {
@@ -76,6 +82,9 @@ public class JFrame_principal extends javax.swing.JFrame {
                 jButton_limparActionPerformed(evt);
             }
         });
+
+        jComboBox_criterioOrdenacao.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Escolha um critério", "Matrícula", "Nome" }));
+        jComboBox_criterioOrdenacao.setEnabled(false);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -85,16 +94,18 @@ public class JFrame_principal extends javax.swing.JFrame {
                 .addGap(20, 20, 20)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 360, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 353, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 401, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jScrollPane2))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jButton_abrirArquivo)
-                        .addGap(18, 18, 18)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jComboBox_escolhaOrdenacao, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jComboBox_criterioOrdenacao, 0, 320, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jButton_ordenar)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jButton_limpar)))
                 .addContainerGap())
         );
@@ -106,10 +117,11 @@ public class JFrame_principal extends javax.swing.JFrame {
                     .addComponent(jButton_abrirArquivo)
                     .addComponent(jComboBox_escolhaOrdenacao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton_ordenar)
-                    .addComponent(jButton_limpar))
+                    .addComponent(jButton_limpar)
+                    .addComponent(jComboBox_criterioOrdenacao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 308, Short.MAX_VALUE)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 306, Short.MAX_VALUE)
                     .addComponent(jScrollPane1))
                 .addContainerGap())
         );
@@ -125,7 +137,7 @@ public class JFrame_principal extends javax.swing.JFrame {
             System.out.println("Arquivo selecionado: " + janelaCarregarArquivo.getSelectedFile());
 
             String resposta[]; //1000@Pedro@CC
-            
+
             try {
                 FileReader arquivo = new FileReader(janelaCarregarArquivo.getSelectedFile());
                 BufferedReader in = new BufferedReader(arquivo);
@@ -137,18 +149,18 @@ public class JFrame_principal extends javax.swing.JFrame {
                     //colocar alunos na lista
                     listaAlunos.add(new Aluno(Integer.parseInt(resposta[0]), resposta[1], resposta[2]));
                     //colocar alunos na área de texto
-                    jTextArea_listaOriginal.append(listaAlunos.get(i).matricula + " - " + listaAlunos.get(i).nome + " - " +
-                            listaAlunos.get(i).curso + "\n");
+                    jTextArea_listaOriginal.append(listaAlunos.get(i).matricula + " - " + listaAlunos.get(i).nome + " - "
+                            + listaAlunos.get(i).curso + "\n");
                     i++;
                 }
                 jComboBox_escolhaOrdenacao.setEnabled(true);
+                jComboBox_criterioOrdenacao.setEnabled(true);
+                jButton_ordenar.setEnabled(true);
                 in.close();
             } catch (IOException e) {
                 System.out.println("Erro na abertura e tratamento do arquivo!");
             }
-
         }
-
     }//GEN-LAST:event_jButton_abrirArquivoActionPerformed
 
     private void jButton_limparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_limparActionPerformed
@@ -156,7 +168,47 @@ public class JFrame_principal extends javax.swing.JFrame {
         jTextArea_listaOriginal.setText("");
         jTextArea_listaOrdenada.setText("");
         listaAlunos.clear();
+        jComboBox_escolhaOrdenacao.setSelectedIndex(0);
+        jComboBox_criterioOrdenacao.setSelectedIndex(0);
+        jComboBox_escolhaOrdenacao.setEnabled(false);
+        jComboBox_criterioOrdenacao.setEnabled(false);
+        jButton_ordenar.setEnabled(false);
     }//GEN-LAST:event_jButton_limparActionPerformed
+
+    private void exibirListaAreaTextoOrdenado(ArrayList<Aluno> lista) {
+        for (int i = 0; i < lista.size(); i++) {
+            jTextArea_listaOrdenada.append(lista.get(i).matricula + " - " + lista.get(i).nome + " - "
+                    + lista.get(i).curso + "\n");
+        }
+    }
+
+    private void jButton_ordenarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_ordenarActionPerformed
+        // TODO add your handling code here:
+        if ((jComboBox_escolhaOrdenacao.getSelectedIndex() == 0) || (jComboBox_criterioOrdenacao.getSelectedIndex() == 0)) {
+            JOptionPane.showMessageDialog(this, "Você precisa selecionar um método de ordenação\n ou um critério: matrícula ou nome");
+        } else {
+            switch (jComboBox_escolhaOrdenacao.getSelectedIndex()) {
+                case 1: //bolha
+                    System.out.println(jComboBox_escolhaOrdenacao.getSelectedItem());
+                    if (jComboBox_criterioOrdenacao.getSelectedIndex() == 1) {
+                        Ordenacao.bolhaMatricula(listaAlunos);
+                    } else {
+                        Ordenacao.bolhaNome(listaAlunos);
+                    }
+                    break;
+                case 2: //selecao
+                    System.out.println(jComboBox_escolhaOrdenacao.getSelectedItem());
+                    break;
+                case 3: //pente
+                    System.out.println(jComboBox_escolhaOrdenacao.getSelectedItem());
+                    if (jComboBox_criterioOrdenacao.getSelectedIndex() == 1) {
+                        Ordenacao.penteMatricula(listaAlunos);
+                    } 
+                    break;
+            }
+            exibirListaAreaTextoOrdenado(listaAlunos);
+        }
+    }//GEN-LAST:event_jButton_ordenarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -199,6 +251,7 @@ public class JFrame_principal extends javax.swing.JFrame {
     private javax.swing.JButton jButton_abrirArquivo;
     private javax.swing.JButton jButton_limpar;
     private javax.swing.JButton jButton_ordenar;
+    private javax.swing.JComboBox<String> jComboBox_criterioOrdenacao;
     private javax.swing.JComboBox<String> jComboBox_escolhaOrdenacao;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
