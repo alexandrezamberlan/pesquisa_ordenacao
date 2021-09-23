@@ -184,6 +184,7 @@ public class JFrame_principal extends javax.swing.JFrame {
 
     private void jButton_ordenarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_ordenarActionPerformed
         // TODO add your handling code here:
+        jTextArea_listaOrdenada.setText("");
         if ((jComboBox_escolhaOrdenacao.getSelectedIndex() == 0) || (jComboBox_criterioOrdenacao.getSelectedIndex() == 0)) {
             JOptionPane.showMessageDialog(this, "Você precisa selecionar um método de ordenação\n ou um critério: matrícula ou nome");
         } else {
@@ -198,12 +199,15 @@ public class JFrame_principal extends javax.swing.JFrame {
                     break;
                 case 2: //selecao
                     System.out.println(jComboBox_escolhaOrdenacao.getSelectedItem());
+                    
                     break;
                 case 3: //pente
                     System.out.println(jComboBox_escolhaOrdenacao.getSelectedItem());
                     if (jComboBox_criterioOrdenacao.getSelectedIndex() == 1) {
                         Ordenacao.penteMatricula(listaAlunos);
-                    } 
+                    } else {
+                        Ordenacao.penteNome(listaAlunos);
+                    }
                     break;
             }
             exibirListaAreaTextoOrdenado(listaAlunos);
