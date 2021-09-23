@@ -184,6 +184,7 @@ public class JFrame_principal extends javax.swing.JFrame {
 
     private void jButton_ordenarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_ordenarActionPerformed
         // TODO add your handling code here:
+        long tempoInicio, tempoFim;  
         jTextArea_listaOrdenada.setText("");
         if ((jComboBox_escolhaOrdenacao.getSelectedIndex() == 0) || (jComboBox_criterioOrdenacao.getSelectedIndex() == 0)) {
             JOptionPane.showMessageDialog(this, "Você precisa selecionar um método de ordenação\n ou um critério: matrícula ou nome");
@@ -191,23 +192,31 @@ public class JFrame_principal extends javax.swing.JFrame {
             switch (jComboBox_escolhaOrdenacao.getSelectedIndex()) {
                 case 1: //bolha
                     System.out.println(jComboBox_escolhaOrdenacao.getSelectedItem());
+                    tempoInicio = System.nanoTime();
                     if (jComboBox_criterioOrdenacao.getSelectedIndex() == 1) {
                         Ordenacao.bolhaMatricula(listaAlunos);
                     } else {
                         Ordenacao.bolhaNome(listaAlunos);
                     }
+                    tempoFim = System.nanoTime();
+                    JOptionPane.showMessageDialog(this, "Tempo (ms) bolha: " + (tempoFim - tempoInicio)/1000000);
                     break;
                 case 2: //selecao
                     System.out.println(jComboBox_escolhaOrdenacao.getSelectedItem());
                     
+                    //
+                    
                     break;
                 case 3: //pente
                     System.out.println(jComboBox_escolhaOrdenacao.getSelectedItem());
+                    tempoInicio = System.nanoTime();
                     if (jComboBox_criterioOrdenacao.getSelectedIndex() == 1) {
                         Ordenacao.penteMatricula(listaAlunos);
                     } else {
                         Ordenacao.penteNome(listaAlunos);
                     }
+                    tempoFim = System.nanoTime();
+                    JOptionPane.showMessageDialog(this,"Tempo (ms) pente: " + (tempoFim - tempoInicio)/1000000);
                     break;
             }
             exibirListaAreaTextoOrdenado(listaAlunos);
