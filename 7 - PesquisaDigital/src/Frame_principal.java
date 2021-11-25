@@ -96,12 +96,16 @@ public class Frame_principal extends javax.swing.JFrame {
     private void jTextField_frasePesquisaKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_frasePesquisaKeyReleased
         String frase = jTextField_frasePesquisa.getText();
         contador = 0;
-
+       jTextArea_texto.setText(areaDeTexto.toString());
         String sequencia;
         for (int i = 0; !frase.equals("") && i <= areaDeTexto.length() - frase.length(); i++) {
             sequencia = areaDeTexto.substring(i, i + frase.length());
             if (frase.equalsIgnoreCase(sequencia)){
                 contador++;
+                System.out.println(ANSI_YELLOW
+                           + frase
+                           + ANSI_RESET);
+                jTextArea_texto.replaceRange(frase.toUpperCase(), i, i + frase.length());
             }
         }
         jTextField_localizados.setText(""+contador);
@@ -149,6 +153,8 @@ public class Frame_principal extends javax.swing.JFrame {
     
     StringBuilder areaDeTexto = new StringBuilder();
     int contador = 0;
+    public static final String ANSI_YELLOW = "\u001B[43m";
+    public static final String ANSI_RESET = "\u001B[47m";
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
