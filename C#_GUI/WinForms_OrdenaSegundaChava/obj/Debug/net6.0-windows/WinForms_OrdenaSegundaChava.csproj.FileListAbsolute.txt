@@ -1,0 +1,17 @@
+C:\Users\laboratorio\source\repos\WinForms_OrdenaSegundaChava\bin\Debug\net6.0-windows\WinForms_OrdenaSegundaChava.exe
+C:\Users\laboratorio\source\repos\WinForms_OrdenaSegundaChava\bin\Debug\net6.0-windows\WinForms_OrdenaSegundaChava.deps.json
+C:\Users\laboratorio\source\repos\WinForms_OrdenaSegundaChava\bin\Debug\net6.0-windows\WinForms_OrdenaSegundaChava.runtimeconfig.json
+C:\Users\laboratorio\source\repos\WinForms_OrdenaSegundaChava\bin\Debug\net6.0-windows\WinForms_OrdenaSegundaChava.dll
+C:\Users\laboratorio\source\repos\WinForms_OrdenaSegundaChava\bin\Debug\net6.0-windows\WinForms_OrdenaSegundaChava.pdb
+C:\Users\laboratorio\source\repos\WinForms_OrdenaSegundaChava\obj\Debug\net6.0-windows\WinForms_OrdenaSegundaChava.csproj.AssemblyReference.cache
+C:\Users\laboratorio\source\repos\WinForms_OrdenaSegundaChava\obj\Debug\net6.0-windows\WinForms_OrdenaSegundaChava.Form1.resources
+C:\Users\laboratorio\source\repos\WinForms_OrdenaSegundaChava\obj\Debug\net6.0-windows\WinForms_OrdenaSegundaChava.csproj.GenerateResource.cache
+C:\Users\laboratorio\source\repos\WinForms_OrdenaSegundaChava\obj\Debug\net6.0-windows\WinForms_OrdenaSegundaChava.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\laboratorio\source\repos\WinForms_OrdenaSegundaChava\obj\Debug\net6.0-windows\WinForms_OrdenaSegundaChava.AssemblyInfoInputs.cache
+C:\Users\laboratorio\source\repos\WinForms_OrdenaSegundaChava\obj\Debug\net6.0-windows\WinForms_OrdenaSegundaChava.AssemblyInfo.cs
+C:\Users\laboratorio\source\repos\WinForms_OrdenaSegundaChava\obj\Debug\net6.0-windows\WinForms_OrdenaSegundaChava.csproj.CoreCompileInputs.cache
+C:\Users\laboratorio\source\repos\WinForms_OrdenaSegundaChava\obj\Debug\net6.0-windows\WinForms_OrdenaSegundaChava.dll
+C:\Users\laboratorio\source\repos\WinForms_OrdenaSegundaChava\obj\Debug\net6.0-windows\refint\WinForms_OrdenaSegundaChava.dll
+C:\Users\laboratorio\source\repos\WinForms_OrdenaSegundaChava\obj\Debug\net6.0-windows\WinForms_OrdenaSegundaChava.pdb
+C:\Users\laboratorio\source\repos\WinForms_OrdenaSegundaChava\obj\Debug\net6.0-windows\WinForms_OrdenaSegundaChava.genruntimeconfig.cache
+C:\Users\laboratorio\source\repos\WinForms_OrdenaSegundaChava\obj\Debug\net6.0-windows\ref\WinForms_OrdenaSegundaChava.dll
