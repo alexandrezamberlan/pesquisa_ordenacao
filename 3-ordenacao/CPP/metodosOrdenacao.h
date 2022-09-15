@@ -75,3 +75,71 @@ void pente(int *vetor, long long int n) {
     // cout << "Quantidade trocas: " << qtdTrocas << endl  << endl;;
 }
 
+void intercala(int v[], unsigned long long int n) {
+  	unsigned long long int meio;
+  	unsigned long long int i, j, k;
+ 	int *vetorTemporario;
+
+  	vetorTemporario = (int*) malloc(n * sizeof(int));
+
+	if (!vetorTemporario) { //testa para ver se malloc aloca de fato
+		printf("Nao hah mais memoria\n");
+		exit(1);
+	}
+
+	meio = n / 2;
+
+	i = 0; //indice da porcao esquerda
+	j = meio; //indice da porcao direita
+	k = 0; //indice do vetor temporario
+
+	while (i < meio && j < n) {
+
+		if (v[i] < v[j]) {
+	  		vetorTemporario[k] = v[i]; //elemento da porcao esquerda vem para o temporario
+	  		++i;
+		} else {
+	  		vetorTemporario[k] = v[j]; //elemento da porcao direita vem para o temporario
+	  		++j;
+		}
+		++k;
+	}
+
+	if (i == meio) {
+		while (j < n) { //nao hah mais elementos na porcao esquerda
+	  		vetorTemporario[k] = v[j];
+	  		++j;
+	  		++k;
+
+		}
+	} else {
+		while (i < meio) {
+	    	vetorTemporario[k] = v[i];
+	  		++i;
+	    	++k;
+
+		}
+	}
+
+	for (i = 0; i < n; ++i) {
+		v[i] = vetorTemporario[i];
+
+	}
+
+	free(vetorTemporario);
+}
+
+void mergeSort(int v[], unsigned long long int n) { //responsavel pela divisao = recursao
+  unsigned long long int meio;
+
+  if (n > 1) {
+    meio = n / 2;
+    //imprime(v, n); printf(" - n: %d; meio: %d\n", n, meio); getchar();
+
+    mergeSort(v, meio); //porcao da esquerda
+    mergeSort(v + meio, n - meio); //porcao da direita
+    //printf("chama intercalacao\n"); getchar();
+    intercala(v, n);
+  }
+}
+
