@@ -20,7 +20,8 @@ public class Aluno implements Comparable<Aluno> {
     public int compareTo(Aluno a) {
         if (this.idade < a.idade) {
             return -1;
-        } if (this.idade == a.idade) {
+        } 
+        if (this.idade == a.idade) {
             if (this.nome.compareTo(a.nome) < 0) {
                  return -1;
             }

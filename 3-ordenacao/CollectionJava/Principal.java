@@ -8,7 +8,7 @@ public class Principal {
         listaAlunos.add(new Aluno(46,"Alexandre Zamberlan"));
         listaAlunos.add(new Aluno(20,"Alexandre Zeni"));
         listaAlunos.add(new Aluno(19,"Meani"));
-        listaAlunos.add(new Aluno(27,"Ana"));
+        listaAlunos.add(new Aluno(19,"Ana"));
         listaAlunos.add(new Aluno(5,"Dante"));
         listaAlunos.add(new Aluno(19,"Bia"));
 
