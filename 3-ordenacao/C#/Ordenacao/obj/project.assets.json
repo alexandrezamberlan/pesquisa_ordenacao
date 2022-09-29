@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\laboratorio\\source\\repos\\Ordenacao\\Ordenacao.csproj",
+      "projectUniqueName": "C:\\Users\\laboratorio\\source\\repos\\pesquisa_ordenacao\\3-ordenacao\\C#\\Ordenacao\\Ordenacao.csproj",
       "projectName": "Ordenacao",
-      "projectPath": "C:\\Users\\laboratorio\\source\\repos\\Ordenacao\\Ordenacao.csproj",
+      "projectPath": "C:\\Users\\laboratorio\\source\\repos\\pesquisa_ordenacao\\3-ordenacao\\C#\\Ordenacao\\Ordenacao.csproj",
       "packagesPath": "C:\\Users\\laboratorio\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\laboratorio\\source\\repos\\Ordenacao\\obj\\",
+      "outputPath": "C:\\Users\\laboratorio\\source\\repos\\pesquisa_ordenacao\\3-ordenacao\\C#\\Ordenacao\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

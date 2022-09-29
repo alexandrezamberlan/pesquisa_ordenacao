@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8KJ++dF7OyZRnYnP3g//lKZd3DZyuZWtKTu7kUX+y2aeKx3Itg7uB5KBWSbSjrOBjgcCyUhpgcaHtjVfGxoyCg==",
+  "dgSpecHash": "+eZ5d2VDAIBbRDrTnx1QhTRScCK6y4PadVkF5+F4p6UzF34cYvuIrvvZdemh55xwVPMAzLPudSMunHU9/yKfrA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\laboratorio\\source\\repos\\Ordenacao\\Ordenacao.csproj",
+  "projectFilePath": "C:\\Users\\laboratorio\\source\\repos\\pesquisa_ordenacao\\3-ordenacao\\C#\\Ordenacao\\Ordenacao.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

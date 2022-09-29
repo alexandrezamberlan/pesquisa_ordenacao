@@ -282,5 +282,40 @@ namespace Ordenacao
         //         intercala(vetor, n);
         //     }
         // }
+
+
+        public static void heapSort(List<int> lista)
+        {
+            int tmp;
+            int i;           
+            int n = lista.Count;
+            
+
+            while (n > 1)
+            {
+                for (i = (int)n / 2 - 1; i > 0; i--)
+                {
+                    if (lista[i] < lista[i * 2])
+                    { //comparando o raiz com seu filho da esquerda
+                        tmp = lista[i];
+                        lista[i] = lista[i * 2];
+                        lista[i * 2] = tmp;
+                    }
+                    if (i * 2 + 1 <= n)
+                    { //só vamos comparar o filho da direita se ele existir
+                        if (lista[i] < lista[i * 2 + 1])
+                        { //comparando o raiz com seu filho da direita
+                            tmp = lista[i];
+                            lista[i] = lista[i * 2 + 1];
+                            lista[i * 2 + 1] = tmp;
+                        }
+                    }
+                }
+                tmp = lista[1];
+                lista[1] = lista[n - 1];
+                lista[n - 1] = tmp;
+                n--;
+            }
+        }
     }
-}
+    }
