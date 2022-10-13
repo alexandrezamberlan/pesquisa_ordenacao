@@ -1,0 +1,29 @@
+Thread é um mini-processo ou um sub-processo presente em um processo maior, por exemplo,
+um programa, uma rotina, etc.
+
+O principal papel de threads é possibilitar a execução concomitante/simultânea de vários
+subprocessos (sistemas multi-tarefas)
+
+Há dois tipos de threads:
+    - subprocessos sem memória compartilhada - usar a classe Thread
+    - subprocessos COM memória compartilhada - usar uma interface Thread 
+        - acessar variáveis de forma única e sequencial (bloqueante) 
+
+Threads têm um grande problema:
+ - SINCRONIZAÇÃO!!!
+
+
+Em C#
+    - Programador precisa implementar (uma ou mais threads) e chamar adequadamente
+    - Classe ou uma Interface
+    - Dentro de um programa C#, thread(s) seria(am) a possibilidade de vários métodos ou rotinas
+      serem executadas sem nenhuma bloquear a outra
+    - SINCRONISMO: start, wait, sleep, join, ....
+
+
+Em Unity
+    - A engine Unity é naturalmente orientada a Threads
+    - Thread é mais transparente, pois o programador só precisa chamar adequadamente
+    - Co-rotina
+    - SINCRONISMO: start, awake, update, ...
+    
