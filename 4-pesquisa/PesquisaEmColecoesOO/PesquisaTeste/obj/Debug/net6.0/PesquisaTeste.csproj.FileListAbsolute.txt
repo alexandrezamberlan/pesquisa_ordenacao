@@ -1,0 +1,15 @@
+C:\Users\laboratorio\PesquisaTeste\bin\Debug\net6.0\PesquisaTeste.exe
+C:\Users\laboratorio\PesquisaTeste\bin\Debug\net6.0\PesquisaTeste.deps.json
+C:\Users\laboratorio\PesquisaTeste\bin\Debug\net6.0\PesquisaTeste.runtimeconfig.json
+C:\Users\laboratorio\PesquisaTeste\bin\Debug\net6.0\PesquisaTeste.dll
+C:\Users\laboratorio\PesquisaTeste\bin\Debug\net6.0\PesquisaTeste.pdb
+C:\Users\laboratorio\PesquisaTeste\obj\Debug\net6.0\PesquisaTeste.csproj.AssemblyReference.cache
+C:\Users\laboratorio\PesquisaTeste\obj\Debug\net6.0\PesquisaTeste.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\laboratorio\PesquisaTeste\obj\Debug\net6.0\PesquisaTeste.AssemblyInfoInputs.cache
+C:\Users\laboratorio\PesquisaTeste\obj\Debug\net6.0\PesquisaTeste.AssemblyInfo.cs
+C:\Users\laboratorio\PesquisaTeste\obj\Debug\net6.0\PesquisaTeste.csproj.CoreCompileInputs.cache
+C:\Users\laboratorio\PesquisaTeste\obj\Debug\net6.0\PesquisaTeste.dll
+C:\Users\laboratorio\PesquisaTeste\obj\Debug\net6.0\refint\PesquisaTeste.dll
+C:\Users\laboratorio\PesquisaTeste\obj\Debug\net6.0\PesquisaTeste.pdb
+C:\Users\laboratorio\PesquisaTeste\obj\Debug\net6.0\PesquisaTeste.genruntimeconfig.cache
+C:\Users\laboratorio\PesquisaTeste\obj\Debug\net6.0\ref\PesquisaTeste.dll
