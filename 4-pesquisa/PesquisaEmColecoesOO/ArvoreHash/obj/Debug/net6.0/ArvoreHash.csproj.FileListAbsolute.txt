@@ -1,0 +1,15 @@
+C:\Users\laboratorio\Documents\PesquisaEmColecoesOO\ArvoreHash\obj\Debug\net6.0\ArvoreHash.csproj.AssemblyReference.cache
+C:\Users\laboratorio\Documents\PesquisaEmColecoesOO\ArvoreHash\obj\Debug\net6.0\ArvoreHash.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\laboratorio\Documents\PesquisaEmColecoesOO\ArvoreHash\obj\Debug\net6.0\ArvoreHash.AssemblyInfoInputs.cache
+C:\Users\laboratorio\Documents\PesquisaEmColecoesOO\ArvoreHash\obj\Debug\net6.0\ArvoreHash.AssemblyInfo.cs
+C:\Users\laboratorio\Documents\PesquisaEmColecoesOO\ArvoreHash\obj\Debug\net6.0\ArvoreHash.csproj.CoreCompileInputs.cache
+C:\Users\laboratorio\Documents\PesquisaEmColecoesOO\ArvoreHash\bin\Debug\net6.0\ArvoreHash.exe
+C:\Users\laboratorio\Documents\PesquisaEmColecoesOO\ArvoreHash\bin\Debug\net6.0\ArvoreHash.deps.json
+C:\Users\laboratorio\Documents\PesquisaEmColecoesOO\ArvoreHash\bin\Debug\net6.0\ArvoreHash.runtimeconfig.json
+C:\Users\laboratorio\Documents\PesquisaEmColecoesOO\ArvoreHash\bin\Debug\net6.0\ArvoreHash.dll
+C:\Users\laboratorio\Documents\PesquisaEmColecoesOO\ArvoreHash\bin\Debug\net6.0\ArvoreHash.pdb
+C:\Users\laboratorio\Documents\PesquisaEmColecoesOO\ArvoreHash\obj\Debug\net6.0\ArvoreHash.dll
+C:\Users\laboratorio\Documents\PesquisaEmColecoesOO\ArvoreHash\obj\Debug\net6.0\refint\ArvoreHash.dll
+C:\Users\laboratorio\Documents\PesquisaEmColecoesOO\ArvoreHash\obj\Debug\net6.0\ArvoreHash.pdb
+C:\Users\laboratorio\Documents\PesquisaEmColecoesOO\ArvoreHash\obj\Debug\net6.0\ArvoreHash.genruntimeconfig.cache
+C:\Users\laboratorio\Documents\PesquisaEmColecoesOO\ArvoreHash\obj\Debug\net6.0\ref\ArvoreHash.dll
