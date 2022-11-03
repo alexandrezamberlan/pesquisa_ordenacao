@@ -37,10 +37,20 @@ Pesquisa em estruturas vetores/listas:
         }
 
 
-
-
-
-
 Pesquisa em textos (Pesquisa Digital)
     - Árvores Trie
     - P.A.T.R.I.C.I.A
+
+
+
+- PESQUISA == BUSCA == RECUPERAÇÃO
+    - guardar bem (ordenado), para buscar bem 
+        - árvores ou conjuntos ordenados (inserir ordenado e busca binária)
+            - Java -> TreeSet
+            - C#   -> SortedSet
+        - listas ordenadas (inserir ordenado e busca binária)
+            - Java -> Vector, ArrayList, LinkedList, List 
+            - C#   -> List, LinkedList, 
+        - tabelas hash (inserir e buscar via cálculo de endereço)
+            - Java -> HashSet
+            - C#   -> HashSet 

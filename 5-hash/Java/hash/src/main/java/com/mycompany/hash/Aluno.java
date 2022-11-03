@@ -5,7 +5,7 @@ package com.mycompany.hash;
  *
  * @author alexandrezamberlan
  */
-public class Aluno {
+public class Aluno implements Comparable <Aluno>{
     public int matricula;
     public String nome;
 
@@ -17,7 +17,7 @@ public class Aluno {
     public Aluno(int matricula) {
         this.matricula = matricula;
     }
-
+    
     @Override
     public int hashCode() {
         int hash = 7;
@@ -44,11 +44,17 @@ public class Aluno {
     }
 
     @Override
+    public int compareTo(Aluno a) {
+        if (this.matricula == a.matricula) {
+            return 0;
+        } else if (this.matricula < a.matricula) {
+            return -1;
+        }
+        return 1;
+    }
+
+    @Override
     public String toString() {
         return "Aluno{" + "matricula=" + matricula + ", nome=" + nome + '}';
     }
-    
-    
-    
-    
 }
