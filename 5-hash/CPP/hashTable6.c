@@ -121,6 +121,7 @@ int funcaoHash(char chave[]) {
 	int i;
 	int soma = 0;
 	//alex -> 97+108+101+120 -> soma
+	//ascii
 	for (i = 0; i < strlen(chave); i++) {
 		soma = soma + (int)chave[i];
 	}
