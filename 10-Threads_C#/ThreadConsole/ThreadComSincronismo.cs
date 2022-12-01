@@ -8,17 +8,17 @@ namespace ThreadConsole
     class ThreadComSincronismo
     {
 
-        private static int x = 0;
+        private static int x = 0;  // variavel global acessada pelas threads
 
         private static Object locker = new Object();
 
         private static void Executa(){
-            for (int i = 0; i < 100; i++){
+            for (int i = 0; i < 10; i++){
                 lock (locker)   // garante o sincronismo ao acessar a variavel compartilhada
                 {
                     Console.Write("Thread: " + Thread.GetCurrentProcessorId().ToString() + ": ");
                     Console.WriteLine("Acessando memória compartilhada: " + x);
-                    // Thread.Sleep(1000);
+                    Thread.Sleep(1000);
                     x = x + 1;
                 }
             }
