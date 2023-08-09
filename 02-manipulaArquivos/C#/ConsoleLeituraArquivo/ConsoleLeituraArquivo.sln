@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleLeituraArquivo", "ConsoleLeituraArquivo.csproj", "{F4CFBE3D-6E7A-4542-AD71-2100B7FF5BDA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4CFBE3D-6E7A-4542-AD71-2100B7FF5BDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4CFBE3D-6E7A-4542-AD71-2100B7FF5BDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4CFBE3D-6E7A-4542-AD71-2100B7FF5BDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4CFBE3D-6E7A-4542-AD71-2100B7FF5BDA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {58FEF50A-02B6-4FB2-BF90-4F32DB9F9676}
+	EndGlobalSection
+EndGlobal

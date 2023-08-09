@@ -1,0 +1,15 @@
+C:\Users\laboratorio\Desktop\ConsoleLeituraArquivo\bin\Debug\net6.0\ConsoleLeituraArquivo.exe
+C:\Users\laboratorio\Desktop\ConsoleLeituraArquivo\bin\Debug\net6.0\ConsoleLeituraArquivo.deps.json
+C:\Users\laboratorio\Desktop\ConsoleLeituraArquivo\bin\Debug\net6.0\ConsoleLeituraArquivo.runtimeconfig.json
+C:\Users\laboratorio\Desktop\ConsoleLeituraArquivo\bin\Debug\net6.0\ConsoleLeituraArquivo.dll
+C:\Users\laboratorio\Desktop\ConsoleLeituraArquivo\bin\Debug\net6.0\ConsoleLeituraArquivo.pdb
+C:\Users\laboratorio\Desktop\ConsoleLeituraArquivo\obj\Debug\net6.0\ConsoleLeituraArquivo.csproj.AssemblyReference.cache
+C:\Users\laboratorio\Desktop\ConsoleLeituraArquivo\obj\Debug\net6.0\ConsoleLeituraArquivo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\laboratorio\Desktop\ConsoleLeituraArquivo\obj\Debug\net6.0\ConsoleLeituraArquivo.AssemblyInfoInputs.cache
+C:\Users\laboratorio\Desktop\ConsoleLeituraArquivo\obj\Debug\net6.0\ConsoleLeituraArquivo.AssemblyInfo.cs
+C:\Users\laboratorio\Desktop\ConsoleLeituraArquivo\obj\Debug\net6.0\ConsoleLeituraArquivo.csproj.CoreCompileInputs.cache
+C:\Users\laboratorio\Desktop\ConsoleLeituraArquivo\obj\Debug\net6.0\ConsoleLeituraArquivo.dll
+C:\Users\laboratorio\Desktop\ConsoleLeituraArquivo\obj\Debug\net6.0\refint\ConsoleLeituraArquivo.dll
+C:\Users\laboratorio\Desktop\ConsoleLeituraArquivo\obj\Debug\net6.0\ConsoleLeituraArquivo.pdb
+C:\Users\laboratorio\Desktop\ConsoleLeituraArquivo\obj\Debug\net6.0\ConsoleLeituraArquivo.genruntimeconfig.cache
+C:\Users\laboratorio\Desktop\ConsoleLeituraArquivo\obj\Debug\net6.0\ref\ConsoleLeituraArquivo.dll
