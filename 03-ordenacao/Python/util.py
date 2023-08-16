@@ -38,4 +38,18 @@ class Util:
         Ordenacao.bolha(listas[1])
         tempoFim = time.time()
         print("Tempo de processamento do Bolha: ", (tempoFim - tempoInicio) , "s")        
+
+        tempoInicio = time.time()
+        Ordenacao.selecao(listas[2])
+        tempoFim = time.time()
+        print("Tempo de processamento do Seleção: ", (tempoFim - tempoInicio) , "s")        
+        # Util.exibir_lista(listas[2])
+
+        tempoInicio = time.time()
+        Ordenacao.insercao(listas[3])
+        tempoFim = time.time()
+        print("Tempo de processamento do Inserção: ", (tempoFim - tempoInicio) , "s")        
+        # Util.exibir_lista(listas[3])
+        
+
         
