@@ -1,3 +1,5 @@
+Veja os vídeos para entender a dinâmica de cada método: https://www.youtube.com/@AlgoRythmics/videos
+
 ORDENAR E PESQUISAR
     - ordenar agiliza a pesquisa
     - classificações de ordenação
