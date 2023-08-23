@@ -1,11 +1,13 @@
 import random
 import time
+import os
 
 from ordenacao import Ordenacao
 
 class Util:
     @staticmethod
     def menu(listas):       
+        os.system("cls")
         print("1 - Gerar numeros aleatorios")
         print("2 - Carregar numeros de arquivo")
         opcao = input("Opção: ")
@@ -14,7 +16,17 @@ class Util:
             for lista in listas:
                 Util.popular_lista(lista, quantidade_numeros)                
         elif (opcao == "2"):
-            nomeArquivo = input("Nome do arquivo: ")
+            nome_arquivo = input("Nome do arquivo: ")
+            Util.popular_lista_arquivo(listas, nome_arquivo)   
+
+    @staticmethod
+    def popular_lista_arquivo(listas, nome_arquivo):
+        leitor = open(nome_arquivo, "r")
+        for linha in leitor:
+            for i in listas:
+                i.append(int(linha))
+
+        leitor.close()
 
     @staticmethod
     def popular_lista(lista, n):        
