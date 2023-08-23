@@ -68,7 +68,6 @@ Qual o melhor método de ordenação?
 Depende: tamanho da estrutura; de como a estrutura já está previamente ordenada;
 
 
-
 4) AGITAÇÃO - Shake Sort ou Cocktail
 É baseado no Bolha, ou seja, é uma tentantiva de melhorar o Bolha.
 Estável

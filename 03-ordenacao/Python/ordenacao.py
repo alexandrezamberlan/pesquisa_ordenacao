@@ -38,5 +38,24 @@ class Ordenacao:
                 j -= 1
            
             lista[j + 1] = tmp
+        
+    @staticmethod
+    def pente(lista):
+        distancia = len(lista)
+
+        houveTroca = True
+        while (houveTroca and distancia > 1):
+            distancia = int(distancia / 1.3)
+            if (distancia < 1):
+                distancia = 1
+            houveTroca = False
+            for i in range(0, len(lista) - distancia):
+                if (lista[i] > lista[i+distancia]):
+                    houveTroca = True
+                    tmp = lista[i]
+                    lista[i] = lista[i+distancia]
+                    lista[i+distancia] = tmp
+            
+
        
    
