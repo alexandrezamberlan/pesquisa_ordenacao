@@ -1,0 +1,15 @@
+C:\Users\laboratorio\Downloads\ordenacaoSegundaChave2\OrdenacaoSegundaChave2\bin\Debug\net6.0\OrdenacaoSegundaChave2.exe
+C:\Users\laboratorio\Downloads\ordenacaoSegundaChave2\OrdenacaoSegundaChave2\bin\Debug\net6.0\OrdenacaoSegundaChave2.deps.json
+C:\Users\laboratorio\Downloads\ordenacaoSegundaChave2\OrdenacaoSegundaChave2\bin\Debug\net6.0\OrdenacaoSegundaChave2.runtimeconfig.json
+C:\Users\laboratorio\Downloads\ordenacaoSegundaChave2\OrdenacaoSegundaChave2\bin\Debug\net6.0\OrdenacaoSegundaChave2.dll
+C:\Users\laboratorio\Downloads\ordenacaoSegundaChave2\OrdenacaoSegundaChave2\bin\Debug\net6.0\OrdenacaoSegundaChave2.pdb
+C:\Users\laboratorio\Downloads\ordenacaoSegundaChave2\OrdenacaoSegundaChave2\obj\Debug\net6.0\OrdenacaoSegundaChave2.csproj.AssemblyReference.cache
+C:\Users\laboratorio\Downloads\ordenacaoSegundaChave2\OrdenacaoSegundaChave2\obj\Debug\net6.0\OrdenacaoSegundaChave2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\laboratorio\Downloads\ordenacaoSegundaChave2\OrdenacaoSegundaChave2\obj\Debug\net6.0\OrdenacaoSegundaChave2.AssemblyInfoInputs.cache
+C:\Users\laboratorio\Downloads\ordenacaoSegundaChave2\OrdenacaoSegundaChave2\obj\Debug\net6.0\OrdenacaoSegundaChave2.AssemblyInfo.cs
+C:\Users\laboratorio\Downloads\ordenacaoSegundaChave2\OrdenacaoSegundaChave2\obj\Debug\net6.0\OrdenacaoSegundaChave2.csproj.CoreCompileInputs.cache
+C:\Users\laboratorio\Downloads\ordenacaoSegundaChave2\OrdenacaoSegundaChave2\obj\Debug\net6.0\OrdenacaoSegundaChave2.dll
+C:\Users\laboratorio\Downloads\ordenacaoSegundaChave2\OrdenacaoSegundaChave2\obj\Debug\net6.0\refint\OrdenacaoSegundaChave2.dll
+C:\Users\laboratorio\Downloads\ordenacaoSegundaChave2\OrdenacaoSegundaChave2\obj\Debug\net6.0\OrdenacaoSegundaChave2.pdb
+C:\Users\laboratorio\Downloads\ordenacaoSegundaChave2\OrdenacaoSegundaChave2\obj\Debug\net6.0\OrdenacaoSegundaChave2.genruntimeconfig.cache
+C:\Users\laboratorio\Downloads\ordenacaoSegundaChave2\OrdenacaoSegundaChave2\obj\Debug\net6.0\ref\OrdenacaoSegundaChave2.dll
