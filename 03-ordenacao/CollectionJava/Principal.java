@@ -12,6 +12,11 @@ public class Principal {
         listaAlunos.add(new Aluno(5,"Dante"));
         listaAlunos.add(new Aluno(19,"Bia"));
 
+        Aluno aluno = new Aluno(46,"Alexandre Zamberlan");
+        if (listaAlunos.contains(aluno)) {
+            System.out.println(a + " ja cadastrado");
+        }
+
         Collections.sort(listaAlunos);
 
         System.out.println("Lista de alunos ordenados por idade");

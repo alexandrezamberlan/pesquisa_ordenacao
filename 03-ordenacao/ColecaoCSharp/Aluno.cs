@@ -17,6 +17,16 @@ namespace ColecaoCSharp
             Nome = nome;
         }
 
+        public override boolean Equals(Object o) {
+            if ((o == null) || !this.GetType().Equals(obj.GetType())) {
+                return false;
+            } else {
+                Aluno e = (Aluno) o;
+                return (Id == e.Id && this.Nome == e.Nome);
+            }
+        }
+        
+
         public int CompareTo(Aluno? other)
         {
             if (this.Id < other.Id)
@@ -27,6 +37,6 @@ namespace ColecaoCSharp
                     return -1;
             }
             return 1;
-        }
+        }        
     }
 }

@@ -6,6 +6,10 @@ lista.Add(new Aluno(45,"Alexandre"));
 lista.Add(new Aluno(23, "Pedro"));
 lista.Add(new Aluno(19, "Matheus"));
 lista.Add(new Aluno(19, "Gabriel"));
+Aluno aluno = new Aluno(45,"Alexandre");
+if (lista.Contains(aluno)) {
+    Console.WriteLine("Aluno já cadastrado ");
+}
 
 lista.Sort();
 

@@ -28,3 +28,11 @@ C:\Users\laboratorio\Downloads\pesquisa_ordenacao\03-ordenacao\ColecaoCSharp\obj
 C:\Users\laboratorio\Downloads\pesquisa_ordenacao\03-ordenacao\ColecaoCSharp\obj\Debug\net6.0\ColecaoCSharp.pdb
 C:\Users\laboratorio\Downloads\pesquisa_ordenacao\03-ordenacao\ColecaoCSharp\obj\Debug\net6.0\ColecaoCSharp.genruntimeconfig.cache
 C:\Users\laboratorio\Downloads\pesquisa_ordenacao\03-ordenacao\ColecaoCSharp\obj\Debug\net6.0\ref\ColecaoCSharp.dll
+C:\Users\laboratorio\Documents\pesquisa_ordenacao\03-ordenacao\ColecaoCSharp\obj\Debug\net6.0\ColecaoCSharp.csproj.AssemblyReference.cache
+C:\Users\laboratorio\Documents\pesquisa_ordenacao\03-ordenacao\ColecaoCSharp\obj\Debug\net6.0\ColecaoCSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\laboratorio\Documents\pesquisa_ordenacao\03-ordenacao\ColecaoCSharp\obj\Debug\net6.0\ColecaoCSharp.AssemblyInfoInputs.cache
+C:\Users\laboratorio\Documents\pesquisa_ordenacao\03-ordenacao\ColecaoCSharp\obj\Debug\net6.0\ColecaoCSharp.AssemblyInfo.cs
+C:\Users\laboratorio\Documents\pesquisa_ordenacao\03-ordenacao\ColecaoCSharp\obj\Debug\net6.0\ColecaoCSharp.csproj.CoreCompileInputs.cache
+C:\Users\laboratorio\Documents\pesquisa_ordenacao\03-ordenacao\ColecaoCSharp\obj\Debug\net6.0\ColecaoCSharp.dll
+C:\Users\laboratorio\Documents\pesquisa_ordenacao\03-ordenacao\ColecaoCSharp\obj\Debug\net6.0\refint\ColecaoCSharp.dll
+C:\Users\laboratorio\Documents\pesquisa_ordenacao\03-ordenacao\ColecaoCSharp\obj\Debug\net6.0\ColecaoCSharp.pdb
