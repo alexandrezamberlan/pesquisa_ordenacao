@@ -283,42 +283,42 @@ void shell(int *vetor, long long int n) {
     cout << "Quantidade trocas: " << qtdTrocas << endl  << endl;;
 }
 
-// long long int particiona(int *vetor, long long int ini, long long int fim) {
-//     long long int pivo;
-//     int tmp;
+long long int particiona(int *vetor, long long int ini, long long int fim) {
+    long long int pivo;
+    int tmp;
 
-//     pivo = ini; //na bibliografia do método, é possível ser o ini, o fim ou uma posição sorteada
-//     while (fim > ini) {
+    pivo = ini; //na bibliografia do método, é possível ser o ini, o fim ou uma posição sorteada
+    while (fim > ini) {
 
-//         for (; fim > pivo && vetor[fim] > vetor[pivo]; fim--);
+        for (; fim > pivo && vetor[fim] > vetor[pivo]; fim--); //garantindo que os maiores fiquem na direita
 
-//         if (fim > pivo) {
-//             tmp = vetor[pivo];
-//             vetor[pivo] = vetor[fim];
-//             vetor[fim] = tmp;
-//             pivo = fim;
-//         }
+        if (fim > pivo) {
+            tmp = vetor[pivo];
+            vetor[pivo] = vetor[fim];
+            vetor[fim] = tmp;
+            pivo = fim;
+        }
 
-//         for (ini++; ini < pivo && vetor[ini] < vetor[pivo]; ini++);
+        for (ini++; ini < pivo && vetor[ini] < vetor[pivo]; ini++);
 
-//         if (ini < pivo) {
-//             tmp = vetor[pivo];
-//             vetor[pivo] = vetor[ini];
-//             vetor[ini] = tmp;
-//             pivo = ini;
-//         }
-//     }
-//     return pivo;
-// }
+        if (ini < pivo) {
+            tmp = vetor[pivo];
+            vetor[pivo] = vetor[ini];
+            vetor[ini] = tmp;
+            pivo = ini;
+        }
+    }
+    return pivo;
+}
 
-// void quickSort(int *vetor, long long int ini, long long int fim) {
-//     long long int pivo;
+void quickSort(int *vetor, long long int ini, long long int fim) { //método recurisivo baseado em árvore desbalanceada
+    long long int pivo;
 
-//     pivo = particiona(vetor, ini, fim);
+    pivo = particiona(vetor, ini, fim); //no final do particiona, o pivo está ordenado
     
-//     if (ini < pivo - 1) quickSort(vetor, ini, pivo - 1); //se existe lado esq do pivo, executa lado esq
-//     if (pivo + 1 < fim) quickSort(vetor, pivo + 1, fim); //se existe lado dir do pivo, executa lado dir
-// }
+    if (ini < pivo - 1) quickSort(vetor, ini, pivo - 1); //se existe lado esq do pivo, executa lado esq
+    if (pivo + 1 < fim) quickSort(vetor, pivo + 1, fim); //se existe lado dir do pivo, executa lado dir
+}
 
 // void intercala(int *vetor, long long int n) {
 //   	long long int meio;
