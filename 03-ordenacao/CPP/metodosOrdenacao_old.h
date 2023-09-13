@@ -94,26 +94,26 @@ void selecao(int *vetor, long long int n) {
 //     return l;
 // }
 
-// void insercao(int *vetor, long long int n) {
-//     long long int i, j;
-//     int tmp;
-//     long long int qtdComparacoes = 0, qtdTrocas = 0;
+void insercao(int *vetor, long long int n) {
+    long long int i, j;
+    int tmp;
+    long long int qtdComparacoes = 0, qtdTrocas = 0;
 
-//     for (i = 1; i < n; i++) {
-//         tmp = vetor[i];
-//         for (j = i - 1; j >= 0; j--) {
-//             qtdComparacoes++;
-//             if (tmp < vetor[j]) {
-//                 vetor[j + 1] = vetor[j];
-//                 qtdTrocas++;
-//             } else break;
-//         }
-//         vetor[j + 1] = tmp;
-//         qtdTrocas++;
-//     }
-//     cout << "Quantidade comparações: " << qtdComparacoes << endl;
-//     cout << "Quantidade trocas: " << qtdTrocas << endl  << endl;;
-// }
+    for (i = 1; i < n; i++) {
+        tmp = vetor[i];
+        for (j = i - 1; j >= 0; j--) {
+            qtdComparacoes++;
+            if (tmp < vetor[j]) {
+                vetor[j + 1] = vetor[j];
+                qtdTrocas++;
+            } else break;
+        }
+        vetor[j + 1] = tmp;
+        qtdTrocas++;
+    }
+    cout << "Quantidade comparações: " << qtdComparacoes << endl;
+    cout << "Quantidade trocas: " << qtdTrocas << endl  << endl;;
+}
 
 // CelulaD *insercaoLista(CelulaD *l) {
 //     CelulaD *i, *j;
@@ -138,50 +138,50 @@ void selecao(int *vetor, long long int n) {
 //     return l;
 // }
 
-// void agitacao(int *vetor, long long int n) {
-//     bool houveTroca;
-//     int tmp;
-//     long long int i, ini = 0, fim = n - 1;
-//     long long int qtdComparacoes = 0, qtdTrocas = 0;
+void agitacao(int *vetor, long long int n) {
+    bool houveTroca;
+    int tmp;
+    long long int i, ini = 0, fim = n - 1;
+    long long int qtdComparacoes = 0, qtdTrocas = 0;
 
-//     do {
-//         //aplicando o bolha da esquerda para direita
-//         houveTroca = false;
-//         for (i = ini; i < fim; i++) {      
-//             qtdComparacoes++;      
-//             if (vetor[i] > vetor[i+1]) {
-//                 houveTroca = true;
-//                 tmp = vetor[i];
-//                 vetor[i] = vetor[i+1];
-//                 vetor[i+1] = tmp;
-//                 qtdTrocas++;
-//             }
-//         }
-//         fim--;
+    do {
+        //aplicando o bolha da esquerda para direita
+        houveTroca = false;
+        for (i = ini; i < fim; i++) {      
+            qtdComparacoes++;      
+            if (vetor[i] > vetor[i+1]) {
+                houveTroca = true;
+                tmp = vetor[i];
+                vetor[i] = vetor[i+1];
+                vetor[i+1] = tmp;
+                qtdTrocas++;
+            }
+        }
+        fim--;
 
-//         if (!houveTroca) {
-//             break;
-//         }
+        if (!houveTroca) {
+            break;
+        }
 
-//         //aplicando o bolha da direita para esquerda
-//         houveTroca = false;
-//         for (i = fim; i > ini; i--) {
-//             qtdComparacoes++;
-//             if (vetor[i] < vetor[i-1]) {
-//                 houveTroca = true;
-//                 tmp = vetor[i];
-//                 vetor[i] = vetor[i-1];
-//                 vetor[i-1] = tmp;
-//                 qtdTrocas++;
-//             }
-//         }
-//         ini++;
+        //aplicando o bolha da direita para esquerda
+        houveTroca = false;
+        for (i = fim; i > ini; i--) {
+            qtdComparacoes++;
+            if (vetor[i] < vetor[i-1]) {
+                houveTroca = true;
+                tmp = vetor[i];
+                vetor[i] = vetor[i-1];
+                vetor[i-1] = tmp;
+                qtdTrocas++;
+            }
+        }
+        ini++;
 
-//     } while (houveTroca && ini <= fim);
+    } while (houveTroca && ini <= fim);
 
-//     cout << "Quantidade comparações: " << qtdComparacoes << endl;
-//     cout << "Quantidade trocas: " << qtdTrocas << endl  << endl;;
-// }
+    cout << "Quantidade comparações: " << qtdComparacoes << endl;
+    cout << "Quantidade trocas: " << qtdTrocas << endl  << endl;;
+}
 
 // CelulaD *agitacaoLista(CelulaD *l) {
 //     bool houveTroca;
@@ -252,36 +252,36 @@ void pente(int *vetor, long long int n) {
     // cout << "Quantidade trocas: " << qtdTrocas << endl  << endl;;
 }
 
-// void shell(int *vetor, long long int n) {
-//     long long int i, j, distancia = 1;
-//     int tmp;
-//     long long int qtdComparacoes = 0, qtdTrocas = 0;
-//     int referenciaTamanho = 3;
+void shell(int *vetor, long long int n) {
+    long long int i, j, distancia = 1;
+    int tmp;
+    long long int qtdComparacoes = 0, qtdTrocas = 0;
+    int referenciaTamanho = 3;
 
-//     do {
-//         distancia = referenciaTamanho * distancia + 1;
-//     } while (distancia < n);
+    do {
+        distancia = referenciaTamanho * distancia + 1;
+    } while (distancia < n);
 
-//     do {
-//         distancia = (int)distancia / referenciaTamanho;
+    do {
+        distancia = (int)distancia / referenciaTamanho;
         
-//         for (i = distancia; i < n; i++) {
-//             tmp = vetor[i];
-//             for (j = i - distancia; j >= 0; j = j - distancia) {
-//                 qtdComparacoes++;
-//                 if (tmp < vetor[j]) {
-//                     vetor[j + distancia] = vetor[j];
-//                     qtdTrocas++;
-//                 } else break;
-//             }
-//             vetor[j + distancia] = tmp;
-//             qtdTrocas++;
-//         }
+        for (i = distancia; i < n; i++) {
+            tmp = vetor[i];
+            for (j = i - distancia; j >= 0; j = j - distancia) {
+                qtdComparacoes++;
+                if (tmp < vetor[j]) {
+                    vetor[j + distancia] = vetor[j];
+                    qtdTrocas++;
+                } else break;
+            }
+            vetor[j + distancia] = tmp;
+            qtdTrocas++;
+        }
 
-//     } while (distancia > 1);
-//     cout << "Quantidade comparações: " << qtdComparacoes << endl;
-//     cout << "Quantidade trocas: " << qtdTrocas << endl  << endl;;
-// }
+    } while (distancia > 1);
+    cout << "Quantidade comparações: " << qtdComparacoes << endl;
+    cout << "Quantidade trocas: " << qtdTrocas << endl  << endl;;
+}
 
 // long long int particiona(int *vetor, long long int ini, long long int fim) {
 //     long long int pivo;

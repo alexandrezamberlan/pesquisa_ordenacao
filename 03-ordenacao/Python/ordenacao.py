@@ -55,6 +55,32 @@ class Ordenacao:
                     tmp = lista[i]
                     lista[i] = lista[i+distancia]
                     lista[i+distancia] = tmp
+
+
+    @staticmethod
+    def shell(lista):   
+        distancia = 1
+        referenciaTamanho = 3
+
+        while (distancia < len(lista)):
+            distancia = referenciaTamanho * distancia + 1
+    
+
+        while (distancia > 1):
+            distancia = int(float(distancia / referenciaTamanho))
+
+            for i in range(distancia, len(lista)):
+                tmp = lista[i]
+                j = i - distancia
+                while (j >= 0): 
+                    if (tmp < lista[j]):
+                        lista[j + distancia] = lista[j]                    
+                    else:
+                        break
+                    j = j - distancia
+                
+                lista[j + distancia] = tmp
+            
             
 
        
