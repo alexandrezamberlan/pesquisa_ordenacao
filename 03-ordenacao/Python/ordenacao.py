@@ -82,6 +82,38 @@ class Ordenacao:
                 lista[j + distancia] = tmp
             
             
+    def particiona(lista, ini, fim):
+        pivo = ini
+        while (fim > ini):
+            while (fim > pivo and lista[fim] > lista[pivo]):
+                fim -= 1
+
+            if (fim > pivo):
+                tmp = lista[pivo]
+                lista[pivo] = lista[fim]
+                lista[fim] = tmp
+                pivo = fim
+
+            ini += 1
+            while (ini < pivo and lista[ini] < lista[pivo]):
+                ini += 1
+
+            if (ini < pivo):
+                tmp = lista[pivo]
+                lista[pivo] = lista[ini]
+                lista[ini] = tmp
+                pivo = ini
+        
+        return pivo
+
+    @staticmethod
+    def quick(lista, ini, fim):
+        pivo = particiona(lista, ini, fim)
+    
+        if (ini < pivo - 1):
+            quick(lista, ini, pivo - 1)
+        if (pivo + 1 < fim):
+            quick(vetor, pivo + 1, fim)
 
        
    
