@@ -3,7 +3,6 @@ class Aluno:
         self.matricula = matricula
         self.nome = nome
         
-
     def __eq__(self, other):
         if isinstance(other, Aluno):
             return self.matricula == other.matricula
@@ -17,5 +16,5 @@ class Aluno:
     def __str__(self):
         return "Aluno{" + "matricula=" + str(self.matricula) + ", nome=" + self.nome + '}'
     
-    def __hash__(self):
-        return hash((self.matricula, self.nome))
+    def __hash__(self):    
+        return hash((self.matricula))
