@@ -19,5 +19,5 @@ rapidamente, com uma complexidade O(1). Qual o recurso utilizado para que isso a
 4) Tendo como base o algoritmo de pesquisa binária, contabilize e mostra quantas comparações
 ocorrem na estrutura até o número 24 ser localizado na lista.
 
-0   1	  2	  3	  4	  5	  6	  7	  8
-10  15	20	24	25	30	35	40	45
+![image](https://github.com/alexandrezamberlan/pesquisa_ordenacao/assets/5599081/b43b1bb6-995d-4b6e-a7d4-f1c02b67c0b7)
+
