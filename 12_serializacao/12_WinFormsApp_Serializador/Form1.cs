@@ -28,7 +28,7 @@ namespace _17_WinFormsApp_SerializadorJSON
                 try
                 {
                     Paciente p = new Paciente(textBox_nomePaciente.Text.ToUpper(), DateTime.Parse(textBox_dataNascimento.Text), textBox_cpf.Text);
-                    if (Paciente.jaCadastrado(pacientes, p.Nome))
+                    if (pacientes.Contains(p))                      
                     {
                         MessageBox.Show("Paciente já cadastrado", "Alerta");
                     }
@@ -56,6 +56,7 @@ namespace _17_WinFormsApp_SerializadorJSON
             if (pacientes.Count > 0)
             {
                 Serializador.serializarJSON(pacientes, @"C:\teste\pacientes.json");
+                //Serializador.serializarXML(pacientes, @"C:\teste\pacientes.json");
                 textBox_conteudoArquivo.Text = Arquivo.lerArquivo(@"C:\teste\pacientes.json");
             } else
             {
@@ -66,6 +67,7 @@ namespace _17_WinFormsApp_SerializadorJSON
         private void button1_Click(object sender, EventArgs e)
         {
             Serializador.deserializarJSON(pacientes, @"C:\teste\pacientes.json");
+            //Serializador.deserializarXML(pacientes, @"C:\teste\pacientes.json");
         }
     }
 }

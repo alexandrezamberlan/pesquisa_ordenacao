@@ -29,13 +29,33 @@ namespace _17_WinFormsApp_SerializadorJSON
         public DateTime DataNascimento { get => dataNascimento; set => dataNascimento = value; }
         public string Cpf { get => cpf; set => cpf = value; }
 
-        public static bool jaCadastrado(List<Paciente> lista, string nome)
+        public int CompareTo(object? obj)
         {
-            foreach (Paciente paciente in lista)
+            var paciente = obj as Paciente;
+
+            if (paciente != null)
+                return this.Nome.CompareTo(paciente.Nome);
+            else
+                throw new ArgumentException("Objeto não é Paciente");
+        }
+
+        public override bool Equals(object? obj)
+        {
+            var paciente = obj as Paciente;
+
+            if (paciente != null)
+            { 
+                return this.Nome.Equals(paciente.Nome);
+
+            } else
             {
-                if (paciente.Nome == nome) return true;
+                throw new ArgumentException("Objeto não é Paciente");
             }
-            return false;
+        }
+
+        public override string ToString()
+        {
+            return "Paciente{" + "Nome=" + Nome + ", Data Nascimento=" + DataNascimento + ", CPF=" + Cpf + '}';
         }
     }
 }
