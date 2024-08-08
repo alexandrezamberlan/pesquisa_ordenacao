@@ -11,5 +11,10 @@ import random
 # Util.exibir(lista_palavras,'Lista de palavras')
 
 #gerar n palavras de tamanho m em arquivo
-nome_arquivo = 'palavras.txt'
-Util.gerar_palavras_arquivo(nome_arquivo, 100, 11)
+# nome_arquivo = 'palavras.txt'
+# Util.gerar_palavras_arquivo(nome_arquivo, 100, 11)
+
+
+#gerar n números de tamanho m em arquivo
+nome_arquivo = 'numeros.txt'
+Util.gerar_numeros_arquivo(nome_arquivo, 100, 500)
