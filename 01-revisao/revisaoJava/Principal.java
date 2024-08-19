@@ -5,9 +5,14 @@ public class Principal {
         //gerar n numeros de range m
         
         //gerar n palavras de tamanho m
-        ArrayList<String> listaPalavras = new ArrayList<>();
-        Util.gerarPalavrasLista(listaPalavras, 10, 8);
-        Util.exibir(listaPalavras, "Lista de palavras...");
+        // ArrayList<String> listaPalavras = new ArrayList<>();
+        // Util.gerarPalavrasLista(listaPalavras, 10, 8);
+        // Util.exibir(listaPalavras, "Lista de palavras...");
+
+        //gerar n palavras de tamanho m em arquivo texto
+
+        String nomeArquivo = "C:\\temp\\palavras.txt";
+        Util.gerarPalavrasArquivo(nomeArquivo, 100, 8);
     }
 }
 

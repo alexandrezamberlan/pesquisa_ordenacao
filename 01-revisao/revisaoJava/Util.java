@@ -1,8 +1,54 @@
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.Random;
+import java.io.FileReader;
+import java.io.FileWriter;
 
 public class Util {
+
+    /**
+     * Método estático que copia as palavras contidas em um arquivo texto para uma lista
+     * @param lista - nome da lista que conterá as palavras vindas do arquivo
+     * @param nomeArquivo - arquivo fonte com as palavras
+     */
+    public static void popularPalavrasListaDeArquivo(ArrayList<String> lista, String nomeArquivo){
+        try {
+            FileReader fr;
+            fr = new FileReader(nomeArquivo);
+            BufferedReader bf = new BufferedReader(fr);
+            String linha;
+            do {
+                linha = bf.readLine();
+                if (linha == null) {
+                    break;
+                }
+                lista.add(linha);
+            } while(true);
+            bf.close();
+        }catch (Exception e){
+            System.out.println("Erro "+ e.getMessage());
+        }
+    }    
+
+    /**
+     * Método estático que popula um arquivo com palavras aleatórias
+     * @param nomeArquivo - nome do arquivo destino para as palavras geradas
+     * @param quantidade - quantas palavras se deseja gerar
+     * @param tamanho - quantidade de caracteres da palavra a ser gerada
+     */
+    public static void gerarPalavrasArquivo(String nomeArquivo, int quantidade, int tamanho) {
+        try {
+            FileWriter fw;
+            //fw = new FileWriter(nomeArquivo, true); // Não reescreve o arquivo arq.txt (adiciona ao arquivo)
+            fw = new FileWriter(nomeArquivo);
+            
+            for (int i = 0; i < quantidade; i++) {
+                fw.write(Util.gerarPalavra(tamanho) + "\n"); 
+            }
+            fw.close();
+        } catch (Exception e){
+            System.out.println("Erro "+ e.getMessage());
+        }
+    }
     
     /**
      * Método estático que gera uma palavra aleatória a partir de um tamanho
