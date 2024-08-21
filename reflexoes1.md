@@ -49,7 +49,7 @@ void bolha(int vetor[], int n) {
 void selecao(int vetor[], int n) {
     int i, j, posMenor, aux;
     
-    for (i = 0; i < n; i++) {
+    for (i = 0; i < n-1; i++) {
         posMenor = i;
         for (j = i+1; j < n; j++) {
             if (vetor[j] < vetor[posMenor]) {
