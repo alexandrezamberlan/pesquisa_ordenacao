@@ -28,7 +28,7 @@ Explique os conceitos de complexidade e estabilidade.
     Todos têm complexidade temporal alta - O(n^2)
     Complexidade espacial O(1)
 
-```
+```c
 void bolha(int vetor[], int n) {
     int i, aux, houveTroca;
     do {
@@ -45,7 +45,7 @@ void bolha(int vetor[], int n) {
 }
 ```
 
-```
+```c
 void selecao(int vetor[], int n) {
     int i, j, posMenor, aux;
     
@@ -65,7 +65,7 @@ void selecao(int vetor[], int n) {
 }
 ```
 
-```
+```c
 void insercao(int vetor[], int n) {
     int i, j, aux;
 
