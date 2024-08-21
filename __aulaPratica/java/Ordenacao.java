@@ -1,4 +1,4 @@
-package java;
+//package java;
 import java.util.ArrayList;
 public class Ordenacao {
     public static void bolha(ArrayList<Integer> lista) {
@@ -37,6 +37,7 @@ public class Ordenacao {
 
     public void selecao(ArrayList<Integer> lista) {
         int i, j, posMenor, aux;
+        posMenor = 0;
         
         for (i = 0; i < lista.size(); i++) {
             posMenor = i;
@@ -48,16 +49,17 @@ public class Ordenacao {
         }
         if (posMenor != i) {
             aux = lista.get(i);
-            lista.set(i, lista.get(posMenor);
+            lista.set(i, lista.get(posMenor));
             lista.set(posMenor, aux);
         }
     }
 
-    public void selecaoPalavra(ArrayList<String> lista) {
+    public static void selecaoPalavra(ArrayList<String> lista) {
         int i, j, posMenor;
         String aux;
+        posMenor = 0;
         
-        for (i = 0; i < lista.size(); i++) {
+        for (i = 0; i < lista.size()-1; i++) {
             posMenor = i;
             for (j = i+1; j < lista.size(); j++) {
                 if ((lista.get(i).compareTo(lista.get(posMenor)) > 0)) {
@@ -67,7 +69,7 @@ public class Ordenacao {
         }
         if (posMenor != i) {
             aux = lista.get(i);
-            lista.set(i, lista.get(posMenor);
+            lista.set(i, lista.get(posMenor));
             lista.set(posMenor, aux);
         }
     }
