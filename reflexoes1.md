@@ -9,8 +9,7 @@ Pesquisa e ordenação
 4) Qual ou quais os melhores métodos de ordenação?    
 
 5) O que tem em comum os métodos bolha, seleção e inserção?
-    Todos têm complexidade temporal alta - O(n^2)
-    Complexidade espacial O(1)
+   
 
 ```c
 void bolha(int vetor[], int n) {
