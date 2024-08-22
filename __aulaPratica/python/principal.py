@@ -5,17 +5,28 @@ import threading
 import os
 
 os.system("cls")
-listaBolha = []
+lista_bolha = []
+lista_insercao = []
 lista = []
 
-Util.gerar_numeros_lista(listaBolha, 10000, 20),
-Util.gerar_numeros_lista(lista, 10000, 20)
+tamanho = 60000
+
+Util.gerar_numeros_lista(lista_bolha, tamanho, 20),
+Util.gerar_numeros_lista(lista_insercao, tamanho, 20),
+Util.gerar_numeros_lista(lista, tamanho, 20)
 
 
 threading.Thread(
     target=lambda: (
-        Ordenacao.bolha(listaBolha),
+        Ordenacao.bolha(lista_bolha),
         print("feito... com bolha")
+    )
+).start()
+
+threading.Thread(
+    target=lambda: (
+        Ordenacao.insercao(lista_insercao),
+        print("feito... com insercao")
     )
 ).start()
 
