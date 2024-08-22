@@ -4,8 +4,7 @@ Pesquisa e ordenação
     
 2) Por que ordenar?
     
-3) Os algoritmos de ordenação são categorizados por:
-Explique os conceitos de complexidade e estabilidade.
+3) Os algoritmos de ordenação são categorizados por complexidade e estabilidade. Explique os conceitos.
 
 4) Qual ou quais os melhores métodos de ordenação?    
 
