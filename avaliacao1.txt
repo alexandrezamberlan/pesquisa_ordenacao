@@ -1,0 +1,24 @@
+Avaliação semestral de Pesquisa e Ordenação
+18/09/2024
+Nome:____________________________
+
+Enviar o arquivo da avaliação para alexz@ufn.edu.br. Assunto deve ser: Prova Pesquisa e Ordenação.
+
+1) O que é ordenação e qual o seu papel nos sistemas de informação?
+
+2) Na construção de algoritmos, por exemplo, algoritmos de ordenação, há o conceito de complexidade. Assim, em ordenação como se calcula ou se mede a complexidade?
+
+3) Novamente, no contexto de algoritmos de ordenação, há algoritmos estáveis e instáveis. Explique o que isso significa.
+
+4) Dos algoritmos estudados (bolha, seleção, inserção e pente), há um desses que tem um desempenho muito bom. Qual é? E qual o recurso computacional que ele utiliza para ser tão melhor que os outros? Explique a resposta.
+
+5) Observe a sequencia de números no vetor:
+    0   1   2   3   4   5   6   - indices
+    7   3   5   1   8   2   5   - valores
+
+    a) quantas comparações e trocas vão ocorrer usando o bolha?
+    b) quantas comparações e trocas vão ocorrer usando o pente?
+
+6) Dos métodos estudados (bolha, seleção, inserção e pente), quais são estáveis e quais são instáveis?
+
+7) No processo de ordenação de listas contendo objetos, como pessoas que derivam da classe Pessoa(nome, email, telefone, curso), para usar o método sort() em Java ou C Sharp é preciso realizar alterações na classe Pessoa para que a ordenação ocorra corretamente. Exemplifique e explique qual(is) é(são) essa(s) alterações? Assuma que o atributo chave de ordenação da classe pessoa é nome seguido de curso.
