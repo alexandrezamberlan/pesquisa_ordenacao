@@ -55,24 +55,40 @@
             - porção ordenada: final
 
         - seleção (selection sort)
+            - memória interna
+            - instável
+            - O(nˆ2)
+            - porção ordenada: início
+
         - inserção (inserction sort)
+            - memória interna
+            - estável
+            - O(nˆ2)
+            - porção ordenada: início
+
         - pente (combsort)
         - agitação (shakesort ou cocktailsort)
         - shellsort
+        - bucketsort
+        - radix
         - heapsort
         - mergesort
         - quicksort
-        - bucketsort
-        - radix
-
-
-
-
-
-
-
-
 
 # Comentários
     eficiente versus eficaz 
         - ambos atingem objetivos
+
+    qual o melhor algoritmo de ordenação?
+        Depende:
+            - do tamanho da estrutura
+            - do quanto já está ordenado
+
+
+    Cenários de um processo de ordenação
+        - pior caso
+            bolha - lista ordenada decrescente e se desejar ordenar crescente
+            seleção - lista ordenada
+            inserção - lista ordenada decrescente e se desejar ordenar crescente
+
+        
