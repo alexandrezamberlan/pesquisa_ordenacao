@@ -35,7 +35,7 @@
                 - trocas
                 Categorias:
                     Complexidade fatorial       - O(n!)         - menos eficiente
-                    Complexidade ??             - O(n^k) 
+                    Complexidade polinomial     - O(n^k) 
                     Complexidade Exponencial    - O(n^2)
                     Complexidade Linear         - O(n)
                     Complexidade Logaritmica    - O(log n)      - mais eficaz
