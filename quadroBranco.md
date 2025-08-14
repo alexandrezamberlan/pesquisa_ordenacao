@@ -2,7 +2,7 @@
 
 ## Aula Semana 3
     - Conceitos e fundamentos associados à ordenação
-    - entender e implementar 3 métodos de ordenação: seleção, bolha e inserção
+    - Discutir e implementar técnicas de medição de tempo nas linguagens
 
 ## Aula Semana 2
     - Realização do desafio

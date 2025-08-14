@@ -27,6 +27,11 @@ class Utilidades {
         }
     }
 
+    /**
+     * método de classe que exibe conteúdo de uma lista de inteiros
+     * @param lista
+     * @param frase - para exibir no início do método
+     */
     public static void exibrLista(List<Integer> lista, String frase) {
         System.out.println(frase);
         for (Object item : lista) {
