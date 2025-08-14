@@ -43,7 +43,7 @@ class Utilidades {
 }
 
 
-public class ExemploMedicaoTempo {
+public class 2_ExemploMedicaoTempo {
     public static void main(String[] args) {
         long tempoInicio, tempoFim;  
         List<Integer> listaAleatoria = new ArrayList<>();
