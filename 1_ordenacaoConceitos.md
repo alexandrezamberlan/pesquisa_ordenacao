@@ -21,7 +21,7 @@
                 [1,2,3,4,4,8]
                 [1,2,3,4,4,8]
                 [1,2,3,4,4,8]
-                Adequados para listas feitas em C ou C++ com alocação dinâmica de memória, como trabalhado na disciplina Estruturas de Dados
+                NÃO SÃO adequados para listas feitas em C ou C++ com alocação dinâmica de memória, como trabalhado na disciplina Estruturas de Dados
 
 
             Obs.: ao ordenar os algoritmos garantem porções ordenadas na estrutura:
@@ -35,7 +35,7 @@
                 - trocas
                 Categorias:
                     Complexidade fatorial       - O(n!)         - menos eficiente
-                    Complexidade ??             - O(n^k) 
+                    Complexidade polinomial     - O(n^k) 
                     Complexidade Exponencial    - O(n^2)
                     Complexidade Linear         - O(n)
                     Complexidade Logaritmica    - O(log n)      - mais eficaz
