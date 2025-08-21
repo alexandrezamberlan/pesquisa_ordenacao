@@ -106,12 +106,14 @@ Observação: se a estrutura estiver ordenada, o método vai funcionar/processar
 
 0   1   2   3   4   5   6    posMenor = 1
 7   1   4   2   3   9   8
-1   7   4   2   3   9   8.   posMenor
+1   7   4   2   3   9   8
 1   2   4   7   3   9   8
 1   2   3   7   4   9   8
 1   2   3   4   7   9   8
 1   2   3   4   7   9   8
 1   2   3   4   7   8   9
+1   2   3   4   7   8   9  
+
 
 ```c#
 void selecao(List<> lista) {
@@ -197,7 +199,7 @@ Depende: tamanho da estrutura; de como a estrutura já está previamente ordenad
 1   2   4   7   3   9   8
 1   2   3   4   7   9   8
 1   2   3   4   7   9   8
-1   2   3   4   7   8   9
+1   2   3   4   7   8   9   
 
 ```c#
 void insercao(Lista<> lista) {
@@ -210,7 +212,7 @@ void insercao(Lista<> lista) {
         for (j = i - 1; j >= 0; j--) {
             qtdComparacoes++;
             if (tmp < lista[j]) {
-                lista[j + 1] = lista[j];
+                lista[j + 1] = lista[j]; //shift eh trocar para o lado
                 qtdTrocas++;
             } else break;
         }

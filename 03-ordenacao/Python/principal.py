@@ -13,31 +13,31 @@ Util.popular_lista_aleatoria(lista_selecao, 10000, 100, 20000)
 Util.popular_lista_aleatoria(lista_insercao, 10000, 100, 20000)
 
 #sort
-tempoInicio = time.time()
+tempoInicio = time.perf_counter()
 lista_normal.sort()
-tempoFim = time.time()
+tempoFim = time.perf_counter()
 print("Tempo da rotina ordenar por sort nativo: ", (tempoFim - tempoInicio) , "s")        
 
 #bolha
-tempoInicio = time.time()
+tempoInicio = time.perf_counter()
 qtd_comparacoes, qtd_trocas = Ordenacao.bolha(lista_bolha)
-tempoFim = time.time()
+tempoFim = time.perf_counter()
 print("Tempo da rotina ordenar por bolha: ", (tempoFim - tempoInicio) , "s")      
 print('Comparacoes:', qtd_comparacoes)
 print('Trocas:', qtd_trocas)  
 
 #selecao
-tempoInicio = time.time()
+tempoInicio = time.perf_counter()
 qtd_comparacoes, qtd_trocas = Ordenacao.selecao(lista_selecao)
-tempoFim = time.time()
+tempoFim = time.perf_counter()
 print("Tempo da rotina ordenar por selecao: ", (tempoFim - tempoInicio) , "s")      
 print('Comparacoes:', qtd_comparacoes)
 print('Trocas:', qtd_trocas)  
 
 #insercao
-tempoInicio = time.time()
+tempoInicio = time.perf_counter()
 qtd_comparacoes, qtd_trocas = Ordenacao.insercao(lista_insercao)
-tempoFim = time.time()
+tempoFim = time.perf_counter()
 print("Tempo da rotina ordenar por insercao: ", (tempoFim - tempoInicio) , "s")      
 print('Comparacoes:', qtd_comparacoes)
 print('Trocas:', qtd_trocas)  
