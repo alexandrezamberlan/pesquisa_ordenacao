@@ -16,7 +16,7 @@ Estável
 Memória Interna
 Alta complexidade (muito esforço) - O(n^2)
 A estrutura possui 2 partes/porções (1a é a desordenada; 2a parte é a ordenada)
-Adequado para vetores e listas
+Adequado para listaes e listas
 
 0   1   2   3   4   5   6
 7   1   4   2   3   9   8
@@ -105,7 +105,7 @@ Instável
 Memória Interna
 Alta complexidade (muito esforço) - O(n^2)
 A estrutura possui 2 partes/porções (1a é a ordenada; 2a parte é a desordenada)
-Adequado para vetores e listas
+Adequado para listaes e listas
 
 Trabalha com conceito de trocas não contíguas. É considerado seleção porque ele seleciona os menores para
 o início da estrutura
@@ -176,7 +176,6 @@ def selecao(lista):
             if (lista[j] < lista[posMenor]):
                 posMenor = j
             
-        
         if (i != posMenor):
             qtd_trocas+=1
             tmp = lista[i]
@@ -190,17 +189,84 @@ Estável
 Memória Interna
 Alta complexidade - O(n^2)
 A estrutura possui 2 partes/porções (1a é a ordenada; 2a parte é a desordenada)
-Adequado para vetores e listas
+Adequado para listaes e listas
 
 Trabalha com o conceito de inserção na porção inicial, com isso, pode diminuir o número de comparações
 
 Observação: i) se a estrutura estiver ordenada ou quase, o inserção terá excelente desempenho
-            ii) atenção a lista deve ser duplamente encadeada
-
-
 
 Qual o melhor método de ordenação?
 Depende: tamanho da estrutura; de como a estrutura já está previamente ordenada;
+
+0   1   2   3   4   5   6
+7   1   4   2   3   9   8
+1   7   4   2   3   9   8
+1   4   7   2   3   9   8
+1   2   4   7   3   9   8
+1   2   3   4   7   9   8
+1   2   3   4   7   9   8
+1   2   3   4   7   8   9
+
+```c#
+void insercao(Lista<> lista) {
+    int i, j;
+    int tmp;
+    int qtdComparacoes = 0, qtdTrocas = 0;
+
+    for (i = 1; i < lista.Count(); i++) {
+        tmp = lista[i];
+        for (j = i - 1; j >= 0; j--) {
+            qtdComparacoes++;
+            if (tmp < lista[j]) {
+                lista[j + 1] = lista[j];
+                qtdTrocas++;
+            } else break;
+        }
+        lista[j + 1] = tmp;
+        qtdTrocas++;
+    }
+}
+```
+
+```java
+void insercao(Lista<> lista) {
+    int i, j;
+    int tmp;
+    int qtdComparacoes = 0, qtdTrocas = 0;
+
+    for (i = 1; i < n; i++) {
+        tmp = lista.get(i);
+        for (j = i - 1; j >= 0; j--) {
+            qtdComparacoes++;
+            if (tmp < lista.get(j)) {
+                lista.set(j + 1, lista.get(j));
+                qtdTrocas++;
+            } else break;
+        }
+        lista.set(j + 1, tmp);
+        qtdTrocas++;
+    }
+}
+```
+
+```python
+def insercao(lista):
+    qtd_comparacoes = 0
+    qtd_trocas = 0
+
+    for i in range(1, len(lista)):
+        tmp = lista[i]
+        for j in range(i - 1, -2, -1):
+            qtd_comparacoes+=1
+            if (tmp < lista[j]):
+                lista[j + 1] = lista[j]
+                qtd_trocas+=1
+            else:
+                break
+
+        lista[j + 1] = tmp
+        qtd_trocas+=1
+```
 
 
 4) AGITAÇÃO - Shake Sort ou Cocktail
@@ -231,7 +297,7 @@ A estrutura possui 2 porções/partes (1a é a ordenada; 2a é a desordenada)
 Há as variáveis clássicas do bolha: i, houveTroca, tmp.
 Há a variável distancia que é calculada pelo tamanho da estrutura dividido por 1.3
 
-Adequado somente para vetores ou estruturas prontas tipo lista de uma linguagem de programação
+Adequado somente para listaes ou estruturas prontas tipo lista de uma linguagem de programação
 n = 7
 0   1   2   3   4   5   6   
 7   1   4   2   3   9   8    distancia = (int)n / 1.3 = 5
@@ -268,18 +334,18 @@ Contudo, diferente do QUICKSORT, o MERGESORT sempre divide a estrutura no meio (
     
 
 
-9) HEAPSORT (método baseado na dinâmica de árvores binárias, contudo em vetor)
+9) HEAPSORT (método baseado na dinâmica de árvores binárias, contudo em lista)
     - Heapmáximo: garantir que raiz da subarvore seja maior ou igual que seus filhos. Se isso não ocorrer, fazer as trocas
         filhoEsquerda = posicaoRaiz * 2
         filhoDireita = posicaoRaiz * 2 + 1
-    - Troca do primeiro com o último e diminui uma posição o vetor (fim)
+    - Troca do primeiro com o último e diminui uma posição o lista (fim)
 
-    ATENÇÃO: o vetor deve começar na posição 1
+    ATENÇÃO: o lista deve começar na posição 1
 
     Teste para filho esquerda 
-        -> if (vetor[raiz] < vetor[raiz * 2]) { troca }
+        -> if (lista[raiz] < lista[raiz * 2]) { troca }
     Teste para o filho da direita (antes de testar, é preciso ter certeza que o filho exista)
-        -> if (raiz * 2 + 1 < n && vetor[raiz] < vetor[raiz * 2 + 1]) { troca }
+        -> if (raiz * 2 + 1 < n && lista[raiz] < lista[raiz * 2 + 1]) { troca }
 
 
 

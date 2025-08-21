@@ -34,3 +34,24 @@ class Ordenacao:
                 lista[posMenor] = tmp
                 
         return qtd_comparacoes, qtd_trocas
+    
+    
+    @staticmethod
+    def insercao(lista):
+        qtd_comparacoes = 0
+        qtd_trocas = 0
+
+        for i in range(1, len(lista)):
+            tmp = lista[i]
+            for j in range(i - 1, -2, -1):
+                qtd_comparacoes+=1
+                if (tmp < lista[j]):
+                    lista[j + 1] = lista[j]
+                    qtd_trocas+=1
+                else:
+                    break
+
+            lista[j + 1] = tmp
+            qtd_trocas+=1
+            
+        return qtd_comparacoes, qtd_trocas
