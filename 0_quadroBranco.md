@@ -1,5 +1,12 @@
 # Plano de aula
 
+## Aula Semana 4
+    - Ordenação
+        - sort - método de ordenação nativo das linguagens
+        - bolha
+        - seleção
+        - inserção
+
 ## Aula Semana 3
     - Conceitos e fundamentos associados à ordenação
     - Discutir e implementar técnicas de medição de tempo nas linguagens

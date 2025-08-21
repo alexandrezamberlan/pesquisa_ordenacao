@@ -1,21 +1,21 @@
-
 from util import Util
+from ordenacao import Ordenacao
+import time
 
-lista = []
 lista_bolha = []
-lista_selecao = []
-lista_insercao = []
-lista_pente = []
+lista_normal = []
+Util.popular_lista_aleatoria(lista_bolha, 10000, 100, 20000)
+Util.popular_lista_aleatoria(lista_normal, 10000, 100, 20000)
 
-minhas_listas = []
-minhas_listas.append( lista )
-#minhas_listas.append( lista_bolha )
-#minhas_listas.append( lista_selecao )
-#minhas_listas.append( lista_insercao )
-minhas_listas.append( lista_pente )
 
-#rotinas de popular lista: numeros aleatorios ou numeros de arquivos
-Util.menu( minhas_listas )
+tempoInicio = time.time()
+lista_normal.sort()
+tempoFim = time.time()
+print("Tempo da rotina ordenar por sort nativo: ", (tempoFim - tempoInicio) , "s")        
 
-#ordenar temporizando
-Util.ordenar( minhas_listas )
+tempoInicio = time.time()
+qtd_comparacoes, qtd_trocas = Ordenacao.bolha(lista_bolha)
+tempoFim = time.time()
+print("Tempo da rotina ordenar por bolha: ", (tempoFim - tempoInicio) , "s")      
+print('Comparacoes:', qtd_comparacoes)
+print('Trocas:', qtd_trocas)  

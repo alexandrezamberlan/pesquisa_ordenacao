@@ -24,6 +24,77 @@ Adequado para vetores e listas
 1   2   3   4   7   8   9
 1   2   3   4   7   8   9
 
+
+0   1   2   3   4   5   6
+20  12  10  70  20  11  10
+12  10  20  20  11  10  70
+10  12  20  11  10  20  70
+10  12  11  10  20  20  70
+10  11  10  12  20  20  70
+10  10  11  12  20  20  70
+10  10  11  12  20  20  70
+
+```c#
+void bolha(List<> lista) {
+    bool houveTroca;
+    int tmp;
+    int qtdComparacoes = 0, qtdTrocas = 0;
+
+    do {
+        houveTroca = False;
+        for (int i = 0; i < lista.Count()-1; i++){
+            qtdComparacoes++;
+            if (lista[i] > lista[i+1]) {
+                qtdTrocas++;
+                houveTroca = True;
+                tmp = lista[i];
+                lista[i] = lista[i+1];
+                lista[i+1] = tmp;
+            }
+        }
+    } while (houveTroca);
+}
+````
+
+```java
+void bolha(List<> lista) {
+    boolean houveTroca;
+    int tmp;
+    int qtdComparacoes = 0, qtdTrocas = 0;
+
+    do {
+        houveTroca = False;
+        for (int i = 0; i < lista.size()-1; i++){
+            qtdComparacoes++;
+            if (lista.get(i) > lista.get(i+1)) {
+                qtdTrocas++;
+                houveTroca = True;
+                tmp = lista.get(i);
+                lista.set(i, lista.get(i+1));
+                lista.set(i+1, tmp);
+            }
+        }
+    } while (houveTroca);
+}
+```
+
+```python
+def bolha(lista):
+    houve_troca = true
+    qtd_comparacoes = 0
+    qtd_trocas = 0
+    while (houve_troca):    
+        houveTroca = false
+        for i in range (len(lista) - 1):
+            qtd_comparacoes+=1
+            if (lista[i] > lista[i+1]):
+                qtd_trocas+=1
+                houve_troca = true
+                tmp = lista[i]
+                lista[i] = lista[i+1]
+                lista[i+1] = tmp
+```
+
 Trabalha com o conceito de trocas, ou seja, enquanto houver trocas, o algoritmo não para.
 É considerado bolha, porque 'leva' os maiores para o final da estrutura
 
