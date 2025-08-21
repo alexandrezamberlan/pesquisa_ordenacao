@@ -16,3 +16,21 @@ class Ordenacao:
                     lista[i+1] = tmp
                     
         return qtd_comparacoes, qtd_trocas
+    
+    @staticmethod
+    def selecao(lista):
+        qtd_comparacoes = 0
+        qtd_trocas = 0
+        for i in range(len(lista) - 1):
+            posMenor = i
+            for j in range(i+1, len(lista)):
+                qtd_comparacoes+=1
+                if (lista[j] < lista[posMenor]):
+                    posMenor = j
+            if (i != posMenor):
+                qtd_trocas+=1
+                tmp = lista[i]
+                lista[i] = lista[posMenor]
+                lista[posMenor] = tmp
+                
+        return qtd_comparacoes, qtd_trocas
