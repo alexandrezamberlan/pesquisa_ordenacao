@@ -15,7 +15,7 @@ class Ordenacao:
                     lista[i] = lista[i+1]
                     lista[i+1] = tmp
                     
-        return qtd_comparacoes, qtd_trocas
+        return qtd_comparacoes, qtd_trocas #medem a complexidade do algoritmo
     
     @staticmethod
     def selecao(lista):

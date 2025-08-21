@@ -2,15 +2,25 @@ from util import Util
 from ordenacao import Ordenacao
 import time
 
-lista_insercao = []
+lista = []
+lista_sort = []
 
-Util.popular_lista_aleatoria(lista_insercao, 10, 100, 20000)
+Util.popular_lista_aleatoria(lista, 5000, 100, 200)
+Util.popular_lista_aleatoria(lista_sort, 5000, 100, 200)
 
-#insercao
-tempoInicio = time.time()
-qtd_comparacoes, qtd_trocas = Ordenacao.insercao(lista_insercao)
-tempoFim = time.time()
-print("Tempo da rotina ordenar por insercao: ", (tempoFim - tempoInicio) , "s")      
+#bolha
+tempo_inicio = time.perf_counter()
+qtd_comparacoes, qtd_trocas = Ordenacao.bolha(lista)
+tempo_fim = time.perf_counter()
+print("Tempo da rotina ordenar por bolha: ", (tempo_fim - tempo_inicio) , "s")      
 print('Comparacoes:', qtd_comparacoes)
 print('Trocas:', qtd_trocas)  
-Util.exibir_lista(lista_insercao,"Lista ordenada pelo insercao")
+
+
+#sort
+tempo_inicio = time.perf_counter()
+lista_sort.sort()
+tempo_fim = time.perf_counter()
+print("Tempo da rotina ordenar por sort nativo: ", (tempo_fim - tempo_inicio) , "s")      
+
+
