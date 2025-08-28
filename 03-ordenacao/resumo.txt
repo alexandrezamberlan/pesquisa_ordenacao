@@ -373,31 +373,105 @@ void agitacao(List<> lista) {
 ````
 
 
-
-
-
 5) PENTE - Comb Sort
-É baseado no Bolha, ou seja, é uma tentantiva de melhorar o Bolha.
+    - É baseado no Bolha, ou seja, é uma tentantiva de melhorar o Bolha.
 
-ATENÇÃO: a partir deste método, há COMPARAÇÕES a uma distância X. Isso gera uma pré-organização da estrutura,
-         diminuindo número de comparações e trocas.
+    ATENÇÃO: a partir deste método, há COMPARAÇÕES a uma distância X. Isso gera uma pré-organização da estrutura, diminuindo número de comparações e trocas.
 
-Instável
-Memória Interna
-A estrutura possui 2 porções/partes (1a é a ordenada; 2a é a desordenada)
+    Instável
+    Memória Interna
+    A estrutura possui 2 porções/partes (1a é a ordenada; 2a é a desordenada)
 
-Há as variáveis clássicas do bolha: i, houveTroca, tmp.
-Há a variável distancia que é calculada pelo tamanho da estrutura dividido por 1.3
+    Há as variáveis clássicas do bolha: i, houveTroca, tmp.
+    Há a variável distancia que é calculada pelo tamanho da estrutura dividido por 1.3
 
-Adequado somente para listaes ou estruturas prontas tipo lista de uma linguagem de programação
+Adequado somente para listas ou estruturas prontas tipo lista de uma linguagem de programação
 n = 7
 0   1   2   3   4   5   6   
-7   1   4   2   3   9   8    distancia = (int)n / 1.3 = 5
-7   1   4   2   3   9   8    distancia = distancia / 1.3 = 3
-2   1   4   7   3   9   8    distancia = distancia / 1.3 = 2
-2   1   3   7   4   9   8    distancia = distancia / 1.3 = 1
-1   2   3   4   7   8   9    distancia = 1
+7   1   4   2   3   9   8       distancia = (int)n / 1.3 = 5
+7   1   4   2   3   9   8       distancia = (int)distancia / 1.3 = 3
+2   1   4   7   3   9   8       distancia = (int)distancia / 1.3 = 2
+2   1   3   7   4   9   8       distancia = (int)distancia / 1.3 = 1
+1   2   3   4   7   8   9       distancia = (int)distancia / 1.3 = 1
 1   2   3   4   7   8   9
+
+
+```c#
+void pente(List<> lista) {
+    bool houveTroca;
+    int tmp;
+    int distancia = lista.Count();
+    int qtdComparacoes = 0, qtdTrocas = 0;
+
+    do {
+        distancia = (int)distancia / 1.3;
+        if (distancia < 1) {
+            distancia = 1;
+        }
+        houveTroca = false;
+        for (int i = 0; i+distancia < lista.Count(); i++){
+            qtdComparacoes++;
+            if (lista[i] > lista[i+distancia]) {
+                qtdTrocas++;
+                houveTroca = True;
+                tmp = lista[i];
+                lista[i] = lista[i+distancia];
+                lista[i+distancia] = tmp;
+            }
+        }
+    } while (houveTroca || distancia > 1);
+}
+````
+
+
+```java
+void pente(List<> lista) {
+    bool houveTroca;
+    int tmp;
+    int distancia = lista.Count();
+    int qtdComparacoes = 0, qtdTrocas = 0;
+
+    do {
+        distancia = (int)distancia / 1.3;
+        houveTroca = false;
+        for (int i = 0; i+distancia < lista.Count(); i++){
+            qtdComparacoes++;
+            if (lista[i] > lista[i+distancia]) {
+                qtdTrocas++;
+                houveTroca = True;
+                tmp = lista[i];
+                lista[i] = lista[i+distancia];
+                lista[i+distancia] = tmp;
+            }
+        }
+    } while (houveTroca || distancia > 1);
+}
+````
+
+```python
+void pente(List<> lista) {
+    bool houveTroca;
+    int tmp;
+    int distancia = lista.Count();
+    int qtdComparacoes = 0, qtdTrocas = 0;
+
+    do {
+        distancia = (int)distancia / 1.3;
+        houveTroca = false;
+        for (int i = 0; i+distancia < lista.Count(); i++){
+            qtdComparacoes++;
+            if (lista[i] > lista[i+distancia]) {
+                qtdTrocas++;
+                houveTroca = True;
+                tmp = lista[i];
+                lista[i] = lista[i+distancia];
+                lista[i+distancia] = tmp;
+            }
+        }
+    } while (houveTroca || distancia > 1);
+}
+````
+
 
 6) SHELLSORT 
 É baseado no Inserção, ou seja, é uma tentativa de melhoria via o uso da ANÁLISE A DISTÂNCIA (tipo pente)

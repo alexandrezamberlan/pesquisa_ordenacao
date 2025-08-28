@@ -1,5 +1,5 @@
-import matplotlib.pyplot as plt
 import time
+import os
 
 from util import Util
 from ordenacao import Ordenacao
@@ -10,13 +10,15 @@ lista_selecao = []
 lista_insercao = []
 lista_agitacao = []
 
-tamanho = 10000
+tamanho = 20000
 
-Util.popular_lista_aleatoria(lista_bolha, tamanho, 10000, 20000)
+Util.popular_lista_aleatoria(lista_bolha, tamanho, 1000, 20000)
 lista_normal.extend(lista_bolha)
 lista_selecao.extend(lista_bolha)
 lista_insercao.extend(lista_bolha)
 lista_agitacao.extend(lista_bolha)
+
+os.system('cls')
 
 #sort
 tempoInicio = time.perf_counter()
@@ -54,11 +56,10 @@ print('Trocas:', qtd_trocas)
 
 
 #agitacao
-tempoInicio = time.perf_counter()
-qtd_comparacoes, qtd_trocas = Ordenacao.insercao(lista_insercao)
-tempoFim = time.perf_counter()
-tempo_insercao = tempoFim - tempoInicio
-print("Tempo da rotina ordenar por insercao: ", tempo_insercao , "s")      
+tempo_inicio = time.perf_counter()
+qtd_comparacoes, qtd_trocas = Ordenacao.agitacao(lista_agitacao)
+tempo_fim = time.perf_counter()
+print("Tempo da rotina ordenar por agitacao: ", (tempo_fim - tempo_inicio) , "s")      
 print('Comparacoes:', qtd_comparacoes)
-print('Trocas:', qtd_trocas)  
+print('Trocas:', qtd_trocas)    
 

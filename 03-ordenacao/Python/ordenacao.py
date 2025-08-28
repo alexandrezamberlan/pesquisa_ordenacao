@@ -4,9 +4,10 @@ class Ordenacao:
         houve_troca = True
         qtd_comparacoes = 0
         qtd_trocas = 0
+        fim = len(lista)
         while (houve_troca):    
             houve_troca = False
-            for i in range (len(lista) - 1):
+            for i in range (fim - 1):
                 qtd_comparacoes+=1
                 if (lista[i] > lista[i+1]):
                     qtd_trocas+=1
@@ -14,6 +15,7 @@ class Ordenacao:
                     tmp = lista[i]
                     lista[i] = lista[i+1]
                     lista[i+1] = tmp
+            fim-=1
                     
         return qtd_comparacoes, qtd_trocas #medem a complexidade do algoritmo
     
@@ -58,43 +60,40 @@ class Ordenacao:
     
     @staticmethod
     def agitacao(lista):
-        void agitacao(List<> lista) {
-        bool houveTroca;
-        int tmp;
-        int ini = 0;
-        int fim = lista.Count;
-        int qtdComparacoes = 0, qtdTrocas = 0;
+        ini = 0
+        fim = len(lista)
+        qtd_comparacoes = 0
+        qtd_trocas = 0
 
-        do {
-            houveTroca = False;
-            for (int i = 0; i < fim-1; i++){
-                qtdComparacoes++;
-                if (lista[i] > lista[i+1]) {
-                    qtdTrocas++;
-                    houveTroca = True;
-                    tmp = lista[i];
-                    lista[i] = lista[i+1];
-                    lista[i+1] = tmp;
-                }
-            }
+        while(True):
+            houveTroca = False
+            for i in range(ini, fim-1):
+                qtd_comparacoes+=1
+                if (lista[i] > lista[i+1]):
+                    qtd_trocas+=1
+                    houveTroca = True
+                    tmp = lista[i]
+                    lista[i] = lista[i+1]
+                    lista[i+1] = tmp
+                
+            if (not houveTroca):
+                break
+            
+            fim-=1
 
-            if (!houveTroca) {
-                break;
-            }
-            fim--;
+            houveTroca = False
+            for i in range(fim, ini, -1):
+                qtd_comparacoes+=1
+                if (lista[i] < lista[i-1]):
+                    qtd_trocas+=1
+                    houveTroca = True
+                    tmp = lista[i]
+                    lista[i] = lista[i-1]
+                    lista[i-1] = tmp
+                
+            ini+=1
 
-            houveTroca = False;
-            for (int i = fim; i > ini+1; i--){
-                qtdComparacoes++;
-                if (lista[i] < lista[i-1]) {
-                    qtdTrocas++;
-                    houveTroca = True;
-                    tmp = lista[i];
-                    lista[i] = lista[i-1];
-                    lista[i-1] = tmp;
-                }
-            }
-            ini++;
-
-        } while (houveTroca);
-    }
+            if (not houveTroca):
+                break
+        
+        return qtd_comparacoes, qtd_trocas
