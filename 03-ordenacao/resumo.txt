@@ -25,7 +25,6 @@ Adequado para listaes e listas
 1   2   3   4   7   8   9
 
 
-
 ```c#
 void bolha(List<> lista) {
     bool houveTroca;
@@ -264,18 +263,117 @@ def insercao(lista):
 
 
 4) AGITAÇÃO - Shake Sort ou Cocktail
-É baseado no Bolha, ou seja, é uma tentantiva de melhorar o Bolha.
-Estável
-Memória Interna
-A estrutura possui 3 partes/porções (1a é a ordenada pelos menores; 2a é a desordenada; 3a é 
-a ordenada pelos maiores)
+    - É baseado no Bolha, ou seja, é uma tentantiva de melhorar o Bolha.
+    - Estável
+    - Memória Interna
+    - A estrutura possui 3 partes/porções (1a é a ordenada pelos menores; 2a é a desordenada; 3a é a ordenada pelos maiores)
 
-De fato é a aplicação do bolha da esquerda para direita e depois da direita para esquerda
+    De fato é a aplicação do bolha da esquerda para direita e depois da direita para esquerda
 
-Há os índices/ponteiros ini e fim que marcam o início e o final da estrutura
+    Há os índices/ponteiros ini e fim que marcam o início e o final da estrutura
 
-Observação: i) se a estrutura estiver ordenada ou quase, o agitação terá excelente desempenho, como o bolha
-            ii) atenção a lista deve ser duplamente encadeada  
+    Observação: 
+        i) se a estrutura estiver ordenada ou quase, o agitação terá excelente desempenho, como o bolha
+        ii) atenção a lista deve ser duplamente encadeada  
+
+ini = 1
+fim = 4
+
+0   1   2   3   4   5   6
+7   1   4   2   3   9   8
+1   4   2   3   7   8   9
+1   2   4   3   7   8   9
+1   2   3   4   7   8   9
+1   2   3   4   7   8   9
+
+```c#
+void agitacao(List<> lista) {
+    bool houveTroca;
+    int tmp;
+    int ini = 0;
+    int fim = lista.Count;
+    int qtdComparacoes = 0, qtdTrocas = 0;
+
+    do {
+        houveTroca = False;
+        for (int i = 0; i < fim-1; i++){
+            qtdComparacoes++;
+            if (lista[i] > lista[i+1]) {
+                qtdTrocas++;
+                houveTroca = True;
+                tmp = lista[i];
+                lista[i] = lista[i+1];
+                lista[i+1] = tmp;
+            }
+        }
+
+        if (!houveTroca) {
+            break;
+        }
+        fim--;
+
+        houveTroca = False;
+        for (int i = fim; i > ini+1; i--){
+            qtdComparacoes++;
+            if (lista[i] < lista[i-1]) {
+                qtdTrocas++;
+                houveTroca = True;
+                tmp = lista[i];
+                lista[i] = lista[i-1];
+                lista[i-1] = tmp;
+            }
+        }
+        ini++;
+
+    } while (houveTroca);
+}
+````
+
+```java
+void agitacao(List<> lista) {
+    boolean houveTroca;
+    int tmp;
+    int ini = 0;
+    int fim = lista.size();
+    int qtdComparacoes = 0, qtdTrocas = 0;
+
+    do {
+        houveTroca = false;
+        for (int i = 0; i < fim-1; i++){
+            qtdComparacoes++;
+            if (lista.get(i) > lista.get(i+1)) {
+                qtdTrocas++;
+                houveTroca = True;
+                tmp = lista.get(i);
+                lista.set(i, lista.get(i+1));
+                lista.set(i+1, tmp);
+            }
+        }
+
+        if (!houveTroca) {
+            break;
+        }
+        fim--;
+
+        houveTroca = False;
+        for (int i = fim; i > ini+1; i--){
+            qtdComparacoes++;
+            if (lista.get(i) < lista.get(i-1)) {
+                qtdTrocas++;
+                houveTroca = True;
+                tmp = lista.get(i);
+                lista.set(i, lista.get(i-1);
+                lista.set(i-1, tmp);
+            }
+        }
+        ini++;
+
+    } while (houveTroca);
+}
+````
+
+
+
 
 
 5) PENTE - Comb Sort

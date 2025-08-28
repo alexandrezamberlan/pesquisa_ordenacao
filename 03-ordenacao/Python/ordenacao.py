@@ -55,3 +55,46 @@ class Ordenacao:
             qtd_trocas+=1
             
         return qtd_comparacoes, qtd_trocas
+    
+    @staticmethod
+    def agitacao(lista):
+        void agitacao(List<> lista) {
+        bool houveTroca;
+        int tmp;
+        int ini = 0;
+        int fim = lista.Count;
+        int qtdComparacoes = 0, qtdTrocas = 0;
+
+        do {
+            houveTroca = False;
+            for (int i = 0; i < fim-1; i++){
+                qtdComparacoes++;
+                if (lista[i] > lista[i+1]) {
+                    qtdTrocas++;
+                    houveTroca = True;
+                    tmp = lista[i];
+                    lista[i] = lista[i+1];
+                    lista[i+1] = tmp;
+                }
+            }
+
+            if (!houveTroca) {
+                break;
+            }
+            fim--;
+
+            houveTroca = False;
+            for (int i = fim; i > ini+1; i--){
+                qtdComparacoes++;
+                if (lista[i] < lista[i-1]) {
+                    qtdTrocas++;
+                    houveTroca = True;
+                    tmp = lista[i];
+                    lista[i] = lista[i-1];
+                    lista[i-1] = tmp;
+                }
+            }
+            ini++;
+
+        } while (houveTroca);
+    }

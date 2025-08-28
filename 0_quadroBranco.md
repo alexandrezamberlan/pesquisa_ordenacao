@@ -1,5 +1,19 @@
 # Plano de aula
 
+## Aula Semana 5
+    - Ordenação
+        - implementação simples, porém alta complexidade O(n^2): quantidade de comparação e quantidade de trocas
+            - bolha: estavel; parte ordenada é no final
+            - seleção: instavel; parte ordenada é no início
+            - inserção: estavel; parte ordenada é no início
+        - incrementos ou melhorias dos métodos bolha e inserção
+            - técnica de análise de dois elementos distantes n posições: pré-organiza e diminui o número de trocas
+                - variável distância - h
+            - do bolha há o pente - combsort
+            - do inserção há o shellsort
+            - do bolha há o shakesort ou cocktailsort ou agitação (sem uso de distância)
+                - ordena da esquerda para direita e da direita para esquerda,                
+
 ## Aula Semana 4
     - Ordenação
         - sort - método de ordenação nativo das linguagens
