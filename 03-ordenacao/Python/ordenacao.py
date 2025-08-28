@@ -58,4 +58,44 @@ class Ordenacao:
             
         return qtd_comparacoes, qtd_trocas
     
+    @staticmethod
+    def agitacao(lista):
+        ini = 0
+        fim = len(lista)
+        qtd_comparacoes = 0
+        qtd_trocas = 0
+
+        while(True):
+            houveTroca = False
+            for i in range(ini, fim-1):
+                qtd_comparacoes+=1
+                if (lista[i] > lista[i+1]):
+                    qtd_trocas+=1
+                    houveTroca = True
+                    tmp = lista[i]
+                    lista[i] = lista[i+1]
+                    lista[i+1] = tmp
+                
+            if (not houveTroca):
+                break
+            
+            fim-=1
+
+            houveTroca = False
+            for i in range(fim, ini, -1):
+                qtd_comparacoes+=1
+                if (lista[i] < lista[i-1]):
+                    qtd_trocas+=1
+                    houveTroca = True
+                    tmp = lista[i]  
+                    lista[i] = lista[i-1]
+                    lista[i-1] = tmp
+                
+            ini+=1
+
+            if (not houveTroca):
+                break
+        
+        return qtd_comparacoes, qtd_trocas
+
     
