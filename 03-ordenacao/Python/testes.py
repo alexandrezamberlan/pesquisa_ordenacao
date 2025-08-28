@@ -4,7 +4,7 @@ import time
 
 lista = []
 
-Util.popular_lista_aleatoria(lista, 10, 10, 200)
+Util.popular_lista_aleatoria(lista, 100, 10, 200)
 # lista_teste = []
 
 # lista_teste.extend(lista)
@@ -13,12 +13,12 @@ Util.popular_lista_aleatoria(lista, 10, 10, 200)
 # print("outra lista")
 # print(lista_teste)
 
-#agitacao
+#pente
 tempo_inicio = time.perf_counter()
-qtd_comparacoes, qtd_trocas = Ordenacao.agitacao(lista)
-Util.exibir_lista(lista,"Agitação")
+qtd_comparacoes, qtd_trocas = Ordenacao.pente(lista)
+Util.exibir_lista(lista,"Pente")
 tempo_fim = time.perf_counter()
-print("Tempo da rotina ordenar por agitacao: ", (tempo_fim - tempo_inicio) , "s")      
+print("Tempo da rotina ordenar por pente: ", (tempo_fim - tempo_inicio) , "s")      
 print('Comparacoes:', qtd_comparacoes)
 print('Trocas:', qtd_trocas)  
 

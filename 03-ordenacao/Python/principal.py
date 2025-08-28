@@ -9,6 +9,7 @@ lista_normal = []
 lista_selecao = []
 lista_insercao = []
 lista_agitacao = []
+lista_pente = []
 
 tamanho = 20000
 
@@ -17,6 +18,7 @@ lista_normal.extend(lista_bolha)
 lista_selecao.extend(lista_bolha)
 lista_insercao.extend(lista_bolha)
 lista_agitacao.extend(lista_bolha)
+lista_pente.extend(lista_bolha)
 
 os.system('cls')
 
@@ -25,7 +27,15 @@ tempoInicio = time.perf_counter()
 lista_normal.sort()
 tempoFim = time.perf_counter()
 tempo_sort = tempoFim - tempoInicio
-print("Tempo da rotina ordenar por sort nativo: ",  tempo_sort, "s")        
+print("Tempo da rotina ordenar por sort nativo: ",  tempo_sort, "s")       
+
+#pente
+tempo_inicio = time.perf_counter()
+qtd_comparacoes, qtd_trocas = Ordenacao.pente(lista_pente)
+tempo_fim = time.perf_counter()
+print("Tempo da rotina ordenar por pente: ", (tempo_fim - tempo_inicio) , "s")      
+print('Comparacoes:', qtd_comparacoes)
+print('Trocas:', qtd_trocas)
 
 #bolha
 tempoInicio = time.perf_counter()
@@ -54,7 +64,6 @@ print("Tempo da rotina ordenar por insercao: ", tempo_insercao , "s")
 print('Comparacoes:', qtd_comparacoes)
 print('Trocas:', qtd_trocas)  
 
-
 #agitacao
 tempo_inicio = time.perf_counter()
 qtd_comparacoes, qtd_trocas = Ordenacao.agitacao(lista_agitacao)
@@ -62,4 +71,6 @@ tempo_fim = time.perf_counter()
 print("Tempo da rotina ordenar por agitacao: ", (tempo_fim - tempo_inicio) , "s")      
 print('Comparacoes:', qtd_comparacoes)
 print('Trocas:', qtd_trocas)    
+
+  
 
