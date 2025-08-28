@@ -373,6 +373,45 @@ void agitacao(List<> lista) {
 }
 ````
 
+```python
+def agitacao(lista):
+    ini = 0
+    fim = len(lista)
+    qtd_comparacoes = 0
+    qtd_trocas = 0
+
+    while(True):
+        houveTroca = False
+        for i in range(ini, fim-1):
+            qtd_comparacoes+=1
+            if (lista[i] > lista[i+1]):
+                qtd_trocas+=1
+                houveTroca = True
+                tmp = lista[i]
+                lista[i] = lista[i+1]
+                lista[i+1] = tmp
+            
+        if (not houveTroca):
+            break
+        
+        fim-=1
+
+        houveTroca = False
+        for i in range(fim, ini, -1):
+            qtd_comparacoes+=1
+            if (lista[i] < lista[i-1]):
+                qtd_trocas+=1
+                houveTroca = True
+                tmp = lista[i]  
+                lista[i] = lista[i-1]
+                lista[i-1] = tmp
+            
+        ini+=1
+
+        if (not houveTroca):
+            break
+```
+
 
 5) PENTE - Comb Sort
     - É baseado no Bolha, ou seja, é uma tentantiva de melhorar o Bolha.
@@ -391,10 +430,12 @@ n = 7
 0   1   2   3   4   5   6   
 7   1   4   2   3   9   8       distancia = (int)n / 1.3 = 5
 7   1   4   2   3   9   8       distancia = (int)distancia / 1.3 = 3
-2   1   4   7   3   9   8       distancia = (int)distancia / 1.3 = 2
-2   1   3   7   4   9   8       distancia = (int)distancia / 1.3 = 1
-1   2   3   4   7   8   9       distancia = (int)distancia / 1.3 = 1
+2   1   4   7   3   9   8       distancia = (int)n / 1.3 = 2
+2   1   3   7   4   9   8       distancia = (int)n / 1.3 = 1
+1   2   3   4   7   8   9       distancia = (int)n / 1.3 = 1
 1   2   3   4   7   8   9
+
+
 
 
 ```c#
@@ -410,7 +451,7 @@ void pente(List<> lista) {
             distancia = 1;
         }
         houveTroca = false;
-        for (int i = 0; i+distancia < lista.Count; i++){
+        for (int i = 0; i < lista.Count - distancia; i++){
             qtdComparacoes++;
             if (lista[i] > lista[i+distancia]) {
                 qtdTrocas++;

@@ -30,12 +30,12 @@ tempo_sort = tempoFim - tempoInicio
 print("Tempo da rotina ordenar por sort nativo: ",  tempo_sort, "s")       
 
 # #pente
-# tempo_inicio = time.perf_counter()
-# qtd_comparacoes, qtd_trocas = Ordenacao.pente(lista_pente)
-# tempo_fim = time.perf_counter()
-# print("Tempo da rotina ordenar por pente: ", (tempo_fim - tempo_inicio) , "s")      
-# print('Comparacoes:', qtd_comparacoes)
-# print('Trocas:', qtd_trocas)
+tempo_inicio = time.perf_counter()
+qtd_comparacoes, qtd_trocas = Ordenacao.pente(lista_pente)
+tempo_fim = time.perf_counter()
+print("Tempo da rotina ordenar por pente: ", (tempo_fim - tempo_inicio) , "s")      
+print('Comparacoes:', qtd_comparacoes)
+print('Trocas:', qtd_trocas)
 
 #bolha
 tempoInicio = time.perf_counter()
