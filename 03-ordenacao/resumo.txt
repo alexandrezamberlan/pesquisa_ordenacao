@@ -270,7 +270,7 @@ def insercao(lista):
 
     De fato é a aplicação do bolha da esquerda para direita e depois da direita para esquerda
 
-    Há os índices/ponteiros ini e fim que marcam o início e o final da estrutura
+    Há os índices/ponteiros ini e fim que marcam o início e o final da estrutura. E que vão diminuindo (fim) e aumentando (inicio) conforme as passadas dos fores
 
     Observação: 
         i) se a estrutura estiver ordenada ou quase, o agitação terá excelente desempenho, como o bolha
@@ -286,17 +286,18 @@ fim = 4
 1   2   3   4   7   8   9
 1   2   3   4   7   8   9
 
+
 ```c#
 void agitacao(List<> lista) {
     bool houveTroca;
     int tmp;
     int ini = 0;
     int fim = lista.Count;
-    int qtdComparacoes = 0, qtdTrocas = 0;
+    int qtdComparacoes = 0, qtdTrocas = 0;  //avalia a complexidade ou o esforço
 
     do {
         houveTroca = False;
-        for (int i = 0; i < fim-1; i++){
+        for (int i = ini; i < fim-1; i++){
             qtdComparacoes++;
             if (lista[i] > lista[i+1]) {
                 qtdTrocas++;
@@ -339,7 +340,7 @@ void agitacao(List<> lista) {
 
     do {
         houveTroca = false;
-        for (int i = 0; i < fim-1; i++){
+        for (int i = ini; i < fim-1; i++){
             qtdComparacoes++;
             if (lista.get(i) > lista.get(i+1)) {
                 qtdTrocas++;

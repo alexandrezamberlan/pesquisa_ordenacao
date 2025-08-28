@@ -2,7 +2,7 @@
 
 ## Aula Semana 5
     - Ordenação
-        - implementação simples, porém alta complexidade O(n^2): quantidade de comparação e quantidade de trocas
+        - implementação simples, porém alta complexidade O(n^2): quantidade de comparação e quantidade de trocas = ESFORÇO
             - bolha: estavel; parte ordenada é no final
             - seleção: instavel; parte ordenada é no início
             - inserção: estavel; parte ordenada é no início
