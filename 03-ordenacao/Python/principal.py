@@ -65,12 +65,12 @@ print('Comparacoes:', qtd_comparacoes)
 print('Trocas:', qtd_trocas)  
 
 #agitacao
-tempo_inicio = time.perf_counter()
-qtd_comparacoes, qtd_trocas = Ordenacao.agitacao(lista_agitacao)
-tempo_fim = time.perf_counter()
-print("Tempo da rotina ordenar por agitacao: ", (tempo_fim - tempo_inicio) , "s")      
-print('Comparacoes:', qtd_comparacoes)
-print('Trocas:', qtd_trocas)    
+# tempo_inicio = time.perf_counter()
+# qtd_comparacoes, qtd_trocas = Ordenacao.agitacao(lista_agitacao)
+# tempo_fim = time.perf_counter()
+# print("Tempo da rotina ordenar por agitacao: ", (tempo_fim - tempo_inicio) , "s")      
+# print('Comparacoes:', qtd_comparacoes)
+# print('Trocas:', qtd_trocas)    
 
   
 
