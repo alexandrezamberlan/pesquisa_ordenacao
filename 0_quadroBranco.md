@@ -20,6 +20,10 @@
 
         - Na sua linguagem de preferência, implemente (sem consulta) seu método escolhido para saber.
 
+    - Quicksort
+    - Mergesort
+    - Heapsort
+
 ## Aula Semana 5
     - Ordenação
         - implementação simples, porém alta complexidade O(n^2): quantidade de comparação e quantidade de trocas = ESFORÇO
