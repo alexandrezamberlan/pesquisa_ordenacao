@@ -19,13 +19,6 @@ O(log n)
         - Dos métodos estudados, qual o melhor método de ordenação?
         - Faça um método na sua linguagem de preferência que retorne true/True se a lista enviada como parâmetro está ordenada, o false/False caso contrário
 
-        def esta_ordenado(lista):
-            for i in range(0, len(lista)-1):
-                if list[i] > lista[i+1]:
-                    return False
-
-            return True
-
 
         - Da a sequência de valores na estrutura abaixo, contabilize quantas comparações e quantas trocas há para os métodos:
             - bolha - 56 comparações e 22 trocas 
@@ -33,40 +26,12 @@ O(log n)
             - seleção
 
             0   1   2   3   4   5   6   7   8
-            30  90  10  20  80  10  20  40  10      dist = 6
-            20  40  10  20  80  10  30  90  10      dist = 4
-            20  10  10  20  10  40  30  90  80      dist = 3
-            20  10  10  20  10  40  30  90  80      dist = 2
-            10  10  10  20  20  40  30  90  80      dist = 1
-            10  10  10  20  20  30  40  80  90      dist = 1
-            10  10  10  20  20  30  40  80  90
-            
+            30  90  10  20  80  10  20  40  10     
+                        
         - Na sua linguagem de preferência, implemente (sem consulta) seu método escolhido para saber.
-
-        def pente(lista):
-            qtd_comparacoes = 0
-            qtd_trocas = 0
-            distancia = len(lista)
     
-            while (True):
-                distancia = int(distancia / 1.3)
-                if (distancia < 1):
-                    distancia = 1
-                houve_troca = False
-                for (i in range(0, len(lista)-distancia)):
-                    qtd_comparacoes+=1
-                    if (lista[i] > lista[i+distancia]):
-                        qtd_trocas+=1
-                        tmp = lista[i]
-                        lista[i] = lista[i+distancia]
-                        lista[i+distancia] = tmp
-                        houve_troca = True
-
-                if distancia == 1 and not houve_troca:
-                    break
-                
-    - Como ordenar pela segunda ou terceira chave
-        Exemplo uma lista de Alunos(codigo, curso, nome) - ordenar por curso e ordenar por nome
+        - Como ordenar pela segunda ou terceira chave
+            Exemplo uma lista de Alunos(codigo, curso, nome) - ordenar por curso e ordenar por nome
 
 ## Aula Semana 5
     - Ordenação
