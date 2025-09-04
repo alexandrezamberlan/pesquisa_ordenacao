@@ -1,5 +1,25 @@
 # Plano de aula
 
+## Aula Semana 6
+    - Revisão: bolha, seleção, inserção, agitação, pente, shell
+        - O que é ordenação e por que é importante ordenar estruturas de dados?
+        - Dos vários algoritmos de ordenação, há categorias que os classificam, como:
+            - estabilidade
+            - complexidade
+            Explique o que é estabilidade e complexidade. Se necessário, dar exemplos. Quais os métodos estudados que são estáveis e quais que são instáveis
+        - Dos métodos estudados, quais suas complexidades? Como é avaliada a complexidade de um método de ordenação?
+        - Dos métodos estudados, qual o melhor método de ordenação?
+        - Faça um método na sua linguagem de preferência que retorne true/True se a lista enviada como parâmetro está ordenada, o false/False caso contrário
+        - Da a sequência de valores na estrutura abaixo, contabilize quantas comparações e quantas trocas há para os métodos:
+            - bolha
+            - pente
+            - seleção
+
+            0   1   2   3   4   5   6   7   8
+            30  90  10  20  80  10  20  40  10
+
+        - Na sua linguagem de preferência, implemente (sem consulta) seu método escolhido para saber.
+
 ## Aula Semana 5
     - Ordenação
         - implementação simples, porém alta complexidade O(n^2): quantidade de comparação e quantidade de trocas = ESFORÇO
