@@ -1,4 +1,7 @@
 class Ordenacao:
+    qtd_comparacoes = 0
+    qtd_trocas = 0
+    
     @staticmethod
     def bolha(lista):
         houve_troca = True
@@ -119,3 +122,43 @@ class Ordenacao:
                     lista[i+distancia] = tmp
                     
         return qtd_comparacoes, qtd_trocas #medem a complexidade do algoritmo
+    
+    @staticmethod
+    def particiona(lista, ini, fim):
+    
+        pivo = lista[ini]   # escolhe o primeiro elemento como pivô
+        i = ini + 1
+        j = fim
+
+        while i <= j:
+            # anda da esquerda para a direita até achar alguém maior que o pivô
+            while i <= fim and lista[i] <= pivo:
+                Ordenacao.qtd_comparacoes += 1
+                i += 1
+
+            # anda da direita para a esquerda até achar alguém menor que o pivô
+            while j > ini and lista[j] > pivo:
+                Ordenacao.qtd_comparacoes += 1
+                j -= 1
+
+            if i < j:
+                Ordenacao.qtd_trocas += 1
+                lista[i], lista[j] = lista[j], lista[i]
+
+        # coloca o pivô na posição correta
+        Ordenacao.qtd_trocas += 1
+        lista[ini], lista[j] = lista[j], lista[ini]
+
+        return j  # posição final do pivô
+
+    @staticmethod
+    def quicksort(lista, ini, fim):
+        if ini < fim:
+            pivo = Ordenacao.particiona(lista, ini, fim)
+            Ordenacao.quicksort(lista, ini, pivo - 1)
+            Ordenacao.quicksort(lista, pivo + 1, fim)
+
+
+
+
+

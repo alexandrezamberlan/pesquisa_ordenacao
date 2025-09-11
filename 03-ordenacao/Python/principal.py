@@ -10,6 +10,7 @@ lista_selecao = []
 lista_insercao = []
 lista_agitacao = []
 lista_pente = []
+lista_quick = []
 
 tamanho = 30000
 
@@ -19,6 +20,7 @@ lista_selecao.extend(lista_bolha)
 lista_insercao.extend(lista_bolha)
 lista_agitacao.extend(lista_bolha)
 lista_pente.extend(lista_bolha)
+lista_quick.extend(lista_bolha)
 
 os.system('clear')
 
@@ -27,7 +29,18 @@ tempoInicio = time.perf_counter()
 lista_normal.sort()
 tempoFim = time.perf_counter()
 tempo_sort = tempoFim - tempoInicio
-print("Tempo da rotina ordenar por sort nativo: ",  tempo_sort, "s")       
+print("Tempo da rotina ordenar por sort nativo: ",  tempo_sort, "s")     
+
+# #quick
+qtd_comparacoes = 0
+qtd_trocas = 0
+tempo_inicio = time.perf_counter()
+Ordenacao.quicksort(lista_quick, 0, len(lista_quick) - 1)
+tempo_fim = time.perf_counter()
+print("Tempo da rotina ordenar por quick: ", (tempo_fim - tempo_inicio) , "s")      
+print('Comparacoes:', Ordenacao.qtd_comparacoes)
+print('Trocas:', Ordenacao.qtd_trocas)
+ 
 
 # #pente
 tempo_inicio = time.perf_counter()
@@ -71,6 +84,7 @@ tempo_fim = time.perf_counter()
 print("Tempo da rotina ordenar por agitacao: ", (tempo_fim - tempo_inicio) , "s")      
 print('Comparacoes:', qtd_comparacoes)
 print('Trocas:', qtd_trocas)    
+
 
   
 
