@@ -573,8 +573,74 @@ void shell(Lista<> lista) {
 7) QUICKSORT (USA O CONCEITO DE DIVIDIR PARA CONQUISTAR)
 Faz parte de uma categoria de métodos de ordenação que utilizam a divisão da estrutura para acelerar a ordenação. Essa divisão é realizada por 
 meio de RECURSÃO.
-    - A estrutura vai possuir 2 porções: parte esquerda e parte direita, divididas pelo PIVO. Pensar como se fosse uma ÁRVORE BINÁRIA
+    - A estrutura possui 2 porções: parte esquerda e parte direita, divididas pelo PIVO. Pensar como se fosse uma ÁRVORE BINÁRIA desbalanceada
     - O método possui duas funções: quick (processo recursivo) e o particiona (posiciona/ordena o pivo)
+
+0   1   2   3   4   5   6   7   8
+30  90  10  20  80  10  20  40  10      ini = 0  fim = 8   pivo = 0/30
+10  90  10  20  80  10  20  40  30      ini = 1  fim = 8   pivo = 8/30
+10  30  10  20  80  10  20  40  90      ini = 1  fim = 7   pivo = 1/30
+10  20  10  20  80  10  30  40  90      ini = 4  fim = 6   pivo = 6/30
+10  20  10  20  30  10  80  40  90      ini = 4  fim = 5   pivo = 4/30
+10  20  10  20  30  10  80  40  90      ini = 4  fim = 5   pivo = 4/30
+10  20  10  20  10  30  80  40  90      ini = 5  fim = 5   pivo = 5/30
+                    30
+10  20  10  20  10      ini = 0  fim = 4   pivo = 0/10
+10
+    20  10  20  10      ini = 1  fim = 4    pivo = 1/20
+    10  10  20  20      ini = 2  fim = 4    pivo = 4/20
+                20
+    10  10  20          ini = 1  fim = 3    pivo = 1/10
+                        80  40  90      ini = 6  fim = 8   pivo = 6/80
+                        40  80  90      ini = 7  fim = 7   pivo = 7/80
+
+10  10  10  20  20  30  40  80  90
+
+```
+int particiona(int *vetor, int ini, int fim) {
+    int pivo;
+    int tmp; //para as trocas
+
+    pivo = ini; //na bibliografia do método, é possível ser o ini, o fim ou uma posição sorteada
+    while (fim > ini) {
+
+        //analise da direita para esquerda
+        for (; fim > pivo && vetor[fim] > vetor[pivo]; fim--, qtd_comparacoes++); //garantindo que os maiores fiquem na direita
+
+        if (fim > pivo) {
+            qtdTrocas++;
+            tmp = vetor[pivo];
+            vetor[pivo] = vetor[fim];
+            vetor[fim] = tmp;
+            pivo = fim;
+        }
+
+        //analise da esquerda para direita
+        for (ini++; ini < pivo && vetor[ini] < vetor[pivo]; ini++, qtdComparacoes++);
+
+        if (ini < pivo) {
+            qtdTrocas++;
+            tmp = vetor[pivo];
+            vetor[pivo] = vetor[ini];
+            vetor[ini] = tmp;
+            pivo = ini;
+        }
+    }
+    return pivo;
+}
+
+void quickSort(int *vetor, int ini, int fim) { //método recurisivo baseado em árvore desbalanceada
+    int pivo;
+
+    pivo = particiona(vetor, ini, fim); //no final do particiona, o pivo está ordenado e é retornado a posição do pivo
+    
+    if (ini < pivo - 1) //tem lado esquerdo com mais de 1 elemento
+        quickSort(vetor, ini, pivo - 1); //se existe lado esq do pivo, executa lado esq
+    if (pivo + 1 < fim) //tem lado direito com mais de 1 elemento
+        quickSort(vetor, pivo + 1, fim); //se existe lado dir do pivo, executa lado dir
+}
+```
+
 
 
 
@@ -584,7 +650,7 @@ meio de RECURSÃO.
 
 Contudo, diferente do QUICKSORT, o MERGESORT sempre divide a estrutura no meio (vai existir uma variável meio)
 
-    - A estrutura vai possuir 2 porções: parte esquerda e parte direita, divididas pelo MEIO. Pensar como se fosse uma ÁRVORE BINÁRIA
+    - A estrutura possui 2 porções: parte esquerda e parte direita, divididas pelo MEIO. Pensar como se fosse uma ÁRVORE BINÁRIA
     - O método possui duas funções: merge (processo recursivo) e o intercala (a ordenação vai funcionar no desempilhamento do processo em que intercala e ordena)
     
 
