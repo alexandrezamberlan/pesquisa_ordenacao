@@ -1,12 +1,11 @@
 # Plano de aula
 
-O(n!)
-O(n^k)
-O(n^2)
-O(n log n)
-O(n)
-O(log n)
+## Aula Semana 9
+    - Discussão sobre a prova
+    - Heapsort
 
+## Aula Semana 8
+    - Prova teórica
 
 ## Aula Semana 7
     - PRINCÍPIO DIVIDIR PARA CONQUISTAR
@@ -20,10 +19,17 @@ O(log n)
         - Mergesort
             - Java implementa seu sort com ele
             - usa 3 variáveis: ini (que marca o lado esquerdo), fim (que marca o lado direito) e o meio
-    
-    
+        
     - Heapsort
         - baseado na filosofia de árvore.... 
+
+    - Complexidades
+        - O(n!)
+        - O(n^k)
+        - O(n^2)
+        - O(n log n)
+        - O(n)
+        - O(log n)
 
 ## Aula Semana 6
     - Revisão: bolha, seleção, inserção, agitação, pente, shell
