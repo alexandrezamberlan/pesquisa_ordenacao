@@ -1,4 +1,15 @@
 # Plano de aula
+    - Correção do trabalho Java Gráfico Benchmark Ordenação
+    
+
+## Aula Semana 11
+    - Java Swing: eventos keypressed, keyreleased, keytyped
+    - Trabalho sobre pesquisa digital
+
+## Aula Semana 10
+    - Pesquisa sequencial
+    - Pesquisa binária
+    - Pesquisa digital
 
 ## Aula Semana 9
     - Discussão sobre a prova
