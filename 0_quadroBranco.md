@@ -1,7 +1,25 @@
 # Plano de aula
+
+## Aula Semana 14
+    - Revisão geral: Pesquisa
+    - Pesquisa:
+        - o que é e para que serve?
+        - localizar versus recuperar
+        - complexidade das pesquisas: sequencial, binária, digital, hash
+        - fluxo: armazenar, "ordenar" , pesquisar
+        - saber os algoritmos
+            - pesquisa binária
+            - pesquisa digital
+        - teoria de tabelas hash
+            - tabela
+            - função hash de endereçamento
+
+## Aula Semana 13
+    - Tabelas hash e função de espalhamento (endereçamento)
+    
+## Aula Semana 12    
     - Correção do trabalho Java Gráfico Benchmark Ordenação
     
-
 ## Aula Semana 11
     - Java Swing: eventos keypressed, keyreleased, keytyped
     - Trabalho sobre pesquisa digital
