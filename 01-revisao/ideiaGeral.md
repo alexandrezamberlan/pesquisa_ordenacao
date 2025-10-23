@@ -1,4 +1,5 @@
-Disciplina Pesquisa e Ordenação
+# Disciplina Pesquisa e Ordenação
+## Ordenação
     - Primeiro processo: ordenação
         - memória principal
         - memória secundária
