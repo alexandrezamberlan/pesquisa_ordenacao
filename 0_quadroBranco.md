@@ -154,6 +154,23 @@
         - tabelas hash: conceitos; algoritmos
         - balanceamento em árvores: conceitos; algoritmos
         - árvores B: conceitos; algoritmos
+    - Conceitos iniciais
+        - ordenar: organizar uma estrutura (lista ou vetor) a partir de um ou mais índices ou chaves
+            - por que ordenar?
+                - para otimizar a busca ou pesquisa
+        - pesquisar: localizar ou buscar um dado dentro de uma estrutura via alguma chave
+            - recuperar: localizar ou buscar dados com relevância (semântica ou significado)
+        - complexidade de um algoritmo: é o esforço computacional de um algoritmo, ou seja, quanto de recurso ele aloca para realizar sua ou suas tarefas
+            - alta complexidade: mais esforço
+            - baixa complexidade: menos esforço
+            - Notação Big O
+                - O(n!)             - maior complexidade
+                - O(n^x)
+                - O(log n + n)
+                - O(n)
+                - O(log n)          - menor complexidade
+        - estabilidade
+            - quanto a estrutura é desordenada até chegar na ordenação
     - Revisão
         - orientação a objetos: estruturação de códigos: popular, exibir, ... OO com métodos de classe (static)
         - estruturas de dados: listas nas 3 linguagens
