@@ -154,6 +154,7 @@
         - tabelas hash: conceitos; algoritmos
         - balanceamento em árvores: conceitos; algoritmos
         - árvores B: conceitos; algoritmos
+    
     - Conceitos iniciais
         - ordenar: organizar uma estrutura (lista ou vetor) a partir de um ou mais índices ou chaves
             - por que ordenar?
@@ -172,6 +173,7 @@
         - estabilidade
             - quanto a estrutura é desordenada até chegar na ordenação
     - Revisão
+        - https://github.com/alexandrezamberlan/estruturasDeDados/tree/master/00%20-%20anosAnteriores/exemploJava_usoLista_MVC
         - orientação a objetos: estruturação de códigos: popular, exibir, ... OO com métodos de classe (static)
         - estruturas de dados: listas nas 3 linguagens
     - Desafio: a partir dos códigos gerados em Java, C# e Python, adicionar os métodos de popular lista a partir de arquivos, tanto para listas com números inteiros, quanto para lista de palavras     
