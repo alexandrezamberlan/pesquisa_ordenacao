@@ -24,7 +24,7 @@
                 NÃO SÃO adequados para listas feitas em C ou C++ com alocação dinâmica de memória, como trabalhado na disciplina Estruturas de Dados
 
 
-            Obs.: ao ordenar os algoritmos garantem porções ordenadas na estrutura:
+            Obs.: ao ordenar, os algoritmos garantem porções ordenadas na estrutura:
                 - final
                 - frente
                 - nas extremidades (piramide invertida)
@@ -78,6 +78,7 @@
 # Comentários
     eficiente versus eficaz 
         - ambos atingem objetivos
+        - só que eficaz tem relação com tempo
 
     qual o melhor algoritmo de ordenação?
         Depende:
