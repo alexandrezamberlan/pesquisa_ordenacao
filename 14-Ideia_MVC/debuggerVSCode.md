@@ -8,7 +8,8 @@
 
 4. Selecione a opção Arquivo Python (Python File).
 
-O VS Code vai criar automaticamente uma pasta oculta chamada .vscode na sua raiz e, dentro dela, um arquivo launch.json.Substitua todo o conteúdo desse arquivo pelo código abaixo:
+O VS Code vai criar automaticamente uma pasta oculta chamada .vscode na sua raiz e, dentro dela, um arquivo launch.json.
+Substitua todo o conteúdo desse arquivo pelo código abaixo:
 
 ```json
 {
