@@ -36,10 +36,10 @@
 
 ## Python
 ```python
-    tempoInicio = time.time()
+    tempo_inicio = time.time()
     # rotina 1
-    tempoFim = time.time()
-    print("Tempo da rotina 1: ", (tempoFim - tempoInicio) , "s")        
+    tempo_fim = time.time()
+    print("Tempo da rotina 1: ", (tempo_fim - tempo_inicio) , "s")        
 ```
 
 ## C++

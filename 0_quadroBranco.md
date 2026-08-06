@@ -144,7 +144,7 @@
     - Discutir e implementar técnicas de medição de tempo nas linguagens
 
 ## Aula Semana 2
-    - Realização do desafio
+    - Realização do desafio da ideia MVC
 
 ## Aula Semana 1
     - Dicusssão e entendimento do Plano de Ensino
