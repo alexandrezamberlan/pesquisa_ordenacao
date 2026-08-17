@@ -138,6 +138,8 @@
         - bolha
         - seleção
         - inserção
+        - agitação
+    - Tarefa avaliativa: a partir dos códigos trabalhados (bolha, seleção, inserção e agitação), refatora-los para que funcionem em uma organização MVC. Os algoritmos de ordenação devem estar na classe Ordenacao e serem estáticos. Além disso, é preciso contabilizar números de comparações e trocas, bem como o tempo de execução de cada um. Todas essas operações já foram trabalhadas. O sistema solicitado deve ser disponibilizado no github pessoal de cada aluno.
 
 ## Aula Semana 3
     - Conceitos e fundamentos associados à ordenação
