@@ -16,7 +16,7 @@ import javax.swing.JOptionPane;
  * @author laboratorio
  */
 public class JFramePrincipal extends javax.swing.JFrame {
-    
+
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(JFramePrincipal.class.getName());
 
     /**
@@ -63,6 +63,7 @@ public class JFramePrincipal extends javax.swing.JFrame {
         jButtonAbrir.addActionListener(this::jButtonAbrirActionPerformed);
 
         jButtonLimpar.setText("Limpar");
+        jButtonLimpar.addActionListener(this::jButtonLimparActionPerformed);
 
         jLabel2.setText("Métodos de Ordenação:");
 
@@ -182,7 +183,47 @@ public class JFramePrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButtonExecutarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonExecutarActionPerformed
-        jPanelResultados.setVisible(true);
+        if (Model.lista.isEmpty()) {
+            JOptionPane.showMessageDialog(this, "O arquivo não foi carregado para a lista", "Erro", JOptionPane.ERROR_MESSAGE);
+        } else {
+            jPanelResultados.setVisible(true);
+            switch (jComboBoxMetodos.getSelectedIndex()) {
+                case 0:     //bolha
+                    metricas.clear();
+                    tempoInicio = System.nanoTime();
+                    metricas.addAll(controller.Ordenacao.bolha(Model.lista));
+                    tempoFim = System.nanoTime();
+                    metricas.add((float) (tempoFim - tempoInicio) / 1000000);
+                    break;
+                case 1:     //insercao
+                    metricas.clear();
+                    tempoInicio = System.nanoTime();
+                    metricas.addAll(controller.Ordenacao.insercao(Model.lista));
+                    tempoFim = System.nanoTime();
+                    metricas.add((float) (tempoFim - tempoInicio) / 1000000);
+                    break;
+                case 2:     //pente
+                    metricas.clear();
+                    tempoInicio = System.nanoTime();
+                    metricas.addAll(controller.Ordenacao.pente(Model.lista));
+                    tempoFim = System.nanoTime();
+                    metricas.add((float) (tempoFim - tempoInicio) / 1000000);
+                    break;
+                case 3:     //selecao
+                    metricas.clear();
+                    tempoInicio = System.nanoTime();
+                    metricas.addAll(controller.Ordenacao.selecao(Model.lista));
+                    tempoFim = System.nanoTime();
+                    metricas.add((float) (tempoFim - tempoInicio) / 1000000);
+                    break;
+                default:
+                    throw new AssertionError();
+            }
+            jTextFieldQtdNumeros.setText("" + Model.lista.size());
+            jTextFieldQtdComparacoes.setText("" + metricas.get(0));
+            jTextFieldQtdTrocas.setText("" + metricas.get(1));
+            jTextFieldTempo.setText("" + metricas.get(2));
+        }
     }//GEN-LAST:event_jButtonExecutarActionPerformed
 
     private void jButtonAbrirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAbrirActionPerformed
@@ -194,9 +235,22 @@ public class JFramePrincipal extends javax.swing.JFrame {
             } else {
                 JOptionPane.showMessageDialog(this, "Problemas para ler o arquivo e carregar a lista", "Erro", JOptionPane.ERROR_MESSAGE);
                 jTextFieldNomeArquivo.setText("");
+                jTextFieldNomeArquivo.requestFocusInWindow();
             }
         }
     }//GEN-LAST:event_jButtonAbrirActionPerformed
+
+    private void jButtonLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLimparActionPerformed
+        
+        jTextFieldNomeArquivo.setText("");
+        Model.lista.clear();
+        jComboBoxMetodos.setSelectedIndex(0);
+        jTextFieldQtdNumeros.setText("");
+        jTextFieldQtdComparacoes.setText("");
+        jTextFieldQtdTrocas.setText("");
+        jTextFieldTempo.setText("");
+        jTextFieldNomeArquivo.requestFocusInWindow();
+    }//GEN-LAST:event_jButtonLimparActionPerformed
 
     /**
      * @param args the command line arguments
@@ -221,10 +275,12 @@ public class JFramePrincipal extends javax.swing.JFrame {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> new JFramePrincipal().setVisible(true));
-       
+
     }
 
-      
+    ArrayList<Float> metricas = new ArrayList<>();
+    long tempoInicio, tempoFim;
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonAbrir;
     private javax.swing.JButton jButtonExecutar;

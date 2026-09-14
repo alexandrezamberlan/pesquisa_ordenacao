@@ -3,7 +3,7 @@ package controller;
 import java.util.ArrayList;
 
 public class Ordenacao {
-    
+
     public static ArrayList bolha(ArrayList<Integer> lista) {
         ArrayList<Float> metricas = new ArrayList<>();
         long qtdComparacoes = 0;
@@ -24,39 +24,39 @@ public class Ordenacao {
                 }
             }
         } while (houveTroca);
-        metricas.add((float)qtdComparacoes);
-        metricas.add((float)qtdTrocas);
+        metricas.add((float) qtdComparacoes);
+        metricas.add((float) qtdTrocas);
         return metricas;
     }
 
-    
     public static ArrayList selecao(ArrayList<Integer> lista) {
         ArrayList<Float> metricas = new ArrayList<>();
         long qtdComparacoes = 0;
         long qtdTrocas = 0;
         int i, j, posMenor, aux;
         posMenor = 0;
-        
+
         for (i = 0; i < lista.size(); i++) {
             posMenor = i;
-            for (j = i+1; j < lista.size(); j++) {
+            for (j = i + 1; j < lista.size(); j++) {
                 qtdComparacoes++;
                 if (lista.get(j) < lista.get(posMenor)) {
                     posMenor = j;
                 }
             }
+            if (posMenor != i) {
+                aux = lista.get(i);
+                lista.set(i, lista.get(posMenor));
+                lista.set(posMenor, aux);
+                qtdTrocas++;
+            }
         }
-        if (posMenor != i) {
-            aux = lista.get(i);
-            lista.set(i, lista.get(posMenor));
-            lista.set(posMenor, aux);
-            qtdTrocas++;
-        }
-        metricas.add((float)qtdComparacoes);
-        metricas.add((float)qtdTrocas);
+
+        metricas.add((float) qtdComparacoes);
+        metricas.add((float) qtdTrocas);
         return metricas;
     }
-    
+
     public static ArrayList insercao(ArrayList<Integer> lista) {
         ArrayList<Float> metricas = new ArrayList<>();
         long qtdComparacoes = 0;
@@ -65,17 +65,17 @@ public class Ordenacao {
 
         for (i = 1; i < lista.size(); i++) {
             aux = lista.get(i);
-            for (j = i-1; j > 0 && aux < lista.get(j); j-- , qtdComparacoes++) {
+            for (j = i - 1; j > 0 && aux < lista.get(j); j--, qtdComparacoes++) {
                 qtdTrocas++;
-                lista.set(j+1, lista.get(j));
+                lista.set(j + 1, lista.get(j));
             }
-            lista.set(j+1, aux);
+            lista.set(j + 1, aux);
         }
-        metricas.add((float)qtdComparacoes);
-        metricas.add((float)qtdTrocas);
+        metricas.add((float) qtdComparacoes);
+        metricas.add((float) qtdTrocas);
         return metricas;
     }
-    
+
     public static ArrayList pente(ArrayList<Integer> lista) {
         ArrayList<Float> metricas = new ArrayList<>();
         long qtdComparacoes = 0;
@@ -85,7 +85,7 @@ public class Ordenacao {
         int i;
         int distancia = lista.size();
         do {
-            distancia = (int)(distancia/1.3);
+            distancia = (int) (distancia / 1.3);
             if (distancia <= 0) {
                 distancia = 1;
             }
@@ -101,8 +101,8 @@ public class Ordenacao {
                 }
             }
         } while (distancia > 1 || houveTroca);
-        metricas.add((float)qtdComparacoes);
-        metricas.add((float)qtdTrocas);
+        metricas.add((float) qtdComparacoes);
+        metricas.add((float) qtdTrocas);
         return metricas;
     }
 }
