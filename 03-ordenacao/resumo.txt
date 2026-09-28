@@ -669,4 +669,65 @@ Contudo, diferente do QUICKSORT, o MERGESORT sempre divide a estrutura no meio (
         -> if (raiz * 2 + 1 < n && lista[raiz] < lista[raiz * 2 + 1]) { troca }
 
 
+```
+public static void heap(ArrayList<Integer> lista) {
+        if (lista == null || lista.size() <= 1) {
+            return;
+        }
+
+        // 1. Duplica o primeiro elemento para "jogar" o array para a direita 
+        // e poder ignorar a posição 0 (índices começam em 1)
+        lista.add(0, lista.get(0));
+        int tamanho = lista.size() - 1; // tamanho real dos dados válidos (índices 1 até tamanho)
+
+        // 2. CONSTRUIR O MAX-HEAP
+        // Vai do último nó que possui filhos (tamanho / 2) até a raiz (1)
+        for (int i = tamanho / 2; i >= 1; i--) {
+            heapify(lista, tamanho, i);
+        }
+
+        // 3. EXTRAIR OS ELEMENTOS DO HEAP (ORDENAÇÃO)
+        for (int i = tamanho; i > 1; i--) {
+            // Move a raiz atual (maior elemento) para o final do array útil
+            int tmp = lista.get(1);
+            lista.set(1, lista.get(i));
+            lista.set(i, tmp);
+
+            // Reduz o tamanho do heap e reorganiza a nova raiz que mudou de lugar
+            heapify(lista, i - 1, 1);
+        }
+
+        // 4. Remove o elemento auxiliar que colocamos no índice 0
+        lista.remove(0);
+    }
+
+    // Função auxiliar para descer o elemento (Down-Heap / Heapify)
+    private static void heapify(ArrayList<Integer> lista, int tamanhoHeap, int i) {
+        int maior = i;          // Inicializa o maior como o pai
+        int esquerda = 2 * i;    // Filho da esquerda
+        int direita = 2 * i + 1; // Filho da direita
+
+        // Se o filho da esquerda for maior que o pai
+        if (esquerda <= tamanhoHeap && lista.get(esquerda) > lista.get(maior)) {
+            maior = esquerda;
+        }
+
+        // Se o filho da direita for maior que o maior atual
+        if (direita <= tamanhoHeap && lista.get(direita) > lista.get(maior)) {
+            maior = direita;
+        }
+
+        // Se o maior não for o pai, faz a troca e continua descendo recursivamente
+        if (maior != i) {
+            int swap = lista.get(i);
+            lista.set(i, lista.get(maior));
+            lista.set(maior, swap);
+
+            // Aplica o heapify na subárvore afetada
+            heapify(lista, tamanhoHeap, maior);
+        }
+    }
+```
+
+
 
