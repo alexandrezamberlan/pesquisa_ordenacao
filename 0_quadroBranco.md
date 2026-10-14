@@ -179,3 +179,24 @@
         - orientação a objetos: estruturação de códigos: popular, exibir, ... OO com métodos de classe (static)
         - estruturas de dados: listas nas 3 linguagens
     - Desafio: a partir dos códigos gerados em Java, C# e Python, adicionar os métodos de popular lista a partir de arquivos, tanto para listas com números inteiros, quanto para lista de palavras     
+
+
+
+Roteiro de estudo:
+1) o universo de ordenação
+    - algoritmos
+    - conceitos
+2) o universo de pesquisa
+    - conceitos
+    - algoritmos
+        - sequencial
+        - binário
+        - digital
+3) HASH
+    - função de espalhamento, ou seja, um dado é armazenado ou pesquisado na estrutura via um código de endereçamento
+    - conceitos
+        - tabela hash: estrutura de dados que armazena os dados
+        - função hash: cálculo de endereçamento para armazenar e buscar elementos na estrutura - O(1)
+        - tipos de tratamento de colisões
+            - listas encadeadas
+            - open addressing ou closed hashing
