@@ -1,4 +1,4 @@
-package servidor.util;
+package utilidades;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -6,11 +6,11 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.List;
-import servidor.model.Sessao;
+import model.Sessao;
 
-public class Utilidades {
+public class Util {
 
-    public static boolean carregarArquivoEmHashMap(String nomeArquivo, HashMap<String, Sessao> sessoes, StringBuilder dadosSessoes) {
+    public static String carregarArquivoEmHashMap(String nomeArquivo, HashMap<String, Sessao> sessoes, StringBuilder dadosSessoes) {
         try {
             Path caminho = Paths.get(nomeArquivo);
 
@@ -29,15 +29,14 @@ public class Utilidades {
 
                     if (dadosLinha.length >= 2) {
                         Sessao sessao = new Sessao(dadosLinha[0], dadosLinha[1]);
-                        sessoes.put(sessao.numeroCelular, sessao);
+                        sessoes.put(sessao.getNumeroCelular(), sessao);
                     }
                 }
             }
-
-            return true;
+            return "";
         } catch (IOException e) {
-            System.err.println("Erro ao processar o arquivo: " + e.getMessage());
-            return false;
+            //System.err.println();
+            return "Erro ao processar o arquivo: " + e.getMessage();
         }
     }
 }
