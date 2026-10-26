@@ -32,6 +32,7 @@ A árvore PATRICIA (Practical Algorithm To Retrieve Information Coded In Alphanu
 
 Na Trie padrão, cada caractere vira um nó individual. Se não houver ramificação, o caminho continua descendo letra por letra:
 
+```text
        [ Raiz ]
       /        \
     [A]        [G]
@@ -43,6 +44,7 @@ Na Trie padrão, cada caractere vira um nó individual. Se não houver ramifica�
 
   |     |       |
  [R]*  [R]*     [O]*
+```
 
 (O caractere * indica o fim de uma palavra válida).
 
@@ -51,12 +53,13 @@ Na Trie padrão, cada caractere vira um nó individual. Se não houver ramifica�
 ### 2. Estrutura na Árvore PATRICIA (Trie Compacta)
 
 A árvore PATRICIA elimina os nós redundantes de filho único, agrupando os caracteres que não se ramificam em um único bloco:
-
+```text
        [ Raiz ]
       /        \
    "AM"       "GATO"*
    /   \
  "AR"* "OR"*
+```
 
   - Análise: O prefixo comum "AM" foi mantido, mas as terminações "AR" e "OR" foram compactadas em nós únicos após a ramificação. O termo "GATO" não possui ramificações, por isso foi totalmente compactado em um único nó logo abaixo da raiz.
 
