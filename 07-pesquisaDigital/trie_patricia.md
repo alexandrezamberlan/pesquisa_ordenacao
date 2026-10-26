@@ -19,7 +19,6 @@ A árvore PATRICIA (Practical Algorithm To Retrieve Information Coded In Alphanu
 
 ## Comparação Direta
 
-
 | Característica | Árvore Trie Padrão | Árvore PATRICIA |
 | :--- | :--- | :--- |
 | **Estrutura do Nó** | Cada nó armazena um único caractere (ou caractere por caractere nos caminhos). | Nós agrupam sequências de caracteres ou indicam a posição do próximo teste. |
@@ -27,4 +26,107 @@ A árvore PATRICIA (Practical Algorithm To Retrieve Information Coded In Alphanu
 | **Ramificações** | Pode ter nós com apenas um filho. | Todos os nós internos possuem pelo menos duas ramificações. |
 | **Complexidade** | Mais simples de entender e implementar. | Implementação e lógica de remoção/inserção mais complexas. |
 
+## Simular a inserção do seguinte conjunto de palavras: "AMAR", "AMOR" e "GATO".
+
+### 1. Estrutura na Árvore Trie Padrão
+
+Na Trie padrão, cada caractere vira um nó individual. Se não houver ramificação, o caminho continua descendo letra por letra:
+
+       [ Raiz ]
+      /        \
+    [A]        [G]
+
+     |          |
+    [M]        [A]
+   /   \        |
+ [A]   [O]      [T]
+
+  |     |       |
+ [R]*  [R]*     [O]*
+
+(O caractere * indica o fim de uma palavra válida).
+
+  - Análise: Repare na palavra "GATO". Como não há nenhuma outra palavra que comece com "G", ela gera um caminho linear de 4 nós (G -> A -> T -> O). Isso gera um grande desperdício de memória e ponteiros.
+
+### 2. Estrutura na Árvore PATRICIA (Trie Compacta)
+
+A árvore PATRICIA elimina os nós redundantes de filho único, agrupando os caracteres que não se ramificam em um único bloco:
+
+       [ Raiz ]
+      /        \
+   "AM"       "GATO"*
+   /   \
+ "AR"* "OR"*
+
+  - Análise: O prefixo comum "AM" foi mantido, mas as terminações "AR" e "OR" foram compactadas em nós únicos após a ramificação. O termo "GATO" não possui ramificações, por isso foi totalmente compactado em um único nó logo abaixo da raiz.
+
+### Resumo do Ganho de Espaço
+
+  - Trie Padrão: Precisou de 9 nós no total para armazenar as 3 palavras.
+  - PATRICIA: Precisou de apenas 4 nós no total para armazenar exatamente as mesmas palavras.
+
+## Código Python
+
+```python
+class NodeTrie:
+    def __init__(self):
+        # Cada nó possui um dicionário de filhos (caractere -> NodeTrie)
+        self.filhos = {}
+        # Flag para indicar se o nó atual marca o fim de uma palavra válida
+        self.fim_da_palavra = False
+
+class Trie:
+    def __init__(self):
+        self.raiz = NodeTrie()
+
+    def inserir(self, palavra: str) -> None:
+        """Insere uma palavra na árvore caractere por caractere."""
+        no_atual = self.raiz
+        for caractere in palavra:
+            # Se o caractere não existir nos filhos do nó atual, cria um novo nó
+            if caractere not in no_atual.filhos:
+                no_atual.filhos[caractere] = NodeTrie()
+            # Avança para o nó filho
+            no_atual = no_atual.filhos[caractere]
+        # Ao final da palavra, marca o nó como o fim de uma palavra válida
+        no_atual.fim_da_palavra = True
+
+    def buscar(self, palavra: str) -> bool:
+        """Busca se uma palavra exata existe na árvore."""
+        no_atual = self.raiz
+        for caractere in palavra:
+            if caractere not in no_atual.filhos:
+                return False
+            no_atual = no_atual.filhos[caractere]
+        return no_atual.fim_da_palavra
+
+    def comeca_com(self, prefixo: str) -> bool:
+        """Verifica se existe alguma palavra na árvore que começa com o prefixo dado."""
+        no_atual = self.raiz
+        for caractere in prefixo:
+            if caractere not in no_atual.filhos:
+                return False
+            no_atual = no_atual.filhos[caractere]
+        return True
+
+# --- Testando a implementação ---
+if __name__ == "__main__":
+    trie = Trie()
+    
+    # Inserindo as palavras do nosso exemplo anterior
+    palavras = ["AMAR", "AMOR", "GATO"]
+    for p in palavras:
+        trie.inserir(p)
+    
+    # Testes de busca exata
+    print(trie.buscar("AMOR"))   # Saída: True
+    print(trie.buscar("AMO"))    # Saída: False (Existe o prefixo, mas não a palavra exata)
+    print(trie.buscar("CÃO"))    # Saída: False
+    
+    # Testes de busca por prefixo (Autocompletar)
+    print(trie.comeca_com("AM"))  # Saída: True (Atende a "AMAR" e "AMOR")
+    print(trie.comeca_com("GA"))  # Saída: True (Atende a "GATO")
+    print(trie.comeca_com("XE"))  # Saída: False
+
+```
 
