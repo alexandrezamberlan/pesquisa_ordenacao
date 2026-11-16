@@ -1,0 +1,1001 @@
+id;nome;categoria;preco;estoque
+1415;Bola de Vôlei Premium 896;Esportes;661.97;13
+1436;Quebra-Cabeça Eco 135;Brinquedos;1242.59;237
+1101;Liquidificador Compacto 966;Eletrodomésticos;763.21;362
+1843;Chocolate Amargo Classic 510;Alimentos;771.37;408
+1428;Calça Jeans Smart 467;Vestuário;1819.28;9
+1196;Agenda Smart 771;Papelaria;2097.06;341
+1241;Lápis de Cor Max 144;Papelaria;1594.17;396
+1670;Trena Pro 897;Ferramentas;2038.14;444
+1773;Filtro de Ar Eco 860;Automotivo;2296.61;365
+1212;Romance Premium 222;Livros;970.05;411
+1506;Quebra-Cabeça Max 264;Brinquedos;1189.98;8
+1126;Carregador Veicular Turbo 771;Automotivo;992.92;445
+1722;Boneca Profissional 901;Brinquedos;1140.98;457
+1461;Boneca Turbo 365;Brinquedos;1591.97;115
+1568;Biografia Básico 298;Livros;816.94;170
+1109;Shampoo Premium 355;Beleza;97.66;59
+1005;Aditivo Básico 474;Automotivo;2532.42;351
+1569;Luva de Treino Básico 661;Esportes;1633.89;430
+1767;Bola de Vôlei Eco 858;Esportes;1096.27;393
+1111;Adubo Orgânico Pro 173;Jardinagem;1346.14;409
+1279;Trena Básico 553;Ferramentas;731.93;312
+1926;Óleo de Motor Compacto 590;Automotivo;2460.09;90
+1483;Carregador Veicular Ultra 421;Automotivo;134.80;150
+1753;Furadeira Profissional 654;Ferramentas;1476.73;145
+1737;Corda de Pular Max 305;Esportes;700.77;457
+1444;Fritadeira Elétrica Profissional 931;Eletrodomésticos;778.68;204
+1799;Lápis de Cor Pro 315;Papelaria;796.19;28
+1408;Trena Pro 214;Ferramentas;1038.39;164
+1698;Mangueira Eco 716;Jardinagem;1975.39;371
+1448;Liquidificador Max 264;Eletrodomésticos;2155.45;325
+1295;Livro Infantil Ultra 821;Livros;1721.29;287
+1310;Condicionador Plus 928;Beleza;2358.56;462
+1387;Luva de Treino Profissional 178;Esportes;2318.06;432
+1972;Aspirador de Pó Básico 334;Eletrodomésticos;2963.99;317
+1351;Meia Esportiva Básico 720;Vestuário;1107.64;252
+1016;Shampoo Básico 567;Beleza;2776.60;149
+1488;Romance Básico 723;Livros;1912.10;289
+1610;Chocolate Amargo Profissional 764;Alimentos;949.90;123
+1550;Pen Drive Ultra 707;Informática;2946.88;109
+1766;Granola Compacto 370;Alimentos;620.59;448
+1177;Biscoito Integral Premium 203;Alimentos;2344.24;311
+1484;Biscoito Integral Classic 303;Alimentos;136.55;214
+1794;Micro-ondas Básico 230;Eletrodomésticos;1730.15;421
+1029;Blocos de Montar Ultra 338;Brinquedos;1273.88;94
+1557;Condicionador Smart 634;Beleza;329.38;1
+1355;Blocos de Montar Eco 265;Brinquedos;2270.28;231
+1164;Halter Profissional 494;Esportes;2313.09;92
+1288;Camiseta Turbo 649;Vestuário;760.83;291
+1552;Meia Esportiva Lite 108;Vestuário;2097.88;23
+1644;Chocolate Amargo Pro 720;Alimentos;136.67;294
+1079;Headset Premium 403;Informática;2132.58;172
+1065;Regador Max 288;Jardinagem;1418.14;64
+1454;Monitor Classic 916;Informática;2805.25;249
+1159;Livro de Receitas Lite 500;Livros;195.66;46
+1824;Caneta Esferográfica Max 652;Papelaria;2255.52;456
+1485;Granola Plus 666;Alimentos;966.16;59
+1247;Chave de Fenda Plus 594;Ferramentas;2424.79;432
+1259;Bola de Vôlei Turbo 339;Esportes;71.83;44
+1741;Café Torrado Ultra 217;Alimentos;34.10;228
+1768;Boneca Plus 347;Brinquedos;1952.10;145
+1385;Carrinho de Controle Remoto Básico 897;Brinquedos;1287.95;66
+1877;Jogo de Tabuleiro Lite 993;Brinquedos;1961.62;76
+1937;Martelo Básico 962;Ferramentas;1362.08;80
+1637;Livro Infantil Premium 863;Livros;419.11;403
+1261;Raquete de Tênis Mini 174;Esportes;1335.08;413
+1442;Chocolate Amargo Pro 252;Alimentos;1010.26;131
+1653;Aditivo Lite 907;Automotivo;1049.28;108
+1255;Jaqueta Ultra 211;Vestuário;2154.54;220
+1699;Liquidificador Classic 147;Eletrodomésticos;110.69;430
+1354;SSD Externo Pro 467;Informática;1108.88;185
+1130;Fritadeira Elétrica Compacto 881;Eletrodomésticos;1593.67;422
+1863;Óleo de Motor Pro 591;Automotivo;1778.48;43
+1572;Boneca Profissional 573;Brinquedos;1278.74;262
+1810;Bermuda Família 726;Vestuário;2546.17;493
+1341;Boneca Profissional 649;Brinquedos;2577.62;180
+1382;Pá de Jardim Família 348;Jardinagem;533.77;56
+1184;Blocos de Montar Eco 266;Brinquedos;2716.68;134
+1498;Aditivo Turbo 862;Automotivo;2454.32;161
+1638;Livro Infantil Ultra 896;Livros;690.54;67
+1356;Bermuda Classic 489;Vestuário;2502.73;456
+1059;Livro de Receitas Profissional 122;Livros;1353.17;369
+1037;Azeite Extra Virgem Pro 115;Alimentos;2260.20;109
+1608;Jaqueta Classic 575;Vestuário;2202.82;232
+1021;Camiseta Eco 876;Vestuário;373.50;389
+1710;Palheta de Para-brisa Lite 637;Automotivo;934.32;7
+1993;Pá de Jardim Compacto 531;Jardinagem;2524.00;69
+1400;Granola Mini 992;Alimentos;2751.57;320
+1480;Batedeira Mini 162;Eletrodomésticos;427.78;52
+1595;Café Torrado Premium 958;Alimentos;2876.78;316
+1347;Livro Técnico Smart 827;Livros;2533.44;144
+1468;Chocolate Amargo Turbo 706;Alimentos;239.66;107
+1527;Martelo Básico 732;Ferramentas;1466.83;276
+1939;Halter Eco 891;Esportes;1087.77;95
+1733;Pelúcia Max 113;Brinquedos;215.27;89
+1639;Carregador Veicular Plus 270;Automotivo;421.93;65
+1344;Mangueira Família 158;Jardinagem;2898.31;430
+1066;Chave de Fenda Premium 617;Ferramentas;1241.21;21
+1894;Bola de Vôlei Pro 224;Esportes;397.15;333
+1023;Carrinho de Controle Remoto Max 511;Brinquedos;2149.01;56
+1008;Trena Turbo 303;Ferramentas;2266.89;499
+1715;Trena Mini 127;Ferramentas;518.46;424
+1584;Shampoo Premium 192;Beleza;2333.17;470
+1668;Martelo Compacto 321;Ferramentas;1647.03;126
+1617;Camiseta Pro 291;Vestuário;2653.82;467
+1795;Monitor Lite 496;Informática;390.79;193
+1942;Romance Mini 754;Livros;951.87;389
+1885;Pen Drive Pro 243;Informática;2631.63;136
+1098;Bola de Futebol Premium 299;Esportes;242.91;154
+1596;Guia de Viagem Profissional 426;Livros;1548.78;149
+1402;Jaqueta Mini 876;Vestuário;1600.39;442
+1751;Palheta de Para-brisa Premium 742;Automotivo;1366.25;49
+1015;Mangueira Básico 551;Jardinagem;2361.91;37
+1876;Azeite Extra Virgem Pro 874;Alimentos;2116.78;394
+1763;Carregador Veicular Max 919;Automotivo;2784.49;80
+1966;Batedeira Compacto 718;Eletrodomésticos;2052.55;9
+1338;Mouse Óptico Compacto 782;Informática;1221.69;97
+1694;Meia Esportiva Plus 468;Vestuário;569.55;250
+1995;Camiseta Básico 145;Vestuário;1834.67;100
+1978;Carrinho de Controle Remoto Mini 419;Brinquedos;1715.42;231
+1586;Marcador de Texto Max 336;Papelaria;1892.52;232
+1113;Esmalte Compacto 707;Beleza;2074.91;338
+1252;Nível a Laser Eco 682;Ferramentas;2170.24;194
+1717;Perfume Classic 668;Beleza;885.01;368
+1188;Trena Eco 237;Ferramentas;2134.12;51
+1727;Monitor Max 107;Informática;1804.27;156
+1286;Esmalte Lite 596;Beleza;1798.05;482
+1007;Carrinho de Controle Remoto Ultra 649;Brinquedos;2550.40;85
+1513;Óleo de Motor Lite 741;Automotivo;1147.28;98
+1823;Biografia Lite 760;Livros;1484.38;439
+1146;Pen Drive Turbo 231;Informática;1253.03;290
+1160;Capa de Banco Mini 360;Automotivo;1492.31;250
+1576;Livro de Receitas Smart 466;Livros;2526.78;440
+1149;Corda de Pular Compacto 128;Esportes;2188.50;329
+1771;Mangueira Lite 187;Jardinagem;788.86;366
+1163;Boné Classic 511;Vestuário;257.19;470
+1964;Bola de Vôlei Classic 721;Esportes;1358.31;137
+1839;Carrinho de Controle Remoto Premium 772;Brinquedos;1702.70;348
+1112;Boneca Eco 328;Brinquedos;2487.49;10
+1240;Condicionador Básico 636;Beleza;1316.00;60
+1327;Monitor Lite 821;Informática;1986.96;83
+1268;Boneca Eco 373;Brinquedos;994.48;307
+1858;Alicate Compacto 111;Ferramentas;1294.18;272
+1168;Corda de Pular Família 526;Esportes;620.62;402
+1187;Chocolate Amargo Plus 530;Alimentos;2760.35;164
+1744;Camiseta Classic 358;Vestuário;2105.34;419
+1999;Quebra-Cabeça Smart 759;Brinquedos;443.95;359
+1850;Jogo de Tabuleiro Família 267;Brinquedos;55.59;119
+1142;Raquete de Tênis Compacto 233;Esportes;684.22;159
+1592;Hidratante Turbo 666;Beleza;1002.12;68
+1297;Batedeira Profissional 628;Eletrodomésticos;1373.58;56
+1106;Bermuda Família 439;Vestuário;2764.12;198
+1224;Micro-ondas Plus 458;Eletrodomésticos;579.33;208
+1489;Liquidificador Mini 375;Eletrodomésticos;2211.17;75
+1673;Filtro de Ar Profissional 189;Automotivo;694.16;346
+1831;Martelo Compacto 516;Ferramentas;983.29;313
+1175;Monitor Plus 327;Informática;1948.97;216
+1676;Livro Técnico Pro 864;Livros;1643.85;327
+1933;Calça Jeans Ultra 226;Vestuário;2053.39;496
+1501;Micro-ondas Smart 816;Eletrodomésticos;1587.74;26
+1523;Biografia Lite 904;Livros;1324.09;63
+1030;Camiseta Classic 549;Vestuário;644.40;367
+1229;Bola de Futebol Ultra 144;Esportes;2080.32;229
+1641;Bola de Futebol Mini 869;Esportes;906.75;465
+1441;Vaso de Cerâmica Turbo 508;Jardinagem;52.27;123
+1918;Ventilador Eco 898;Eletrodomésticos;862.94;42
+1427;Marcador de Texto Família 744;Papelaria;1045.38;302
+1118;Caderno Básico 520;Papelaria;1194.78;435
+1453;SSD Externo Ultra 942;Informática;611.33;321
+1246;Palheta de Para-brisa Plus 515;Automotivo;1285.83;384
+1509;Alicate Premium 395;Ferramentas;2672.43;412
+1364;Headset Profissional 121;Informática;1528.67;117
+1589;Granola Família 662;Alimentos;992.37;293
+1791;Capa de Banco Compacto 803;Automotivo;456.01;304
+1392;Webcam Smart 776;Informática;1233.85;174
+1910;Azeite Extra Virgem Profissional 790;Alimentos;2224.92;447
+1981;Vaso de Cerâmica Lite 123;Jardinagem;2661.38;22
+1583;Alicate Profissional 831;Ferramentas;2971.66;126
+1836;Palheta de Para-brisa Eco 792;Automotivo;2855.97;363
+1215;Livro de Receitas Pro 699;Livros;2279.62;81
+1492;Raquete de Tênis Ultra 981;Esportes;2576.69;231
+1050;Boné Profissional 354;Vestuário;338.17;314
+1515;Blocos de Montar Eco 951;Brinquedos;2981.05;86
+1806;Pelúcia Compacto 151;Brinquedos;2667.80;384
+1060;Condicionador Compacto 941;Beleza;2039.93;45
+1429;Chocolate Amargo Premium 255;Alimentos;1115.15;489
+1452;Shampoo Eco 112;Beleza;1725.65;292
+1779;Carrinho de Controle Remoto Pro 965;Brinquedos;2699.30;283
+1222;Regador Família 557;Jardinagem;1662.83;346
+1547;Café Torrado Família 279;Alimentos;420.52;248
+1035;Livro Técnico Ultra 499;Livros;1002.76;481
+1540;Cafeteira Compacto 518;Eletrodomésticos;1006.01;279
+1520;Óleo de Motor Profissional 514;Automotivo;1167.47;191
+1293;Perfume Ultra 757;Beleza;2932.46;57
+1330;Bicicleta Ergométrica Básico 588;Esportes;1484.28;189
+1856;Bicicleta Ergométrica Lite 327;Esportes;2526.39;93
+1243;Martelo Lite 405;Ferramentas;924.91;114
+1051;Pelúcia Plus 600;Brinquedos;2797.75;75
+1092;Moletom Família 263;Vestuário;1643.29;176
+1616;Livro de Receitas Lite 446;Livros;1115.87;334
+1380;Capa de Banco Ultra 482;Automotivo;579.59;44
+1166;Furadeira Pro 644;Ferramentas;466.19;94
+1481;Headset Família 896;Informática;936.74;454
+1244;Hidratante Ultra 538;Beleza;1558.91;72
+1348;Alicate Pro 308;Ferramentas;2360.09;175
+1201;Café Torrado Premium 241;Alimentos;2570.46;47
+1920;Ventilador Classic 489;Eletrodomésticos;2852.65;485
+1316;Furadeira Eco 616;Ferramentas;386.72;242
+1249;Shampoo Plus 454;Beleza;17.26;115
+1266;Jogo de Tabuleiro Smart 133;Brinquedos;2911.44;235
+1200;Esmalte Eco 298;Beleza;2213.21;420
+1093;Raquete de Tênis Compacto 225;Esportes;180.08;446
+1478;Romance Smart 487;Livros;1112.04;436
+1672;Raquete de Tênis Pro 885;Esportes;2824.69;120
+1474;Trena Mini 662;Ferramentas;597.53;438
+1376;Biscoito Integral Plus 379;Alimentos;831.81;25
+1998;Teclado Mecânico Mini 956;Informática;801.43;71
+1094;Perfume Compacto 127;Beleza;2857.04;130
+1083;Bermuda Premium 578;Vestuário;843.71;104
+1875;Pá de Jardim Mini 836;Jardinagem;183.93;276
+1865;Aspirador de Pó Turbo 555;Eletrodomésticos;1111.08;375
+1911;Livro Infantil Turbo 983;Livros;2368.73;337
+1504;Nível a Laser Max 543;Ferramentas;492.82;111
+1664;Caderno Lite 403;Papelaria;1914.34;369
+1162;Pelúcia Mini 753;Brinquedos;1271.42;264
+1276;Livro Técnico Plus 824;Livros;2520.73;200
+1973;Alicate Smart 718;Ferramentas;2861.80;57
+1186;Batedeira Profissional 441;Eletrodomésticos;1185.73;194
+1003;Chocolate Amargo Lite 694;Alimentos;620.94;71
+1785;Aditivo Mini 166;Automotivo;1255.22;134
+1852;Liquidificador Profissional 177;Eletrodomésticos;656.10;312
+1945;Raquete de Tênis Mini 559;Esportes;921.81;405
+1100;Furadeira Classic 828;Ferramentas;385.83;309
+1217;Liquidificador Ultra 727;Eletrodomésticos;475.58;463
+1634;Livro Técnico Eco 266;Livros;2259.30;138
+1145;Pelúcia Profissional 898;Brinquedos;1429.69;422
+1765;Shampoo Smart 285;Beleza;1604.86;193
+1260;Caderno Eco 362;Papelaria;1474.62;102
+1388;Tesoura de Poda Ultra 959;Jardinagem;1113.69;307
+1214;Caneta Esferográfica Básico 867;Papelaria;2390.60;110
+1277;Adubo Orgânico Premium 610;Jardinagem;1014.04;392
+1977;Carregador Veicular Compacto 852;Automotivo;2291.24;136
+1533;Mouse Óptico Plus 132;Informática;1106.86;84
+1232;Capa de Banco Básico 267;Automotivo;1279.82;358
+1403;Granola Eco 886;Alimentos;1512.69;10
+1491;Guia de Viagem Plus 934;Livros;74.33;181
+1758;Monitor Mini 404;Informática;1999.55;202
+1599;Caneta Esferográfica Max 851;Papelaria;179.94;12
+1600;Esmalte Profissional 821;Beleza;2869.32;219
+1063;Adubo Orgânico Eco 135;Jardinagem;2062.54;438
+1493;Mel Puro Compacto 543;Alimentos;2930.34;274
+1041;Adubo Orgânico Básico 561;Jardinagem;55.00;153
+1686;Carregador Veicular Ultra 274;Automotivo;1027.36;34
+1646;Pá de Jardim Lite 224;Jardinagem;1465.93;93
+1776;Café Torrado Lite 990;Alimentos;745.88;286
+1417;Pá de Jardim Ultra 139;Jardinagem;60.91;61
+1854;Nível a Laser Plus 179;Ferramentas;1443.42;425
+1435;Corda de Pular Lite 102;Esportes;1109.32;439
+1622;Café Torrado Premium 803;Alimentos;2582.49;193
+1472;Bola de Futebol Turbo 244;Esportes;2095.71;193
+1129;Quebra-Cabeça Ultra 750;Brinquedos;1002.41;415
+1807;Alicate Pro 101;Ferramentas;1021.79;221
+1304;Luva de Treino Smart 888;Esportes;1778.48;254
+1289;Perfume Plus 973;Beleza;1781.42;465
+1566;Corda de Pular Compacto 793;Esportes;799.25;7
+1086;Capa de Banco Pro 731;Automotivo;15.90;303
+1786;Marcador de Texto Pro 382;Papelaria;426.53;34
+1357;Halter Turbo 107;Esportes;1202.67;248
+1697;Roteador Plus 312;Informática;2877.82;82
+1384;Tesoura de Poda Max 771;Jardinagem;750.82;12
+1642;Palheta de Para-brisa Plus 194;Automotivo;1914.23;38
+1532;Aditivo Plus 703;Automotivo;2582.06;177
+1838;Boné Lite 305;Vestuário;1671.14;249
+1712;Mel Puro Família 488;Alimentos;2830.20;169
+1068;Boneca Família 626;Brinquedos;128.78;64
+1577;Pasta Arquivo Premium 535;Papelaria;522.00;495
+1431;Biscoito Integral Compacto 250;Alimentos;1558.92;485
+1895;Agenda Básico 421;Papelaria;2561.81;219
+1797;Palheta de Para-brisa Pro 251;Automotivo;2393.43;131
+1027;Livro Técnico Classic 879;Livros;936.19;235
+1028;Micro-ondas Família 150;Eletrodomésticos;743.32;261
+1180;Chocolate Amargo Smart 255;Alimentos;342.17;1
+1621;Corda de Pular Ultra 200;Esportes;2416.61;4
+1251;Caderno Classic 852;Papelaria;147.03;264
+1611;Shampoo Ultra 253;Beleza;2857.46;31
+1391;Tesoura de Poda Profissional 779;Jardinagem;1677.18;213
+1089;Óleo de Motor Profissional 381;Automotivo;806.18;272
+1370;Vaso de Cerâmica Compacto 714;Jardinagem;2314.18;78
+1986;Regador Profissional 936;Jardinagem;1613.55;250
+1867;Pá de Jardim Smart 467;Jardinagem;328.30;475
+1955;Condicionador Básico 770;Beleza;2094.78;74
+1183;Webcam Pro 444;Informática;2404.15;399
+1519;Fritadeira Elétrica Smart 385;Eletrodomésticos;2470.99;1
+1197;Grampeador Eco 516;Papelaria;2598.67;29
+1108;Chave de Fenda Eco 453;Ferramentas;1473.54;87
+1759;Livro Infantil Premium 622;Livros;2287.96;33
+1418;Hidratante Classic 246;Beleza;619.89;201
+1837;Aspirador de Pó Básico 414;Eletrodomésticos;229.01;487
+1446;Halter Pro 319;Esportes;1314.08;186
+1283;Headset Compacto 338;Informática;1728.28;6
+1084;Mouse Óptico Compacto 238;Informática;1494.70;220
+1662;Calça Jeans Eco 179;Vestuário;2651.06;493
+1046;Batedeira Pro 590;Eletrodomésticos;707.10;387
+1285;Jogo de Tabuleiro Pro 501;Brinquedos;2036.60;140
+1656;Granola Turbo 341;Alimentos;198.24;358
+1006;Óleo de Motor Básico 253;Automotivo;1832.92;120
+1716;Azeite Extra Virgem Classic 193;Alimentos;2659.60;326
+1311;Esmalte Mini 649;Beleza;1613.75;486
+1014;Martelo Mini 951;Ferramentas;1461.09;293
+1303;Mouse Óptico Compacto 891;Informática;94.36;215
+1346;Livro Técnico Max 598;Livros;1214.13;162
+1467;Carregador Veicular Básico 552;Automotivo;782.58;345
+1031;Pasta Arquivo Profissional 260;Papelaria;1278.62;304
+1147;Granola Turbo 163;Alimentos;2422.34;409
+1708;Romance Eco 193;Livros;2803.11;459
+1422;Grampeador Eco 984;Papelaria;2902.35;188
+1655;Nível a Laser Plus 276;Ferramentas;2080.01;339
+1245;Óleo de Motor Classic 883;Automotivo;1739.55;28
+1834;Micro-ondas Plus 306;Eletrodomésticos;1384.57;285
+1764;Luva de Treino Turbo 853;Esportes;1225.70;97
+1315;Furadeira Básico 178;Ferramentas;2802.19;285
+1688;Serra Manual Eco 423;Ferramentas;422.18;313
+1270;Adubo Orgânico Compacto 476;Jardinagem;529.28;327
+1585;Serra Manual Lite 736;Ferramentas;1033.26;429
+1857;Tesoura de Poda Smart 596;Jardinagem;2731.75;373
+1982;Corda de Pular Max 927;Esportes;1472.71;129
+1880;Chocolate Amargo Max 529;Alimentos;606.44;96
+1861;Aditivo Mini 209;Automotivo;1243.49;329
+1291;Furadeira Plus 985;Ferramentas;234.86;301
+1423;Blocos de Montar Pro 174;Brinquedos;599.74;239
+1025;Guia de Viagem Pro 106;Livros;834.10;386
+1374;Esmalte Ultra 410;Beleza;353.52;39
+1144;Lápis de Cor Mini 606;Papelaria;1152.21;325
+1908;Guia de Viagem Básico 262;Livros;47.18;494
+1363;Esmalte Compacto 987;Beleza;1706.73;450
+1720;Bola de Vôlei Premium 371;Esportes;537.01;35
+1956;Hidratante Plus 415;Beleza;2671.78;146
+1514;Perfume Pro 478;Beleza;941.14;347
+1226;Calça Jeans Básico 613;Vestuário;2400.60;497
+1645;Livro Técnico Mini 802;Livros;8.13;446
+1401;Palheta de Para-brisa Premium 386;Automotivo;1623.20;389
+1888;Trena Max 767;Ferramentas;2503.72;69
+1587;Jogo de Tabuleiro Premium 545;Brinquedos;731.90;456
+1496;Condicionador Compacto 301;Beleza;2890.63;279
+1405;Vaso de Cerâmica Classic 955;Jardinagem;69.98;433
+1136;Martelo Pro 515;Ferramentas;2460.89;287
+1064;Cafeteira Max 401;Eletrodomésticos;2077.17;3
+1463;Granola Classic 342;Alimentos;2006.10;160
+1558;Caneta Esferográfica Compacto 515;Papelaria;491.71;16
+1199;Webcam Básico 405;Informática;2888.61;493
+1381;Blocos de Montar Pro 542;Brinquedos;2614.01;297
+1745;Carregador Veicular Compacto 102;Automotivo;2017.25;335
+1459;Vaso de Cerâmica Profissional 987;Jardinagem;658.60;454
+1901;Luva de Treino Classic 525;Esportes;724.37;350
+1830;Pen Drive Lite 248;Informática;2242.21;17
+1256;Halter Lite 833;Esportes;2351.65;166
+1702;Mouse Óptico Básico 701;Informática;669.58;223
+1774;Livro Técnico Premium 963;Livros;970.11;431
+1731;Grampeador Ultra 590;Papelaria;132.11;181
+1574;Marcador de Texto Eco 111;Papelaria;1577.99;181
+1223;Pá de Jardim Básico 218;Jardinagem;1863.45;378
+1368;Hidratante Lite 396;Beleza;2264.44;41
+1026;Café Torrado Básico 646;Alimentos;2905.50;402
+1680;Teclado Mecânico Compacto 397;Informática;1054.83;486
+1726;Mangueira Pro 824;Jardinagem;1440.15;86
+1539;Alicate Smart 309;Ferramentas;2554.34;195
+1551;Palheta de Para-brisa Turbo 362;Automotivo;1307.21;258
+1156;Luva de Treino Max 903;Esportes;1290.91;282
+1479;Roteador Compacto 331;Informática;2563.90;97
+1482;Pasta Arquivo Compacto 105;Papelaria;951.63;125
+1591;Trena Plus 789;Ferramentas;71.65;268
+1432;Trena Eco 214;Ferramentas;901.82;224
+1048;Vaso de Cerâmica Família 482;Jardinagem;1775.21;42
+1746;Moletom Plus 325;Vestuário;327.16;30
+1647;Batedeira Eco 692;Eletrodomésticos;2939.05;144
+1628;Boneca Max 169;Brinquedos;378.80;458
+1154;Mel Puro Turbo 242;Alimentos;2691.23;358
+1871;Bicicleta Ergométrica Turbo 335;Esportes;979.35;436
+1231;Martelo Turbo 293;Ferramentas;2429.29;164
+1299;Raquete de Tênis Lite 425;Esportes;667.69;47
+1404;Chocolate Amargo Pro 755;Alimentos;19.40;131
+1511;Boné Básico 920;Vestuário;2089.59;271
+1820;Bermuda Família 585;Vestuário;1208.34;42
+1072;Café Torrado Classic 159;Alimentos;1659.60;140
+1133;Jogo de Tabuleiro Smart 269;Brinquedos;23.14;191
+1588;Marcador de Texto Premium 559;Papelaria;424.12;103
+1562;Martelo Profissional 851;Ferramentas;1861.09;320
+1298;Regador Turbo 975;Jardinagem;203.31;415
+1874;Chocolate Amargo Básico 507;Alimentos;845.54;480
+1625;Óleo de Motor Max 451;Automotivo;1255.43;180
+1410;Bola de Vôlei Ultra 925;Esportes;304.33;134
+1456;Pen Drive Smart 306;Informática;1925.85;332
+1237;Biscoito Integral Família 291;Alimentos;1999.07;400
+1718;Boneca Lite 560;Brinquedos;2252.74;329
+1486;Grampeador Básico 932;Papelaria;1074.75;334
+1545;Quebra-Cabeça Mini 364;Brinquedos;1558.62;219
+1872;Azeite Extra Virgem Família 776;Alimentos;2071.71;372
+1069;Filtro de Ar Plus 791;Automotivo;2485.54;288
+1125;Bola de Futebol Plus 941;Esportes;104.99;166
+1210;Adubo Orgânico Smart 452;Jardinagem;2931.34;160
+1001;Bola de Vôlei Classic 728;Esportes;1510.94;455
+1640;Furadeira Família 621;Ferramentas;2167.79;140
+1414;Caneta Esferográfica Premium 842;Papelaria;2852.90;51
+1426;Pen Drive Ultra 729;Informática;1866.04;19
+1191;Filtro de Ar Turbo 951;Automotivo;2971.68;154
+1946;Romance Premium 262;Livros;2715.02;304
+1010;Moletom Pro 995;Vestuário;224.53;123
+1378;Caderno Pro 330;Papelaria;1588.61;498
+1729;Carrinho de Controle Remoto Smart 555;Brinquedos;1442.58;221
+1107;Meia Esportiva Plus 194;Vestuário;2994.71;427
+1314;Caneta Esferográfica Ultra 488;Papelaria;841.43;86
+1620;Trena Compacto 166;Ferramentas;151.00;75
+1833;Jogo de Tabuleiro Família 995;Brinquedos;521.68;192
+1951;Agenda Premium 324;Papelaria;2220.76;100
+1242;Cafeteira Smart 296;Eletrodomésticos;502.00;13
+1619;Vaso de Cerâmica Profissional 383;Jardinagem;2405.47;235
+1816;Serra Manual Pro 373;Ferramentas;1095.35;205
+1416;Mangueira Básico 467;Jardinagem;1123.42;13
+1683;Jaqueta Mini 140;Vestuário;2240.42;457
+1570;Marcador de Texto Premium 117;Papelaria;696.16;314
+1689;SSD Externo Eco 547;Informática;2140.91;71
+1543;Bicicleta Ergométrica Eco 160;Esportes;1913.32;22
+1326;Condicionador Classic 979;Beleza;1908.83;180
+1218;Romance Compacto 916;Livros;1317.13;166
+1893;Batedeira Plus 158;Eletrodomésticos;1505.16;292
+1522;Adubo Orgânico Classic 127;Jardinagem;1124.80;74
+1899;Cafeteira Max 375;Eletrodomésticos;159.74;166
+1781;Biografia Ultra 978;Livros;876.97;150
+1659;SSD Externo Classic 986;Informática;1369.35;100
+1438;Moletom Pro 897;Vestuário;1934.39;245
+1548;Calça Jeans Max 941;Vestuário;98.67;203
+1510;Tesoura de Poda Max 694;Jardinagem;1262.80;366
+1848;Café Torrado Ultra 236;Alimentos;939.30;229
+1012;Pen Drive Max 997;Informática;2797.52;433
+1897;Chocolate Amargo Lite 499;Alimentos;2077.52;407
+1969;Batedeira Premium 310;Eletrodomésticos;1508.32;218
+1979;Mel Puro Profissional 630;Alimentos;1974.26;473
+1691;Bermuda Pro 130;Vestuário;1317.39;178
+1236;Monitor Mini 166;Informática;268.63;21
+1728;Jogo de Tabuleiro Básico 399;Brinquedos;1836.76;322
+1165;Raquete de Tênis Compacto 744;Esportes;1948.34;406
+1529;Biscoito Integral Família 462;Alimentos;1842.90;16
+1135;Ventilador Mini 750;Eletrodomésticos;979.52;410
+1526;Cafeteira Compacto 761;Eletrodomésticos;1981.12;326
+1743;Palheta de Para-brisa Família 759;Automotivo;82.33;458
+1560;Camiseta Plus 458;Vestuário;1771.41;273
+1740;Granola Profissional 369;Alimentos;1922.99;119
+1386;Caneta Esferográfica Plus 810;Papelaria;1374.26;405
+1091;Grampeador Lite 810;Papelaria;635.63;209
+1011;Guia de Viagem Mini 499;Livros;701.41;402
+1272;Guia de Viagem Premium 996;Livros;934.73;6
+1119;Capa de Banco Turbo 112;Automotivo;1387.59;459
+1216;Livro Infantil Lite 159;Livros;1996.24;322
+1898;Chocolate Amargo Mini 809;Alimentos;1640.64;291
+1609;Granola Smart 962;Alimentos;2032.78;357
+1174;Blocos de Montar Profissional 163;Brinquedos;511.24;59
+1802;Roteador Premium 416;Informática;1917.82;230
+1047;Ventilador Família 402;Eletrodomésticos;1541.77;403
+1477;Serra Manual Ultra 124;Ferramentas;1544.07;214
+1578;Quebra-Cabeça Compacto 884;Brinquedos;1800.89;307
+1881;Aditivo Compacto 775;Automotivo;2484.01;445
+1778;Mangueira Básico 606;Jardinagem;654.01;371
+1864;Caderno Plus 695;Papelaria;543.32;2
+1302;Óleo de Motor Compacto 837;Automotivo;2250.17;481
+1783;Calça Jeans Básico 337;Vestuário;1986.03;136
+1903;Esmalte Ultra 574;Beleza;2884.77;484
+1601;Granola Compacto 988;Alimentos;2553.18;220
+1487;Esmalte Eco 418;Beleza;2717.44;114
+1193;Grampeador Compacto 457;Papelaria;480.39;112
+1714;Pá de Jardim Max 699;Jardinagem;2412.21;325
+1980;Chave de Fenda Ultra 413;Ferramentas;2795.51;489
+1949;Hidratante Mini 261;Beleza;1975.83;62
+1565;Tesoura de Poda Premium 570;Jardinagem;2267.54;243
+1757;Jaqueta Premium 357;Vestuário;1106.72;42
+1844;Azeite Extra Virgem Família 941;Alimentos;2962.79;228
+1614;Moletom Mini 105;Vestuário;1364.88;234
+1071;Teclado Mecânico Turbo 959;Informática;2288.25;240
+1139;Halter Premium 318;Esportes;1492.08;367
+1607;Liquidificador Smart 861;Eletrodomésticos;361.77;367
+1173;Lápis de Cor Max 984;Papelaria;2610.86;103
+1923;Vaso de Cerâmica Eco 831;Jardinagem;712.85;262
+1912;Cafeteira Lite 501;Eletrodomésticos;948.77;22
+1761;Filtro de Ar Mini 319;Automotivo;596.51;478
+1870;Guia de Viagem Profissional 104;Livros;244.49;26
+1138;Pá de Jardim Turbo 678;Jardinagem;2767.92;50
+1630;Furadeira Turbo 607;Ferramentas;2536.30;151
+1750;Fritadeira Elétrica Eco 360;Eletrodomésticos;843.38;151
+1967;Romance Lite 733;Livros;1470.32;159
+1420;Headset Compacto 929;Informática;1432.47;477
+1832;Blocos de Montar Mini 880;Brinquedos;2261.77;69
+1473;Webcam Classic 967;Informática;1539.53;250
+1102;Guia de Viagem Turbo 722;Livros;863.80;308
+1950;Grampeador Lite 522;Papelaria;1889.92;471
+1907;Bola de Vôlei Básico 899;Esportes;139.15;313
+1666;Liquidificador Plus 837;Eletrodomésticos;2942.00;209
+1179;Batedeira Família 197;Eletrodomésticos;2823.18;28
+1449;Romance Família 572;Livros;236.60;327
+1300;Bola de Futebol Ultra 573;Esportes;297.38;267
+1284;Corda de Pular Eco 331;Esportes;184.60;125
+1213;Carregador Veicular Lite 152;Automotivo;9.18;66
+1000;Capa de Banco Plus 406;Automotivo;745.94;463
+1319;Pasta Arquivo Lite 364;Papelaria;2982.47;140
+1450;Pen Drive Básico 276;Informática;1560.80;158
+1685;Halter Smart 642;Esportes;386.12;370
+1555;Calça Jeans Classic 224;Vestuário;889.85;490
+1248;Adubo Orgânico Pro 489;Jardinagem;1270.59;117
+1080;Martelo Max 886;Ferramentas;2457.31;400
+1263;Pasta Arquivo Ultra 711;Papelaria;277.82;113
+1439;Caderno Mini 968;Papelaria;2039.35;91
+1593;SSD Externo Família 218;Informática;2539.36;376
+1475;Café Torrado Profissional 285;Alimentos;2903.40;445
+1652;Palheta de Para-brisa Premium 589;Automotivo;2201.30;274
+1684;Grampeador Profissional 307;Papelaria;2535.51;356
+1120;Tesoura de Poda Compacto 126;Jardinagem;519.59;482
+1984;Furadeira Classic 756;Ferramentas;2866.60;18
+1613;Halter Pro 620;Esportes;2930.32;353
+1840;Carrinho de Controle Remoto Ultra 316;Brinquedos;734.86;273
+1425;SSD Externo Premium 436;Informática;2516.44;226
+1134;Calça Jeans Premium 859;Vestuário;2902.76;265
+1975;Palheta de Para-brisa Compacto 469;Automotivo;480.03;308
+1777;Chave de Fenda Pro 204;Ferramentas;1057.23;459
+1271;Raquete de Tênis Turbo 208;Esportes;1038.99;13
+1556;Jogo de Tabuleiro Lite 651;Brinquedos;1318.90;267
+1544;Nível a Laser Eco 199;Ferramentas;217.58;329
+1869;Livro de Receitas Pro 348;Livros;587.57;85
+1800;Hidratante Lite 562;Beleza;1449.35;135
+1095;Aditivo Lite 284;Automotivo;2711.72;186
+1445;Fritadeira Elétrica Max 614;Eletrodomésticos;893.73;427
+1278;Bola de Vôlei Smart 932;Esportes;737.54;31
+1306;Marcador de Texto Mini 572;Papelaria;1233.59;450
+1062;Agenda Eco 125;Papelaria;2239.84;483
+1814;Calça Jeans Pro 209;Vestuário;390.34;59
+1602;Bola de Futebol Lite 437;Esportes;1079.04;131
+1983;Mangueira Profissional 914;Jardinagem;2090.01;216
+1792;Livro de Receitas Turbo 575;Livros;1092.06;158
+1789;Perfume Turbo 596;Beleza;1825.99;223
+1985;Romance Premium 336;Livros;2169.45;423
+1896;Caderno Ultra 380;Papelaria;519.67;69
+1927;Bola de Futebol Classic 516;Esportes;591.40;443
+1274;Bola de Futebol Eco 459;Esportes;2780.00;431
+1695;Pelúcia Turbo 461;Brinquedos;2302.78;500
+1853;Azeite Extra Virgem Pro 652;Alimentos;607.96;78
+1331;Capa de Banco Plus 163;Automotivo;540.58;322
+1866;Jaqueta Básico 178;Vestuário;1852.46;68
+1752;Guia de Viagem Mini 323;Livros;1838.81;109
+1530;Palheta de Para-brisa Premium 298;Automotivo;1653.16;17
+1219;Bola de Vôlei Pro 243;Esportes;2229.43;129
+1762;Fritadeira Elétrica Família 581;Eletrodomésticos;2961.67;30
+1813;Caneta Esferográfica Profissional 521;Papelaria;1182.73;101
+1301;Monitor Profissional 527;Informática;1312.33;298
+1264;Grampeador Classic 517;Papelaria;2536.99;101
+1687;Boneca Mini 467;Brinquedos;375.19;376
+1535;Guia de Viagem Turbo 127;Livros;1465.37;135
+1204;Biografia Max 474;Livros;1933.51;250
+1013;Pá de Jardim Premium 340;Jardinagem;2961.97;468
+1379;Calça Jeans Premium 600;Vestuário;988.79;217
+1594;Óleo de Motor Turbo 548;Automotivo;577.46;424
+1650;Protetor Solar Max 410;Beleza;1265.45;88
+1365;Furadeira Smart 981;Ferramentas;1966.63;495
+1804;Biscoito Integral Mini 809;Alimentos;143.72;292
+1847;Biografia Compacto 943;Livros;871.15;270
+1663;Granola Profissional 768;Alimentos;1819.81;289
+1769;Adubo Orgânico Lite 549;Jardinagem;1907.67;294
+1784;Protetor Solar Família 753;Beleza;1368.48;211
+1932;Vaso de Cerâmica Premium 160;Jardinagem;1687.83;316
+1882;Adubo Orgânico Ultra 695;Jardinagem;1123.24;398
+1580;Bola de Futebol Ultra 270;Esportes;1759.37;56
+1250;Mel Puro Eco 717;Alimentos;2708.30;428
+1658;Shampoo Família 488;Beleza;2724.18;499
+1675;Monitor Pro 379;Informática;2195.81;196
+1905;Serra Manual Compacto 224;Ferramentas;2230.25;83
+1053;Boneca Classic 532;Brinquedos;48.21;352
+1725;Bola de Vôlei Premium 658;Esportes;414.18;185
+1042;Óleo de Motor Max 708;Automotivo;1507.34;293
+1512;Furadeira Família 157;Ferramentas;2185.04;260
+1313;Tesoura de Poda Profissional 357;Jardinagem;1518.61;46
+1045;Caderno Ultra 671;Papelaria;2300.32;449
+1132;Calça Jeans Premium 829;Vestuário;2213.35;407
+1612;SSD Externo Pro 797;Informática;2295.68;19
+1976;Regador Básico 247;Jardinagem;2121.85;448
+1340;Granola Eco 206;Alimentos;1163.21;24
+1369;Chave de Fenda Compacto 529;Ferramentas;583.70;6
+1004;Livro de Receitas Pro 761;Livros;2676.40;387
+1575;Aditivo Turbo 644;Automotivo;1437.61;467
+1182;Bola de Vôlei Lite 580;Esportes;1029.35;112
+1337;Caderno Pro 877;Papelaria;1574.02;317
+1559;Agenda Família 155;Papelaria;2097.00;82
+1239;Romance Classic 969;Livros;577.53;128
+1070;Mangueira Compacto 850;Jardinagem;81.91;54
+1372;Pá de Jardim Smart 856;Jardinagem;2652.12;197
+1564;Livro de Receitas Ultra 422;Livros;2985.76;154
+1957;Pasta Arquivo Família 805;Papelaria;2095.82;389
+1713;Chocolate Amargo Turbo 311;Alimentos;2490.16;471
+1419;Esmalte Smart 685;Beleza;2197.13;436
+1989;Biscoito Integral Básico 925;Alimentos;1488.65;455
+1618;Biografia Classic 724;Livros;2479.98;148
+1360;Carrinho de Controle Remoto Lite 577;Brinquedos;1414.38;416
+1158;Teclado Mecânico Compacto 683;Informática;406.51;200
+1124;Adubo Orgânico Básico 657;Jardinagem;2593.62;123
+1935;Pen Drive Ultra 295;Informática;2220.42;122
+1963;Trena Ultra 885;Ferramentas;2227.67;349
+1396;Chave de Fenda Classic 514;Ferramentas;457.89;223
+1772;Furadeira Básico 137;Ferramentas;1112.32;91
+1606;Pá de Jardim Compacto 207;Jardinagem;532.14;296
+1803;Ventilador Compacto 228;Eletrodomésticos;2328.34;409
+1678;Grampeador Ultra 509;Papelaria;2775.62;131
+1155;Fritadeira Elétrica Max 393;Eletrodomésticos;694.70;85
+1269;Bicicleta Ergométrica Premium 348;Esportes;2522.02;248
+1495;Quebra-Cabeça Ultra 454;Brinquedos;561.61;131
+1671;Corda de Pular Turbo 891;Esportes;1497.88;456
+1597;Moletom Turbo 674;Vestuário;2099.86;216
+1150;Trena Ultra 145;Ferramentas;749.01;99
+1324;Chocolate Amargo Ultra 766;Alimentos;1325.86;121
+1868;Jogo de Tabuleiro Ultra 461;Brinquedos;2639.69;379
+1635;Caderno Básico 870;Papelaria;2775.02;275
+1928;Filtro de Ar Premium 614;Automotivo;2413.90;94
+1631;Marcador de Texto Plus 276;Papelaria;2524.05;44
+1997;Biscoito Integral Família 375;Alimentos;796.32;367
+1531;Hidratante Compacto 836;Beleza;2595.16;439
+1732;Caneta Esferográfica Pro 161;Papelaria;1386.43;289
+1603;Lápis de Cor Smart 994;Papelaria;992.68;376
+1936;Óleo de Motor Smart 766;Automotivo;93.64;22
+1960;Azeite Extra Virgem Classic 265;Alimentos;1832.75;392
+1206;Hidratante Max 458;Beleza;1939.67;422
+1221;Adubo Orgânico Smart 141;Jardinagem;899.47;394
+1667;Boneca Classic 323;Brinquedos;684.06;185
+1528;Trena Classic 777;Ferramentas;1857.28;200
+1451;Fritadeira Elétrica Mini 337;Eletrodomésticos;918.77;130
+1290;Batedeira Ultra 816;Eletrodomésticos;1827.56;90
+1281;Esmalte Max 205;Beleza;2653.44;53
+1884;Livro de Receitas Básico 220;Livros;2385.10;261
+1322;Capa de Banco Profissional 577;Automotivo;1850.34;179
+1579;Luva de Treino Turbo 247;Esportes;1156.75;93
+1447;Quebra-Cabeça Básico 389;Brinquedos;2548.99;347
+1358;Carregador Veicular Pro 553;Automotivo;1265.08;285
+1623;Aditivo Turbo 152;Automotivo;1906.80;16
+1390;Nível a Laser Compacto 850;Ferramentas;426.78;439
+1826;Mel Puro Max 987;Alimentos;2728.07;146
+1375;Granola Família 825;Alimentos;1199.25;369
+1842;Aspirador de Pó Mini 970;Eletrodomésticos;1700.39;271
+1809;Boneca Compacto 946;Brinquedos;1258.30;28
+1900;Aspirador de Pó Básico 916;Eletrodomésticos;350.12;410
+1352;Jaqueta Premium 641;Vestuário;1830.27;298
+1657;Palheta de Para-brisa Classic 176;Automotivo;1326.20;323
+1724;Bola de Futebol Smart 613;Esportes;400.00;400
+1883;Halter Família 916;Esportes;280.26;348
+1469;Mel Puro Lite 798;Alimentos;2231.39;87
+1088;Alicate Lite 391;Ferramentas;1170.49;425
+1211;Aspirador de Pó Lite 491;Eletrodomésticos;46.55;261
+1490;Condicionador Eco 250;Beleza;1224.86;8
+1948;Livro Técnico Básico 842;Livros;905.60;118
+1497;Capa de Banco Mini 673;Automotivo;2527.28;261
+1167;Adubo Orgânico Turbo 444;Jardinagem;91.66;59
+1812;Livro de Receitas Profissional 892;Livros;200.76;273
+1538;Shampoo Smart 648;Beleza;1595.35;471
+1974;Livro Técnico Família 956;Livros;1591.06;484
+1430;Agenda Compacto 317;Papelaria;102.72;466
+1991;Chave de Fenda Mini 409;Ferramentas;2457.98;138
+1309;Ventilador Lite 798;Eletrodomésticos;1622.91;356
+1502;Ventilador Mini 573;Eletrodomésticos;2713.45;494
+1234;Esmalte Smart 163;Beleza;2202.13;79
+1701;Pá de Jardim Plus 933;Jardinagem;801.91;178
+1553;Meia Esportiva Eco 415;Vestuário;559.73;489
+1043;Martelo Max 324;Ferramentas;806.34;419
+1044;Cafeteira Turbo 554;Eletrodomésticos;1966.75;244
+1464;Carregador Veicular Eco 804;Automotivo;2312.93;255
+1902;Esmalte Max 856;Beleza;1322.42;69
+1707;Bermuda Família 142;Vestuário;2158.94;397
+1906;Halter Profissional 244;Esportes;239.75;203
+1424;Nível a Laser Compacto 423;Ferramentas;2497.81;465
+1169;Liquidificador Classic 487;Eletrodomésticos;2406.51;128
+1755;Raquete de Tênis Compacto 491;Esportes;2038.39;216
+1968;Vaso de Cerâmica Classic 801;Jardinagem;661.22;267
+1742;Óleo de Motor Ultra 168;Automotivo;65.82;160
+1349;Café Torrado Ultra 351;Alimentos;2533.86;163
+1581;Carrinho de Controle Remoto Mini 252;Brinquedos;2911.01;100
+1734;Óleo de Motor Max 552;Automotivo;779.18;85
+1808;Pasta Arquivo Eco 704;Papelaria;1185.23;352
+1934;Condicionador Plus 256;Beleza;2838.34;258
+1122;Romance Lite 141;Livros;2473.58;500
+1152;Roteador Profissional 880;Informática;1560.12;484
+1711;Caderno Lite 204;Papelaria;274.88;311
+1140;Monitor Max 374;Informática;1428.47;106
+1525;Granola Profissional 701;Alimentos;2957.76;379
+1443;Capa de Banco Lite 601;Automotivo;1482.34;192
+1669;Carrinho de Controle Remoto Premium 149;Brinquedos;1715.91;74
+1371;Capa de Banco Smart 653;Automotivo;1816.84;241
+1938;Adubo Orgânico Família 595;Jardinagem;2546.51;98
+1457;Café Torrado Ultra 146;Alimentos;1901.09;189
+1466;Bola de Vôlei Turbo 693;Esportes;2322.81;296
+1860;Liquidificador Pro 695;Eletrodomésticos;1496.73;299
+1462;Caderno Eco 975;Papelaria;35.06;120
+1787;Batedeira Compacto 572;Eletrodomésticos;1856.67;191
+1917;Adubo Orgânico Turbo 203;Jardinagem;2642.92;13
+1952;Granola Ultra 414;Alimentos;2325.50;116
+1334;Carregador Veicular Mini 386;Automotivo;807.69;436
+1049;Aspirador de Pó Max 665;Eletrodomésticos;217.23;423
+1567;Adubo Orgânico Max 531;Jardinagem;2297.63;200
+1460;Óleo de Motor Básico 787;Automotivo;146.46;395
+1889;Chocolate Amargo Família 686;Alimentos;389.81;97
+1389;Livro Técnico Ultra 951;Livros;1740.22;131
+1651;Hidratante Mini 500;Beleza;2566.16;316
+1476;Azeite Extra Virgem Eco 881;Alimentos;1272.19;190
+1233;Pen Drive Pro 152;Informática;2345.94;370
+1690;Roteador Ultra 832;Informática;326.04;80
+1987;Jogo de Tabuleiro Pro 606;Brinquedos;1592.41;375
+1516;Adubo Orgânico Turbo 291;Jardinagem;1293.51;393
+1033;Headset Smart 212;Informática;2877.20;238
+1590;Bicicleta Ergométrica Plus 674;Esportes;2745.67;258
+1819;Liquidificador Smart 432;Eletrodomésticos;1493.79;183
+1254;Aspirador de Pó Premium 259;Eletrodomésticos;2774.27;209
+1660;Trena Eco 770;Ferramentas;1446.25;56
+1208;Adubo Orgânico Eco 472;Jardinagem;1704.72;232
+1970;Blocos de Montar Plus 131;Brinquedos;1047.66;80
+1886;Pasta Arquivo Profissional 879;Papelaria;1528.52;24
+1992;Bola de Futebol Turbo 212;Esportes;2570.87;416
+1471;Jaqueta Max 364;Vestuário;814.38;249
+1437;Fritadeira Elétrica Plus 573;Eletrodomésticos;2204.29;341
+1571;Jaqueta Profissional 239;Vestuário;1557.16;269
+1818;Protetor Solar Lite 867;Beleza;995.87;153
+1329;Halter Pro 354;Esportes;291.82;194
+1350;Bicicleta Ergométrica Premium 574;Esportes;2960.46;337
+1339;Guia de Viagem Premium 609;Livros;387.41;256
+1265;Chave de Fenda Básico 168;Ferramentas;2988.14;461
+1406;Livro Técnico Família 834;Livros;2362.81;60
+1170;Óleo de Motor Compacto 812;Automotivo;896.18;308
+1081;Jaqueta Classic 134;Vestuário;2631.70;481
+1626;Bermuda Pro 156;Vestuário;778.99;484
+1944;Pen Drive Compacto 493;Informática;90.49;187
+1205;Pasta Arquivo Ultra 265;Papelaria;2082.89;301
+1598;Mel Puro Mini 485;Alimentos;1291.02;256
+1633;Monitor Premium 760;Informática;811.82;363
+1805;Fritadeira Elétrica Ultra 325;Eletrodomésticos;2597.25;467
+1153;Agenda Premium 598;Papelaria;1270.20;62
+1076;Roteador Mini 514;Informática;1565.41;46
+1176;Mangueira Lite 315;Jardinagem;425.70;38
+1665;Cafeteira Plus 343;Eletrodomésticos;1333.78;308
+1780;Protetor Solar Eco 488;Beleza;528.15;193
+1207;Micro-ondas Pro 726;Eletrodomésticos;1345.20;413
+1228;Corda de Pular Compacto 273;Esportes;1475.87;125
+1879;Jogo de Tabuleiro Classic 587;Brinquedos;812.60;468
+1549;Trena Compacto 381;Ferramentas;2916.61;145
+1282;Agenda Família 785;Papelaria;1603.38;142
+1790;Lápis de Cor Pro 602;Papelaria;1105.63;303
+1573;Carregador Veicular Compacto 535;Automotivo;2211.74;294
+1962;Agenda Ultra 820;Papelaria;2676.37;255
+1117;Regador Profissional 994;Jardinagem;1596.67;108
+1636;Pen Drive Mini 599;Informática;2734.46;148
+1851;Granola Plus 134;Alimentos;2698.92;222
+1536;Biografia Plus 561;Livros;2978.45;303
+1325;Alicate Eco 441;Ferramentas;2606.04;415
+1748;Lápis de Cor Compacto 541;Papelaria;1665.28;178
+1961;Chocolate Amargo Eco 403;Alimentos;634.04;354
+1921;Agenda Max 839;Papelaria;1278.47;60
+1465;Jogo de Tabuleiro Smart 308;Brinquedos;2692.93;3
+1335;Mouse Óptico Ultra 344;Informática;1592.62;97
+1738;Carregador Veicular Eco 765;Automotivo;2138.27;329
+1505;Batedeira Família 708;Eletrodomésticos;1044.59;487
+1115;Guia de Viagem Básico 165;Livros;1353.30;77
+1524;Aspirador de Pó Compacto 707;Eletrodomésticos;915.58;492
+1087;Grampeador Compacto 938;Papelaria;1890.54;152
+1230;SSD Externo Ultra 628;Informática;2249.99;423
+1756;Azeite Extra Virgem Classic 355;Alimentos;2829.48;351
+1296;Batedeira Família 455;Eletrodomésticos;471.57;171
+1002;Webcam Classic 684;Informática;926.29;440
+1267;Calça Jeans Ultra 546;Vestuário;2774.91;99
+1192;Meia Esportiva Lite 505;Vestuário;872.66;155
+1171;Livro de Receitas Profissional 378;Livros;2242.21;339
+1359;Bicicleta Ergométrica Eco 545;Esportes;1585.01;88
+1499;Adubo Orgânico Ultra 728;Jardinagem;383.90;347
+1103;Boné Mini 227;Vestuário;2692.58;14
+1055;Capa de Banco Compacto 215;Automotivo;1728.54;160
+1038;Adubo Orgânico Premium 908;Jardinagem;1651.00;438
+1017;Marcador de Texto Classic 574;Papelaria;2998.43;484
+1262;Granola Smart 725;Alimentos;2807.37;277
+1287;Café Torrado Lite 135;Alimentos;2582.13;282
+1189;Mel Puro Básico 869;Alimentos;555.23;436
+1085;Protetor Solar Max 767;Beleza;2570.08;372
+1913;Vaso de Cerâmica Max 102;Jardinagem;2722.19;31
+1677;Monitor Básico 862;Informática;1788.38;442
+1494;Hidratante Pro 373;Beleza;932.06;326
+1143;Blocos de Montar Premium 752;Brinquedos;1773.77;384
+1345;Biscoito Integral Mini 329;Alimentos;2365.79;25
+1034;Calça Jeans Lite 467;Vestuário;973.19;299
+1377;Condicionador Família 562;Beleza;2184.26;323
+1413;Granola Turbo 541;Alimentos;1256.39;259
+1801;Moletom Eco 999;Vestuário;2346.05;187
+1643;Martelo Classic 966;Ferramentas;218.84;118
+1930;Guia de Viagem Compacto 506;Livros;2891.22;341
+1503;Moletom Premium 334;Vestuário;605.36;180
+1061;Vaso de Cerâmica Eco 992;Jardinagem;283.05;51
+1736;Filtro de Ar Plus 698;Automotivo;2642.44;136
+1257;Granola Premium 548;Alimentos;1954.86;213
+1692;Biscoito Integral Turbo 139;Alimentos;1530.61;8
+1940;Liquidificador Premium 185;Eletrodomésticos;999.31;39
+1433;Caderno Classic 900;Papelaria;1131.77;93
+1190;Esmalte Pro 180;Beleza;2029.00;234
+1105;Moletom Plus 764;Vestuário;67.60;26
+1395;Bicicleta Ergométrica Mini 820;Esportes;2462.47;214
+1703;Aspirador de Pó Premium 363;Eletrodomésticos;2650.29;144
+1971;Luva de Treino Classic 476;Esportes;639.90;452
+1541;Furadeira Profissional 572;Ferramentas;679.78;55
+1121;Micro-ondas Smart 575;Eletrodomésticos;1671.48;150
+1455;Mel Puro Profissional 225;Alimentos;159.89;432
+1342;Blocos de Montar Ultra 763;Brinquedos;2204.56;225
+1747;Quebra-Cabeça Família 172;Brinquedos;1958.31;373
+1393;Camiseta Premium 307;Vestuário;371.05;3
+1841;Moletom Max 778;Vestuário;2463.72;213
+1563;Carregador Veicular Mini 570;Automotivo;2247.40;167
+1582;Halter Max 788;Esportes;73.26;127
+1796;Liquidificador Eco 232;Eletrodomésticos;2457.78;195
+1721;Micro-ondas Plus 352;Eletrodomésticos;1971.83;459
+1632;Adubo Orgânico Ultra 251;Jardinagem;894.02;420
+1827;Batedeira Classic 898;Eletrodomésticos;1627.30;260
+1336;Livro de Receitas Smart 642;Livros;1861.16;73
+1185;Chave de Fenda Pro 987;Ferramentas;896.69;234
+1835;Pasta Arquivo Ultra 182;Papelaria;2404.17;368
+1312;Condicionador Eco 965;Beleza;878.39;284
+1793;Pen Drive Classic 474;Informática;2015.91;56
+1412;Filtro de Ar Ultra 687;Automotivo;183.49;0
+1275;Pelúcia Smart 396;Brinquedos;2458.43;261
+1887;Tesoura de Poda Eco 134;Jardinagem;2200.14;51
+1855;Calça Jeans Compacto 272;Vestuário;1398.83;313
+1696;Aditivo Compacto 517;Automotivo;2969.29;33
+1822;Aditivo Mini 923;Automotivo;486.60;76
+1036;Esmalte Profissional 949;Beleza;612.67;8
+1195;Marcador de Texto Classic 146;Papelaria;175.95;205
+1996;Bicicleta Ergométrica Mini 419;Esportes;1884.60;480
+1323;Luva de Treino Classic 707;Esportes;669.87;300
+1782;Pelúcia Compacto 446;Brinquedos;361.88;187
+1099;Furadeira Ultra 686;Ferramentas;2593.57;384
+1537;Martelo Smart 928;Ferramentas;2075.09;8
+1681;Tesoura de Poda Profissional 266;Jardinagem;1621.78;128
+1542;Chocolate Amargo Pro 622;Alimentos;309.32;389
+1075;Liquidificador Max 969;Eletrodomésticos;961.74;339
+1561;Mel Puro Smart 208;Alimentos;2812.39;375
+1624;Palheta de Para-brisa Plus 334;Automotivo;1369.37;20
+1615;Condicionador Smart 794;Beleza;650.22;153
+1507;Carrinho de Controle Remoto Max 467;Brinquedos;1834.54;236
+1307;Café Torrado Classic 868;Alimentos;1757.41;161
+1332;Romance Smart 473;Livros;1370.60;463
+1020;Chocolate Amargo Classic 735;Alimentos;43.53;228
+1954;Regador Premium 635;Jardinagem;2155.34;397
+1817;Fritadeira Elétrica Profissional 854;Eletrodomésticos;2323.25;146
+1082;Mangueira Premium 899;Jardinagem;1761.48;180
+1825;Carregador Veicular Família 652;Automotivo;1517.59;462
+1157;Vaso de Cerâmica Plus 851;Jardinagem;423.76;130
+1209;Mouse Óptico Família 748;Informática;1135.95;257
+1749;Livro Infantil Turbo 305;Livros;578.17;124
+1067;Monitor Plus 545;Informática;2569.63;245
+1090;Aspirador de Pó Ultra 770;Eletrodomésticos;78.33;276
+1470;SSD Externo Premium 699;Informática;888.67;70
+1739;Micro-ondas Premium 899;Eletrodomésticos;2489.73;225
+1654;Livro de Receitas Mini 253;Livros;2021.65;269
+1815;Monitor Smart 835;Informática;1913.66;14
+1709;Quebra-Cabeça Eco 832;Brinquedos;2709.15;229
+1308;Pelúcia Básico 898;Brinquedos;834.61;413
+1202;Adubo Orgânico Compacto 791;Jardinagem;2120.49;498
+1343;Tesoura de Poda Ultra 307;Jardinagem;723.46;169
+1151;SSD Externo Smart 875;Informática;948.84;302
+1705;Bicicleta Ergométrica Lite 995;Esportes;287.38;159
+1074;Boné Ultra 810;Vestuário;1563.88;215
+1943;Livro Técnico Plus 858;Livros;2683.77;494
+1518;Biscoito Integral Pro 344;Alimentos;741.36;470
+1821;Pelúcia Pro 724;Brinquedos;2696.80;201
+1649;Palheta de Para-brisa Básico 475;Automotivo;2693.63;152
+1394;Shampoo Smart 202;Beleza;1594.03;350
+1220;Bicicleta Ergométrica Compacto 591;Esportes;2150.53;422
+1629;Jogo de Tabuleiro Turbo 253;Brinquedos;1811.20;345
+1873;Teclado Mecânico Smart 388;Informática;126.44;148
+1148;Liquidificador Premium 288;Eletrodomésticos;2454.29;189
+1828;Protetor Solar Eco 479;Beleza;1010.57;442
+1682;SSD Externo Max 327;Informática;2723.51;322
+1508;Livro de Receitas Classic 252;Livros;2869.89;149
+1648;Jaqueta Turbo 188;Vestuário;414.62;203
+1661;Boné Família 184;Vestuário;15.46;100
+1292;Pelúcia Família 546;Brinquedos;2925.59;34
+1922;Aspirador de Pó Compacto 910;Eletrodomésticos;212.94;466
+1161;Granola Ultra 518;Alimentos;2508.59;62
+1534;Livro de Receitas Max 878;Livros;1023.97;181
+1058;Nível a Laser Ultra 209;Ferramentas;2238.14;144
+1123;Nível a Laser Classic 222;Ferramentas;713.80;454
+1052;Jaqueta Ultra 903;Vestuário;762.19;450
+1909;Roteador Profissional 582;Informática;36.79;235
+1273;Boné Mini 767;Vestuário;2526.30;119
+1258;Shampoo Eco 450;Beleza;119.48;25
+1440;Shampoo Eco 558;Beleza;2580.99;403
+1328;Livro Técnico Ultra 359;Livros;108.06;347
+1862;Mouse Óptico Classic 530;Informática;1718.86;18
+1073;Serra Manual Ultra 989;Ferramentas;2276.81;396
+1775;Bermuda Lite 707;Vestuário;2159.41;254
+1458;Aditivo Família 617;Automotivo;2158.52;394
+1294;Condicionador Profissional 147;Beleza;1752.02;122
+1367;Cafeteira Lite 336;Eletrodomésticos;2163.14;460
+1321;Aditivo Classic 278;Automotivo;2912.22;434
+1859;Fritadeira Elétrica Ultra 900;Eletrodomésticos;1899.44;354
+1407;Tesoura de Poda Max 369;Jardinagem;591.94;44
+1227;Boné Max 963;Vestuário;263.02;464
+1770;Agenda Pro 793;Papelaria;2409.02;283
+1397;Aspirador de Pó Família 439;Eletrodomésticos;211.96;362
+1500;Biografia Básico 466;Livros;422.90;417
+1719;Meia Esportiva Lite 983;Vestuário;1306.21;475
+1846;Mangueira Turbo 396;Jardinagem;1820.66;304
+1958;Aditivo Smart 293;Automotivo;1059.61;83
+1941;Fritadeira Elétrica Ultra 672;Eletrodomésticos;223.93;21
+1914;Mel Puro Compacto 150;Alimentos;399.11;400
+1137;Raquete de Tênis Eco 730;Esportes;1097.47;432
+1693;Caderno Plus 961;Papelaria;1623.35;439
+1114;Blocos de Montar Max 723;Brinquedos;173.20;104
+1730;Condicionador Pro 335;Beleza;2845.45;54
+1225;Caderno Plus 434;Papelaria;2200.17;297
+1128;Bicicleta Ergométrica Lite 570;Esportes;699.35;314
+1988;Pasta Arquivo Profissional 767;Papelaria;1932.94;393
+1994;Hidratante Ultra 160;Beleza;1659.41;219
+1235;Marcador de Texto Turbo 788;Papelaria;1049.52;198
+1057;Boneca Max 139;Brinquedos;408.73;32
+1399;Ventilador Premium 289;Eletrodomésticos;2935.27;436
+1849;Shampoo Premium 153;Beleza;1057.24;218
+1754;Shampoo Mini 362;Beleza;802.67;17
+1890;Pelúcia Max 607;Brinquedos;1333.32;499
+1096;Perfume Básico 851;Beleza;1868.68;137
+1953;SSD Externo Classic 688;Informática;2699.17;384
+1054;Palheta de Para-brisa Smart 310;Automotivo;2166.58;158
+1924;Azeite Extra Virgem Premium 685;Alimentos;685.37;67
+1788;Condicionador Família 836;Beleza;2103.86;476
+1305;Guia de Viagem Premium 539;Livros;1120.61;176
+1317;Granola Smart 349;Alimentos;2712.56;35
+1078;Azeite Extra Virgem Classic 526;Alimentos;1585.40;191
+1605;Martelo Compacto 219;Ferramentas;1659.14;303
+1604;Meia Esportiva Lite 202;Vestuário;2658.59;121
+1022;Jaqueta Lite 127;Vestuário;2476.49;369
+1361;Chocolate Amargo Básico 180;Alimentos;1633.27;211
+1947;Adubo Orgânico Max 739;Jardinagem;1864.32;445
+1925;Bicicleta Ergométrica Profissional 838;Esportes;257.23;185
+1811;Monitor Pro 398;Informática;1534.44;175
+1056;Mel Puro Premium 317;Alimentos;1918.44;37
+1009;Lápis de Cor Mini 124;Papelaria;2915.67;453
+1679;Fritadeira Elétrica Smart 315;Eletrodomésticos;232.76;182
+1760;Quebra-Cabeça Básico 226;Brinquedos;1465.15;114
+1990;Pelúcia Plus 362;Brinquedos;896.70;81
+1383;Luva de Treino Turbo 642;Esportes;83.77;353
+1172;Trena Classic 451;Ferramentas;1758.69;162
+1178;Mel Puro Turbo 795;Alimentos;815.77;73
+1554;Furadeira Plus 282;Ferramentas;44.49;202
+1409;Boneca Compacto 583;Brinquedos;2745.23;0
+1238;Bola de Vôlei Plus 183;Esportes;2837.39;136
+1916;Pasta Arquivo Classic 258;Papelaria;751.75;182
+1829;Bermuda Básico 134;Vestuário;742.72;438
+1411;Mangueira Classic 388;Jardinagem;228.05;3
+1141;Batedeira Premium 891;Eletrodomésticos;448.96;401
+1018;Quebra-Cabeça Família 113;Brinquedos;2982.09;65
+1798;Café Torrado Básico 886;Alimentos;1397.80;114
+1398;Liquidificador Básico 184;Eletrodomésticos;601.48;45
+1878;Biografia Smart 582;Livros;1898.14;147
+1421;Furadeira Premium 866;Ferramentas;1933.91;219
+1203;Mouse Óptico Lite 786;Informática;407.67;376
+1735;Perfume Profissional 916;Beleza;1771.87;297
+1845;Agenda Família 559;Papelaria;1231.38;79
+1116;Jogo de Tabuleiro Compacto 739;Brinquedos;669.30;126
+1891;Teclado Mecânico Premium 679;Informática;2352.92;388
+1915;Roteador Classic 400;Informática;52.86;177
+1904;Palheta de Para-brisa Mini 500;Automotivo;2331.34;413
+1362;Nível a Laser Premium 168;Ferramentas;1981.78;427
+1194;Esmalte Pro 218;Beleza;2007.66;282
+1627;Serra Manual Smart 719;Ferramentas;2772.26;259
+1959;Liquidificador Premium 638;Eletrodomésticos;1552.37;382
+1110;Biografia Mini 950;Livros;414.82;75
+1032;Café Torrado Lite 696;Alimentos;1304.30;230
+1546;Shampoo Pro 655;Beleza;2257.10;414
+1198;Biografia Plus 181;Livros;2022.27;335
+1919;Marcador de Texto Família 364;Papelaria;871.06;60
+1320;Chocolate Amargo Pro 390;Alimentos;2405.75;265
+1040;Roteador Turbo 639;Informática;229.41;61
+1892;Luva de Treino Max 446;Esportes;2011.07;248
+1280;Hidratante Compacto 753;Beleza;2198.17;500
+1333;Mangueira Lite 980;Jardinagem;2876.77;302
+1723;Calça Jeans Pro 577;Vestuário;2172.89;474
+1318;Boné Pro 475;Vestuário;1372.30;489
+1097;Pá de Jardim Lite 140;Jardinagem;1319.55;209
+1706;Webcam Eco 865;Informática;2161.51;265
+1674;Hidratante Família 508;Beleza;220.12;269
+1434;Liquidificador Ultra 395;Eletrodomésticos;801.88;429
+1929;Carregador Veicular Compacto 377;Automotivo;715.16;64
+1127;Filtro de Ar Smart 442;Automotivo;2907.92;276
+1373;Camiseta Turbo 167;Vestuário;1829.25;256
+1931;Mouse Óptico Premium 276;Informática;919.89;99
+1353;Biografia Ultra 692;Livros;1354.30;243
+1077;Cafeteira Classic 765;Eletrodomésticos;1528.01;255
+1024;Bicicleta Ergométrica Família 945;Esportes;807.84;47
+1181;Azeite Extra Virgem Compacto 997;Alimentos;2484.53;414
+1019;Micro-ondas Max 276;Eletrodomésticos;1305.15;359
+1517;Pá de Jardim Classic 280;Jardinagem;1559.36;23
+1131;Camiseta Premium 137;Vestuário;2388.63;12
+1704;Pasta Arquivo Turbo 969;Papelaria;1831.22;456
+1039;Azeite Extra Virgem Básico 367;Alimentos;82.22;349
+1366;Corda de Pular Ultra 232;Esportes;27.19;10
+1700;Grampeador Smart 795;Papelaria;2048.09;204
+1104;Marcador de Texto Turbo 226;Papelaria;284.30;461
+1253;Calça Jeans Classic 772;Vestuário;716.35;485
+1965;Batedeira Básico 108;Eletrodomésticos;288.39;32
+1521;Caderno Classic 920;Papelaria;1988.78;486
