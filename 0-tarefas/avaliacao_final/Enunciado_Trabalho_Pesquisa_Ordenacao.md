@@ -11,8 +11,6 @@ Curso de Ciência da Computação
 | **Tema** | Catálogo de produtos: comparando ordenação e busca |
 | **Linguagem / recursos** | Java, Swing, arquivos texto e HashMap |
 
-
-
 ---
 
 ## 1. Objetivo
@@ -114,14 +112,14 @@ Separar a lógica da interface facilita testar os algoritmos e gerar o relatóri
 - Identifique o(s) autor(es) com nome e turma em um comentário no início da classe principal.
 - O programa deve compilar e executar sem alterações, lendo os arquivos de dados a partir da pasta do projeto.
 
-## 7. Critérios de avaliação (10 pontos)
+## 7. Critérios de avaliação (5 pontos)
 
 | Critério | Pontos |
 |---|---:|
-| Leitura e escrita corretas dos arquivos | 1,5 |
-| Dois algoritmos de ordenação implementados e corretos, por dois critérios | 2,5 |
-| Busca linear, binária e por `HashMap` corretas | 2,5 |
-| Medição de tempo e relatório com análise | 2,0 |
-| Interface Swing funcional | 1,5 |
-| **Total** | **10,0** |
+| Leitura e escrita corretas dos arquivos | 0,5 |
+| Dois algoritmos de ordenação implementados e corretos, por dois critérios | 1,5 |
+| Busca linear, binária e por `HashMap` corretas | 1,5 |
+| Medição de tempo e relatório com análise | 1,0 |
+| Interface Swing funcional | 0,5 |
+| **Total** | **5,0** |
 
