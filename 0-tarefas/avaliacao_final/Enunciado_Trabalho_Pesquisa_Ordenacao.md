@@ -11,9 +11,7 @@ Curso de Ciência da Computação
 | **Tema** | Catálogo de produtos: comparando ordenação e busca |
 | **Linguagem / recursos** | Java, Swing, arquivos texto e HashMap |
 
-| Nome do(s) aluno(s) | Turma | Nota |
-|---|---|---|
-| | | |
+
 
 ---
 
@@ -127,10 +125,3 @@ Separar a lógica da interface facilita testar os algoritmos e gerar o relatóri
 | Interface Swing funcional | 1,5 |
 | **Total** | **10,0** |
 
-## 8. Desafios opcionais
-
-Para quem terminar antes do prazo (pontuação extra a critério do professor):
-
-- Ordenar por múltiplos critérios: categoria e, dentro dela, preço.
-- Contar o número de comparações de cada algoritmo, além do tempo, para evidenciar a diferença entre O(n²) e O(n log n) independentemente do computador.
-- Exibir um gráfico de barras simples no Swing com os tempos medidos.
